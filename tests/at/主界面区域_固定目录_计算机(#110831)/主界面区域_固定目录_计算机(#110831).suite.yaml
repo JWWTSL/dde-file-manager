@@ -1,0 +1,248 @@
+name: 主界面区域_固定目录_计算机(#110831)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_固定目录_计算机(#110831)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110831__1_s1
+  name: 主界面区域/固定目录/计算机(#110831)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: A
+      role: list item
+    items:
+    - 从快捷访问移除
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: B
+      role: list item
+    items:
+    - 从快捷访问移除
+  - action: dtk_context_menu
+    selector:
+      name: C
+      role: list item
+    items:
+    - 从快捷访问移除
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 新建窗口
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: test_input_123
+      role: list item
+  - action: mouse_right_click
+    selector:
+      name: test_input_123
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 系统盘
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 在终端中打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 以管理员身份打开
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: mouse_right_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: delete
+  - action: keyboard_hot_key
+    key: shift+delete
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: A
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 系统盘
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 新建文件夹
+  - action: assert_element
+    selector:
+      name: 新建文件
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__110831__2_s1
+  name: 主界面区域/固定目录/计算机(#110831)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+teardown:
+- action: session_stop

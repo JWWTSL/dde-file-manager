@@ -1,0 +1,25 @@
+name: 主界面区域_文件操作_剪切(#110849)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_文件操作_剪切(#110849)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110849__s1
+  name: 主界面区域/文件操作/剪切(#110849)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: keyboard_hot_key
+    key: ctrl+a
+  - action: keyboard_hot_key
+    key: ctrl+x
+  assert_steps:
+  - action: assert_process_running
+teardown:
+- action: session_stop

@@ -1,0 +1,300 @@
+name: 主界面区域_文件操作_鼠标键盘操作(#110847)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_文件操作_鼠标键盘操作(#110847)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110847__1_s1
+  name: 主界面区域/文件操作/鼠标键盘操作(#110847)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: space
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: f5
+  - action: keyboard_press
+    key: f5
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    x: 700
+    y: 400
+  - action: keyboard_press
+    key: escape
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowOptionButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: home
+  - action: keyboard_press
+    key: end
+  - action: keyboard_press
+    key: left
+  - action: keyboard_press
+    key: right
+  - action: keyboard_press
+    key: up
+  - action: keyboard_press
+    key: down
+  - action: keyboard_hot_key
+    key: shift+h
+  - action: keyboard_hot_key
+    key: shift+e
+  - action: keyboard_hot_key
+    key: shift+l
+  - action: keyboard_hot_key
+    key: shift+r
+  - action: keyboard_hot_key
+    key: shift+u
+  - action: keyboard_hot_key
+    key: shift+d
+  - action: keyboard_hot_key
+    key: ctrl+a
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+h
+  - action: keyboard_hot_key
+    key: ctrl+h
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 从上至下，从左至右
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 从下至上，从右至左
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 收起
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 收起
+  - action: assert_element
+    selector:
+      name: 显示隐藏文件
+  - action: assert_window
+- id: suite__110847__2_s1
+  name: 主界面区域/文件操作/鼠标键盘操作(#110847)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 发送到
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 打开方式
+    - 文本编辑器
+  - action: element_action
+    selector:
+      name: 确定
+      role: button
+    do: click
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 此快捷方式指向的xxx.txt已被更改或移动，是否删除此快捷方式?
+  - action: assert_window
+teardown:
+- action: session_stop

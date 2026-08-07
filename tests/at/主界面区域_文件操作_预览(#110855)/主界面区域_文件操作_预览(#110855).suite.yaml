@@ -1,0 +1,241 @@
+name: 主界面区域_文件操作_预览(#110855)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_文件操作_预览(#110855)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110855__s1
+  name: 主界面区域/文件操作/预览(#110855)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 文档
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: viewoptions_button
+      role: button
+    items:
+    - 显示预览
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: preview
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: space
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 压缩
+  - action: keyboard_press
+    key: space
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: viewoptions_button
+      role: button
+    items:
+    - 显示预览
+  - action: keyboard_press
+    key: space
+  - action: dtk_context_menu
+    selector:
+      name: viewoptions_button
+      role: button
+    items:
+    - 显示预览
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: viewoptions_button
+      role: button
+    items:
+    - 显示预览
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: space
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 显示预览
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+teardown:
+- action: session_stop

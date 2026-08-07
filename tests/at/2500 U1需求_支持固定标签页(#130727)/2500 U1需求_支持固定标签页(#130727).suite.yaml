@@ -1,0 +1,348 @@
+name: 2500 U1需求_支持固定标签页(#130727)_suite
+app: dde-file-manager
+description: ''
+module: 2500 U1需求_支持固定标签页(#130727)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite_2500_U1_130727__s1
+  name: 2500 U1需求/支持固定标签页(#130727)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_main_menu
+    items:
+    - 新建窗口
+  - action: mouse_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 新建窗口
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: A1
+      role: page tab
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: A1
+      role: page tab
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: A1
+      role: page tab
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 新建窗口
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 新建窗口
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 新建窗口
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: A
+      role: page tab
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 新建窗口
+  - action: dtk_main_menu
+    items:
+    - 新建窗口
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: A-1
+      role: page tab
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: test_input_123
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: A1
+      role: page tab
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 新建窗口
+  - action: mouse_click
+    selector:
+      name: A1
+      role: page tab
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 新建窗口
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 新建标签页
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: A1
+  - action: assert_element
+    selector:
+      name: B1
+  - action: assert_element
+    selector:
+      name: C1
+  - action: assert_element
+    selector:
+      name: D1
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: A1
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: A
+  - action: assert_element
+    selector:
+      name: B
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: B1
+  - action: assert_element
+    selector:
+      name: C1
+  - action: assert_element
+    selector:
+      name: D1
+  - action: assert_element
+    selector:
+      name: D1
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+teardown:
+- action: session_stop

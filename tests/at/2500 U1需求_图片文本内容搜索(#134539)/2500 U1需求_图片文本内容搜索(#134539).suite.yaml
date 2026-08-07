@@ -1,0 +1,486 @@
+name: 2500 U1需求_图片文本内容搜索(#134539)_suite
+app: dde-file-manager
+description: ''
+module: 2500 U1需求_图片文本内容搜索(#134539)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite_2500_U1_134539__1_s1
+  name: 2500 U1需求/图片文本内容搜索(#134539)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 全文搜索
+      role: check box
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 石鼓寺
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 修改时间
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片文本内容搜索
+      role: check box
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: delete
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: delete
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 图片文本内容搜索
+  - action: assert_element
+    selector:
+      name: 正在更新索引
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 正在更新索引
+  - action: assert_element
+    selector:
+      name: 索引更新完成
+  - action: assert_element
+    selector:
+      name: 石鼓寺.bmp
+  - action: assert_element
+    selector:
+      name: 石鼓寺-new.bmp
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 石鼓寺.bmp
+  - action: assert_element
+    selector:
+      name: 石鼓寺-new.bmp
+  - action: assert_element
+    selector:
+      name: 石鼓寺.bmp
+  - action: assert_element
+    selector:
+      name: 石鼓寺.bmp
+  - action: assert_element
+    selector:
+      name: 索引更新完成
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 石鼓寺.bmp
+  - action: assert_element
+    selector:
+      name: 石鼓寺.bmp
+  - action: assert_element
+    selector:
+      name: 索引更新完成
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_element
+    selector:
+      name: 显示255个字符不带空格符号.png
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 终于等到你啦
+  - action: assert_element
+    selector:
+      name: 终于等到你啦
+  - action: assert_element
+    selector:
+      name: 终于等到你啦
+  - action: assert_element
+    selector:
+      name: 终于等到你啦
+  - action: assert_element
+    selector:
+      name: 终于等到你啦
+  - action: assert_element
+    selector:
+      name: 终于等到你啦
+  - action: assert_element
+    selector:
+      name: 终于等到你啦
+  - action: assert_element
+    selector:
+      name: 索引更新失败，请尝试重新更新索引
+  - action: assert_element
+    selector:
+      name: 重新更新索引
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 索引更新失败，请尝试重新更新索引
+  - action: assert_element
+    selector:
+      name: 索引更新完成
+  - action: assert_element
+    selector:
+      name: 开启后支持搜索图片中的文本内容
+  - action: assert_element
+    selector:
+      name: 正在更新索引
+  - action: assert_element
+    selector:
+      name: 索引更新完成
+  - action: assert_element
+    selector:
+      name: 立即更新索引
+  - action: assert_not_exists
+    selector:
+      name: 图片
+  - action: assert_element
+    selector:
+      name: 开启后支持搜索图片中的文本内容
+  - action: assert_element
+    selector:
+      name: 正在更新索引
+  - action: assert_element
+    selector:
+      name: 索引更新完成
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 图片
+  - action: assert_element
+    selector:
+      name: 图片
+  - action: assert_not_exists
+    selector:
+      name: 图片
+  - action: assert_element
+    selector:
+      name: 新增的图片内容
+  - action: assert_element
+    selector:
+      name: 图片
+  - action: assert_element
+    selector:
+      name: 索引更新完成
+  - action: assert_not_exists
+    selector:
+      name: 图片
+  - action: assert_element
+    selector:
+      name: 索引更新完成
+  - action: assert_element
+    selector:
+      name: 新增的图片内容
+  - action: assert_element
+    selector:
+      name: 图片
+  - action: assert_not_exists
+    selector:
+      name: 图片
+  - action: assert_element
+    selector:
+      name: 新增的图片内容
+  - action: assert_element
+    selector:
+      name: 图片
+  - action: assert_element
+    selector:
+      name: 索引更新完成
+  - action: assert_not_exists
+    selector:
+      name: 图片
+  - action: assert_element
+    selector:
+      name: 索引更新完成
+  - action: assert_element
+    selector:
+      name: 新增的图片内容
+  - action: assert_element
+    selector:
+      name: 图片文本内容搜索
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 索引更新完成
+  - action: assert_element
+    selector:
+      name: 图片中找到的文字
+  - action: assert_element
+    selector:
+      name: 图片中找到的文字
+  - action: assert_element
+    selector:
+      name: 最佳匹配
+  - action: assert_element
+    selector:
+      name: 图片中找到的文字
+  - action: assert_element
+    selector:
+      name: 图片中找到的文字
+  - action: assert_element
+    selector:
+      name: 图片中找到的文字
+  - action: assert_element
+    selector:
+      name: 多关键词-1.png
+  - action: assert_element
+    selector:
+      name: 多关键词-1.png
+- id: suite_2500_U1_134539__2_s1
+  name: 2500 U1需求/图片文本内容搜索(#134539)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 0007-大图片-29.3M.png
+      role: list item
+    items:
+    - 重命名
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片中找到的文字
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片文本内容搜索
+      role: check box
+    do: click
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 0007-大图片-29.3M.png
+  - action: assert_element
+    selector:
+      name: 0007-大图片-29.3M.png
+  - action: assert_element
+    selector:
+      name: 0007-大图片-29.3M.png
+  - action: assert_element
+    selector:
+      name: 0007-大图片-29.3M.png
+  - action: assert_element
+    selector:
+      name: 0007-大图片-29.3M.png
+  - action: assert_element
+    selector:
+      name: 0007-大图片-29.3M.png
+  - action: assert_element
+    selector:
+      name: 0007-大图片-29.3M.png
+  - action: assert_element
+    selector:
+      name: 0007-大图片-29.3M.png
+  - action: assert_not_exists
+    selector:
+      name: 0007-大图片-29.3M.png
+  - action: assert_not_exists
+    selector:
+      name: 0007-大图片-29.3M.png
+  - action: assert_element
+    selector:
+      name: 0007-大图片-29.3M.png
+  - action: assert_element
+    selector:
+      name: 0007-大图片-29.3M.png
+  - action: assert_element
+    selector:
+      name: 0007-大图片-29.3M-new.png
+  - action: assert_not_exists
+    selector:
+      name: 0007-大图片-29.3M.png
+  - action: assert_not_exists
+    selector:
+      name: 0007-大图片-29.3M.png
+  - action: assert_element
+    selector:
+      name: 图片
+  - action: assert_element
+    selector:
+      name: 图片
+  - action: assert_element
+    selector:
+      name: 图片
+  - action: assert_element
+    selector:
+      name: 图片
+  - action: assert_element
+    selector:
+      name: 已被磐石系统拦截
+  - action: assert_element
+    selector:
+      name: 已被磐石系统拦截
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 已被磐石系统拦截
+  - action: assert_element
+    selector:
+      name: 已被磐石系统拦截
+  - action: assert_element
+    selector:
+      name: 已被磐石系统拦截
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 石鼓寺
+  - action: assert_element
+    selector:
+      name: BA.bmp
+  - action: assert_element
+    selector:
+      name: 石鼓寺.png
+  - action: assert_element
+    selector:
+      name: 石鼓寺
+  - action: assert_element
+    selector:
+      name: BA.bmp
+  - action: assert_element
+    selector:
+      name: 石鼓寺.png
+  - action: assert_element
+    selector:
+      name: 1.bmp
+  - action: assert_element
+    selector:
+      name: 1.bmp
+  - action: assert_element
+    selector:
+      name: 1.bmp
+  - action: assert_element
+    selector:
+      name: 1.bmp
+  - action: assert_element
+    selector:
+      name: 1.bmp
+  - action: assert_element
+    selector:
+      name: 1.bmp
+  - action: assert_element
+    selector:
+      name: 图片文本内容搜索
+  - action: assert_element
+    selector:
+      name: 图片文本内容搜索
+  - action: assert_element
+    selector:
+      name: 图片文本内容搜索
+  - action: assert_element
+    selector:
+      name: 索引更新完成
+  - action: assert_element
+    selector:
+      name: 图片文本内容搜索
+teardown:
+- action: session_stop

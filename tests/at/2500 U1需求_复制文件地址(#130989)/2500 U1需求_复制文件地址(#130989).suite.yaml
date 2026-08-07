@@ -1,0 +1,365 @@
+name: 2500 U1需求_复制文件地址(#130989)_suite
+app: dde-file-manager
+description: ''
+module: 2500 U1需求_复制文件地址(#130989)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite_2500_U1_130989__s1
+  name: 2500 U1需求/复制文件地址(#130989)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+a
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 文档
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+a
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 1.txt
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+/
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 1.txt
+      role: list item
+    items:
+    - 发送到
+    - 创建链接
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 系统盘
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 系统盘
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 我的目录
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 最近使用
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: treeView_button
+      role: check box
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+a
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+a
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 文件夹A
+      role: list item
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 有特殊字符+——）（）&……%￥#@！RC!@#$%^&()_+}{L  （副本）.txt
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 复制文件地址  Ctrl + Shift + C
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 复制文件地址  Ctrl + Shift + C
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: treeView_button
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+teardown:
+- action: session_stop

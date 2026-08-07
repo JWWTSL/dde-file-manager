@@ -1,0 +1,503 @@
+name: 主界面区域_文件操作_其他(#133179)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_文件操作_其他(#133179)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__133179__1_s1
+  name: 主界面区域/文件操作/其他(#133179)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 重命名
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 重命名
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 重命名
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 重命名
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+i
+  - action: keyboard_hot_key
+    key: ctrl+s
+  - action: keyboard_hot_key
+    key: ctrl+shift+i
+  - action: keyboard_hot_key
+    key: ctrl+s
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 在新窗口打开
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 在新标签中打开
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 打开方式
+    - 文件管理器
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 打开方式
+    - 文本编辑器
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 以管理员身份打开
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 以管理员身份打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 粘贴
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: shift+d
+  - action: keyboard_hot_key
+    key: shift+d
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 删除
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 在新窗口打开
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 在新标签中打开
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 打开方式
+    - 文件管理器
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 打开方式
+    - 文本编辑器
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 以管理员身份打开
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 以管理员身份打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 新建文档
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 新建文档
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 新建文档
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 新建文档
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件名过长
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+- id: suite__133179__2_s1
+  name: 主界面区域/文件操作/其他(#133179)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 粘贴
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: mouse_drag
+    selector:
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 删除
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 添加
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 添加
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 添加
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 重命名
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 重命名
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 重命名
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 删除
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 复制
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 剪切
+  - action: mouse_drag
+    selector:
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 在终端中打开
+      role: list item
+    items:
+    - 在终端中打开
+  - action: dtk_context_menu
+    selector:
+      name: 在终端中打开
+      role: list item
+    items:
+    - 在终端中打开
+  - action: dtk_context_menu
+    selector:
+      name: 在终端中打开
+      role: list item
+    items:
+    - 在终端中打开
+  - action: dtk_context_menu
+    selector:
+      name: 在终端中打开
+      role: list item
+    items:
+    - 在终端中打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 共享文件夹
+      role: list item
+    items:
+    - 共享文件夹
+  - action: dtk_context_menu
+    selector:
+      name: 取消共享
+      role: list item
+    items:
+    - 取消共享
+  - action: dtk_context_menu
+    selector:
+      name: 共享文件夹
+      role: list item
+    items:
+    - 共享文件夹
+  - action: dtk_context_menu
+    selector:
+      name: 取消共享
+      role: list item
+    items:
+    - 取消共享
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 病毒查杀
+      role: list item
+    items:
+    - 病毒查杀
+  - action: element_action
+    selector:
+      name: 立即体检
+      role: button
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 病毒查杀
+      role: list item
+    items:
+    - 病毒查杀
+  - action: element_action
+    selector:
+      name: 立即体检
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 系统盘/tmp
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 删除
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: enter
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 文件名过长
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 安全中心
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 安全中心
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: '...'
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+teardown:
+- action: session_stop

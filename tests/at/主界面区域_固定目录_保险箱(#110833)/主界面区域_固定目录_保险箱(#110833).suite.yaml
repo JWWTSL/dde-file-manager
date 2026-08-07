@@ -1,0 +1,1167 @@
+name: 主界面区域_固定目录_保险箱(#110833)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_固定目录_保险箱(#110833)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110833__1_s1
+  name: 主界面区域/固定目录/保险箱(#110833)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 保险箱
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 保险箱
+      role: list item
+  - action: element_action
+    selector:
+      name: 立即升级
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 升级保险箱
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 保险箱
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 重置密码
+    - 打开
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱选择立即上锁
+      role: list item
+    items:
+    - 立即上锁
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 保险箱
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: '...选择密钥文件'
+      role: button
+    do: click
+  - action: keyboard_type
+    text: test_input_123
+  - action: element_action
+    selector:
+      name: …
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 密钥解锁
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 保险箱
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_password_123
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_password_123
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_password_123
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 保险箱
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: -打开
+      role: list item
+    items:
+    - 打开
+  - action: dtk_context_menu
+    selector:
+      name: -在新窗口打开
+      role: list item
+    items:
+    - 在新窗口打开
+  - action: element_action
+    selector:
+      name: DSearchEditIconButton
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: dfmvault:///
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 保险箱
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: -解锁
+      role: list item
+    items:
+    - 解锁
+  - action: element_action
+    selector:
+      name: DSearchEditIconButton
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: dfmvault:///
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 文档
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 文档
+  - action: assert_element
+    selector:
+      name: 验证密码
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 输入保险箱密码
+  - action: assert_element
+    selector:
+      name: 保存恢复密钥
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 重置密码
+  - action: assert_process_running
+  - action: assert_not_exists
+    selector:
+      name: 重置密码
+  - action: assert_not_exists
+    selector:
+      name: 重置密码
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 重置密码
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 密钥解锁保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_not_exists
+    selector:
+      name: 至少8位，包含A-Z，a-z,0-9和符号
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 密码解锁
+  - action: assert_element
+    selector:
+      name: 密码解锁
+  - action: assert_element
+    selector:
+      name: 密码解锁
+  - action: assert_element
+    selector:
+      name: 密码解锁
+- id: suite__110833__2_s1
+  name: 主界面区域/固定目录/保险箱(#110833)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱右键-滑动鼠标到自动上锁-观察默认勾选
+      role: list item
+    items:
+    - 自动上锁
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱右键-滑动鼠标到自动上锁-观察默认勾选
+      role: list item
+    items:
+    - 自动上锁
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: escape
+  - action: element_action
+    selector:
+      name: 弹窗页面确定
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: …
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: …
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: …
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_password_123
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 计算机
+      role: button
+    do: click
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 计算机
+      role: button
+    do: click
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 计算机
+      role: button
+    do: click
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 保险箱
+      role: list item
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 主目录
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 解锁
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 解锁
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_not_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 解锁
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 在终端打开
+  - action: assert_element
+    selector:
+      name: 在终端打开
+  - action: assert_element
+    selector:
+      name: 在终端打开
+  - action: assert_element
+    selector:
+      name: 在终端打开
+  - action: assert_element
+    selector:
+      name: 在终端打开
+  - action: assert_element
+    selector:
+      name: 在终端打开
+  - action: assert_element
+    selector:
+      name: 在终端打开
+  - action: assert_not_exists
+    selector:
+      name: 在终端打开
+  - action: assert_not_exists
+    selector:
+      name: 在终端打开
+  - action: assert_not_exists
+    selector:
+      name: 在终端打开
+  - action: assert_not_exists
+    selector:
+      name: 在终端打开
+  - action: assert_not_exists
+    selector:
+      name: 在终端打开
+  - action: assert_not_exists
+    selector:
+      name: 在终端打开
+  - action: assert_not_exists
+    selector:
+      name: 在终端打开
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+- id: suite__110833__3_s1
+  name: 主界面区域/固定目录/保险箱(#110833)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: mouse_drag
+    selector:
+      name: 保险箱
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 音乐
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 保险箱
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 音乐
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 保险箱
+      role: list item
+  - action: element_action
+    selector:
+      name: 保险箱
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 添加标记属性
+      role: list item
+    items:
+    - 新建文件
+    - 属性
+  - action: mouse_drag
+    selector:
+      name: 保险箱
+      role: list item
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 保险箱
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 保险箱
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: DSearchEditIconButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 保险箱
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 保险箱
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 保险箱
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 保险箱
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 保险箱
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 保险箱
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 保险箱
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DSearchEditIconButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 保险箱
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_password_123
+  - action: keyboard_type
+    text: test_password_123
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+- id: suite__110833__4_s1
+  name: 主界面区域/固定目录/保险箱(#110833)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: '...'
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 密钥解锁
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 解锁
+  - action: element_action
+    selector:
+      name: 打开
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 密钥解锁
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 下拉框选择通过指定路径密钥文件找回密码
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: …
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 解锁
+  - action: element_action
+    selector:
+      name: 打开
+      role: button
+    do: click
+  - action: keyboard_type
+    text: test_input_123
+  - action: element_action
+    selector:
+      name: 密钥解锁
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: …
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 返回控件
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 忘记密码
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 保险箱
+      role: list item
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 打开
+  - action: assert_element
+    selector:
+      name: 密钥文件选择
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 密钥文件选择
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: …
+  - action: assert_element
+    selector:
+      name: 密钥文件选择
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 主目录
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_not_exists
+    selector:
+      name: 验证密钥
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_element
+    selector:
+      name: 保险箱
+- id: suite__110833__5_s1
+  name: 主界面区域/固定目录/保险箱(#110833)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+teardown:
+- action: session_stop

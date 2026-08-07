@@ -1,0 +1,530 @@
+name: 主界面区域_文件操作_复制(#110843)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_文件操作_复制(#110843)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110843__1_s1
+  name: 主界面区域/文件操作/复制(#110843)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: esc
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: super+v
+  - action: keyboard_hot_key
+    key: super+v
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_file_exists
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_file_exists
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: test.iso
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: test.iso
+  - action: assert_element
+    selector:
+      name: test.iso
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: test.iso
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: test.iso
+  - action: assert_element
+    selector:
+      name: test.iso
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: test.iso
+  - action: assert_element
+    selector:
+      name: test.iso
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: test
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: test
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__110843__2_s1
+  name: 主界面区域/文件操作/复制(#110843)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: keyboard_press
+    key: esc
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__110843__3_s1
+  name: 主界面区域/文件操作/复制(#110843)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  assert_steps:
+  - action: assert_window
+teardown:
+- action: session_stop

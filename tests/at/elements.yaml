@@ -1,0 +1,1628 @@
+elements:
+  全文搜索:
+    name: 全文搜索
+    role: check box
+  图片文本内容搜索:
+    name: 图片文本内容搜索
+  正在更新索引:
+    name: 正在更新索引
+  索引更新完成:
+    name: 索引更新完成
+  DLineEditChildLineEdit:
+    name: DLineEditChildLineEdit
+    role: text
+  石鼓寺.bmp:
+    name: 石鼓寺.bmp
+  石鼓寺-new.bmp:
+    name: 石鼓寺-new.bmp
+  显示255个字符不带空格符号.png:
+    name: 显示255个字符不带空格符号.png
+  终于等到你啦:
+    name: 终于等到你啦
+  修改时间:
+    name: 修改时间
+    role: button
+  索引更新失败，请尝试重新更新索引:
+    name: 索引更新失败，请尝试重新更新索引
+  重新更新索引:
+    name: 重新更新索引
+  开启后支持搜索图片中的文本内容:
+    name: 开启后支持搜索图片中的文本内容
+  立即更新索引:
+    name: 立即更新索引
+  图片:
+    name: 图片
+  新增的图片内容:
+    name: 新增的图片内容
+  图片中找到的文字:
+    name: 图片中找到的文字
+  最佳匹配:
+    name: 最佳匹配
+  多关键词-1.png:
+    name: 多关键词-1.png
+  0007-大图片-29.3M.png:
+    name: 0007-大图片-29.3M.png
+  0007-大图片-29.3M-new.png:
+    name: 0007-大图片-29.3M-new.png
+  已被磐石系统拦截:
+    name: 已被磐石系统拦截
+  石鼓寺:
+    name: 石鼓寺
+  BA.bmp:
+    name: BA.bmp
+  石鼓寺.png:
+    name: 石鼓寺.png
+  1.bmp:
+    name: 1.bmp
+  在新标签页中打开新文件夹:
+    name: 在新标签页中打开新文件夹
+    role: check box
+  下载:
+    name: 下载
+    role: button
+  访问桌面上的文件夹A:
+    name: 访问桌面上的文件夹A
+    role: list item
+  桌面:
+    name: 桌面
+  DTitlebarDWindowMinButton:
+    name: DTitlebarDWindowMinButton
+    role: button
+  向右翻页:
+    name: 向右翻页
+    role: button
+  向左翻页:
+    name: 向左翻页
+    role: button
+  访问第5页:
+    name: 访问第5页
+    role: button
+  文件夹A:
+    name: 文件夹A
+    role: list item
+  文档:
+    name: 文档
+    role: list item
+  文件夹B:
+    name: 文件夹B
+    role: list item
+  计算机图标进入文管计算机界面:
+    name: 计算机图标进入文管计算机界面
+    role: list item
+  主目录:
+    name: 主目录
+  1.txt:
+    name: 1.txt
+    role: list item
+  复制文件地址  Ctrl + Shift + C:
+    name: 复制文件地址  Ctrl + Shift + C
+  系统盘:
+    name: 系统盘
+    role: list item
+  我的目录:
+    name: 我的目录
+    role: list item
+  最近使用:
+    name: 最近使用
+    role: list item
+  treeView_button:
+    name: treeView_button
+    role: check box
+  有特殊字符+——）（）&……%￥#@！RC!@#$%^&()_+}{L  （副本）.txt:
+    name: 有特殊字符+——）（）&……%￥#@！RC!@#$%^&()_+}{L  （副本）.txt
+    role: list item
+  回收站:
+    name: 回收站
+    role: list item
+  计算机:
+    name: 计算机
+    role: list item
+  A1:
+    name: A1
+  B1:
+    name: B1
+  C1:
+    name: C1
+  D1:
+    name: D1
+  A:
+    name: A
+  B:
+    name: B
+  A-1:
+    name: A-1
+    role: page tab
+  test_input_123:
+    name: test_input_123
+    role: list item
+  分组方式:
+    name: 分组方式
+  音乐:
+    name: 音乐
+    role: list item
+  目录:
+    name: 目录
+    role: list item
+  iconView_button:
+    name: iconView_button
+    role: check box
+  listView_button:
+    name: listView_button
+    role: check box
+  数据盘:
+    name: 数据盘
+    role: list item
+  排序方式:
+    name: 排序方式
+    role: button
+  test:
+    name: test
+  test.txt:
+    name: test.txt
+    role: list item
+  a.txt:
+    name: a.txt
+    role: list item
+  视频:
+    name: 视频
+    role: list item
+  文件粉碎:
+    name: 文件粉碎
+  控制中心:
+    name: 控制中心
+  取消:
+    name: 取消
+    role: button
+  你确定要粉碎这12个项目:
+    name: 你确定要粉碎这12个项目
+  正在进行文件粉碎，正在粉:
+    name: 正在进行文件粉碎，正在粉
+  测试文件粉碎:
+    name: 测试文件粉碎
+  文件粉粹菜单:
+    name: 文件粉粹菜单
+  最近访问:
+    name: 最近访问
+  保险箱:
+    name: 保险箱
+  办公云盘:
+    name: 办公云盘
+  文件索引:
+    name: 文件索引
+    role: check box
+  全文检索:
+    name: 全文检索
+  update-test.txt:
+    name: update-test.txt
+  .hidden-file:
+    name: .hidden-file
+  same-name.txt:
+    name: same-name.txt
+  delete-test.txt:
+    name: delete-test.txt
+  new-test.txt:
+    name: new-test.txt
+  new-a.txt:
+    name: new-a.txt
+  dir-new:
+    name: dir-new
+  搜索:
+    name: 搜索
+    role: list item
+  确认:
+    name: 确认
+    role: button
+  若关闭，文件搜索时将遍历文件系统，严重影响搜索速度。:
+    name: 若关闭，文件搜索时将遍历文件系统，严重影响搜索速度。
+  开启后立即创建文件索引，支持快速搜索文件名:
+    name: 开启后立即创建文件索引，支持快速搜索文件名
+  恢复默认:
+    name: 恢复默认
+    role: button
+  DTitlebarDWindowOptionButton:
+    name: DTitlebarDWindowOptionButton
+    role: button
+  新建Word文档.docx:
+    name: 新建Word文档.docx
+    role: list item
+  新建Excel文档.xlsx:
+    name: 新建Excel文档.xlsx
+  演示文档.pptx:
+    name: 演示文档.pptx
+  DMainWindow:
+    name: DMainWindow
+    role: window
+  跳过:
+    name: 跳过
+  '%1':
+    name: '%1'
+  test_file:
+    name: test_file
+  彻底删除:
+    name: 彻底删除
+  dde-file-manager:
+    name: dde-file-manager
+    role: page tab
+  文件夹C:
+    name: 文件夹C
+  结果中的a.txt:
+    name: 结果中的a.txt
+    role: list item
+  文件夹A1:
+    name: 文件夹A1
+  固定标签页:
+    name: 固定标签页
+  关闭标签:
+    name: 关闭标签
+  取消固定标签:
+    name: 取消固定标签
+  固定标签:
+    name: 固定标签
+  取消固定:
+    name: 取消固定
+  文件保存:
+    name: 文件保存
+  另存为:
+    name: 另存为
+  显示预览:
+    name: 显示预览
+  隐藏后不释放鼠标:
+    name: 隐藏后不释放鼠标
+  左右箭头:
+    name: 左右箭头
+  清 空:
+    name: 清 空
+    role: button
+  pdf:
+    name: pdf
+  mp3:
+    name: mp3
+  wmv:
+    name: wmv
+  gif:
+    name: gif
+  docx:
+    name: docx
+  sketch:
+    name: sketch
+  开启:
+    name: 开启
+  设置:
+    name: 设置
+  check-search-result.sh:
+    name: check-search-result.sh
+  查看索引状态:
+    name: 查看索引状态
+  上:
+    name: 上
+  今天创建的文档.md:
+    name: 今天创建的文档.md
+  精确匹配:
+    name: 精确匹配
+  全部显示:
+    name: 全部显示
+  智能匹配:
+    name: 智能匹配
+  xlsx:
+    name: xlsx
+  pptx:
+    name: pptx
+  智能匹配  30项:
+    name: 智能匹配  30项
+  智能匹配  50项:
+    name: 智能匹配  50项
+  side_bar_view:
+    name: side_bar_view
+  快捷访问:
+    name: 快捷访问
+    role: list item
+  smb:
+    name: smb
+    role: list item
+  添加到快捷访问:
+    name: 添加到快捷访问
+  自定义普通目录:
+    name: 自定义普通目录
+    role: list item
+  自定义smb目录:
+    name: 自定义smb目录
+    role: list item
+  自定义ftp目录:
+    name: 自定义ftp目录
+    role: list item
+  自定义sftp目录:
+    name: 自定义sftp目录
+    role: list item
+  自定义U盘目录:
+    name: 自定义U盘目录
+    role: list item
+  自定义光驱目录:
+    name: 自定义光驱目录
+    role: list item
+  自定义手机目录:
+    name: 自定义手机目录
+    role: list item
+  从快捷访问移除:
+    name: 从快捷访问移除
+  磁盘列表:
+    name: 磁盘列表
+    role: list item
+  打开:
+    name: 打开
+  DTitlebarDWindowMaxButton:
+    name: DTitlebarDWindowMaxButton
+    role: button
+  DTitlebarDWindowCloseButton:
+    name: DTitlebarDWindowCloseButton
+    role: button
+  侧边栏:
+    name: 侧边栏
+  文管:
+    name: 文管
+  立即升级:
+    name: 立即升级
+    role: button
+  验证密码:
+    name: 验证密码
+  升级保险箱:
+    name: 升级保险箱
+    role: button
+  输入保险箱密码:
+    name: 输入保险箱密码
+  保存恢复密钥:
+    name: 保存恢复密钥
+  重置密码:
+    name: 重置密码
+  保险箱选择立即上锁:
+    name: 保险箱选择立即上锁
+    role: list item
+  '...选择密钥文件':
+    name: '...选择密钥文件'
+    role: button
+  …:
+    name: …
+    role: button
+  密钥解锁:
+    name: 密钥解锁
+    role: button
+  密钥解锁保险箱:
+    name: 密钥解锁保险箱
+  至少8位，包含A-Z，a-z,0-9和符号:
+    name: 至少8位，包含A-Z，a-z,0-9和符号
+  -打开:
+    name: -打开
+    role: list item
+  -在新窗口打开:
+    name: -在新窗口打开
+    role: list item
+  DSearchEditIconButton:
+    name: DSearchEditIconButton
+    role: button
+  -解锁:
+    name: -解锁
+    role: list item
+  密码解锁:
+    name: 密码解锁
+  保险箱右键-滑动鼠标到自动上锁-观察默认勾选:
+    name: 保险箱右键-滑动鼠标到自动上锁-观察默认勾选
+    role: list item
+  弹窗页面确定:
+    name: 弹窗页面确定
+    role: button
+  解锁:
+    name: 解锁
+  在终端打开:
+    name: 在终端打开
+  添加标记属性:
+    name: 添加标记属性
+    role: list item
+  '...':
+    name: '...'
+    role: button
+  密钥文件选择:
+    name: 密钥文件选择
+  下拉框选择通过指定路径密钥文件找回密码:
+    name: 下拉框选择通过指定路径密钥文件找回密码
+    role: button
+  返回控件:
+    name: 返回控件
+    role: button
+  验证密钥:
+    name: 验证密钥
+  忘记密码:
+    name: 忘记密码
+    role: button
+  C:
+    name: C
+    role: list item
+  弹窗上最小化:
+    name: 弹窗上最小化
+    role: button
+  弹窗上X关闭:
+    name: 弹窗上X关闭
+    role: button
+  弹窗上跳过:
+    name: 弹窗上跳过
+    role: button
+  弹窗上合并:
+    name: 弹窗上合并
+    role: button
+  弹窗上共存:
+    name: 弹窗上共存
+    role: button
+  文件夹A-右键属性-权限管理下权限改为只读:
+    name: 文件夹A-右键属性-权限管理下权限改为只读
+    role: list item
+  大量文件:
+    name: 大量文件
+    role: list item
+  暂停:
+    name: 暂停
+    role: button
+  终止:
+    name: 终止
+    role: button
+  大文件:
+    name: 大文件
+    role: list item
+  右侧出现滚动条:
+    name: 右侧出现滚动条
+  单击表头--取消勾选原始路径:
+    name: 单击表头--取消勾选原始路径
+    role: list item
+  单击表头--可重新勾选原始路径:
+    name: 单击表头--可重新勾选原始路径
+    role: list item
+  我的共享:
+    name: 我的共享
+    role: list item
+  网络邻居:
+    name: 网络邻居
+    role: list item
+  viewoptions_button:
+    name: viewoptions_button
+  windows网络:
+    name: windows网络
+    role: list item
+  属性:
+    name: 属性
+  显示方式:
+    name: 显示方式
+  最近访问时间:
+    name: 最近访问时间
+  新建文件夹:
+    name: 新建文件夹
+  新建文件:
+    name: 新建文件
+  新建文档:
+    name: 新建文档
+  打开方式:
+    name: 打开方式
+  (:
+    name: (
+    role: list item
+  【打印】选项:
+    name: 【打印】选项
+  粘贴:
+    name: 粘贴
+  反选:
+    name: 反选
+  右键菜单:
+    name: 右键菜单
+  文本编辑器:
+    name: 文本编辑器
+  不得含有|/\*:"&#:
+    name: 不得含有|/\*:"&#
+  编辑按钮:
+    name: 编辑按钮
+    role: button
+  重命名成功:
+    name: 重命名成功
+  复制成功:
+    name: 复制成功
+  可以正常全选:
+    name: 可以正常全选
+  弹窗展示属性窗口:
+    name: 弹窗展示属性窗口
+  无响应:
+    name: 无响应
+  打开属性窗口:
+    name: 打开属性窗口
+    role: list item
+  文件立即显示:
+    name: 文件立即显示
+  文件夹立即显示:
+    name: 文件夹立即显示
+  立即体检:
+    name: 立即体检
+    role: button
+  安全中心:
+    name: 安全中心
+  唤起快捷键预览界面:
+    name: 唤起快捷键预览界面
+  截断:
+    name: 截断
+  在序列输入框中输入超长字符:
+    name: 在序列输入框中输入超长字符
+  错误提示:
+    name: 错误提示
+  文件夹:
+    name: 文件夹
+  保存:
+    name: 保存
+    role: button
+  文件名无效或含有无效字符:
+    name: 文件名无效或含有无效字符
+  文件名过长:
+    name: 文件名过长
+  移除:
+    name: 移除
+    role: button
+  是否移除:
+    name: 是否移除
+  文件已被更改或移动:
+    name: 文件已被更改或移动
+  重命名:
+    name: 重命名
+  删除:
+    name: 删除
+  添加快捷访问:
+    name: 添加快捷访问
+  添加:
+    name: 添加
+    role: button
+  在终端中打开:
+    name: 在终端中打开
+    role: list item
+  共享文件夹:
+    name: 共享文件夹
+    role: list item
+  取消共享:
+    name: 取消共享
+    role: list item
+  病毒查杀:
+    name: 病毒查杀
+    role: list item
+  系统盘/tmp:
+    name: 系统盘/tmp
+    role: list item
+  test.iso:
+    name: test.iso
+  aaa:
+    name: aaa
+    role: list item
+  最近使用、主目录、回收站、书签、我的共享、网络共享、标记:
+    name: 最近使用、主目录、回收站、书签、我的共享、网络共享、标记
+    role: list item
+  替换文本:
+    name: 替换文本
+    role: list item
+  撤销操作Ctrl+Z:
+    name: 撤销操作Ctrl+Z
+  确定:
+    name: 确定
+    role: button
+  sys:
+    name: sys
+    role: list item
+  power:
+    name: power
+    role: list item
+  标记信息:
+    name: 标记信息
+    role: list item
+  标记:
+    name: 标记
+    role: list item
+  被设置文件所在:
+    name: 被设置文件所在
+    role: list item
+  preview:
+    name: preview
+    role: list item
+  从上至下，从左至右:
+    name: 从上至下，从左至右
+  从下至上，从右至左:
+    name: 从下至上，从右至左
+  收起:
+    name: 收起
+  显示隐藏文件:
+    name: 显示隐藏文件
+  此快捷方式指向的xxx.txt已被更改或移动，是否删除此快捷方式?:
+    name: 此快捷方式指向的xxx.txt已被更改或移动，是否删除此快捷方式?
+  基础设置:
+    name: 基础设置
+    role: button
+  新标签:
+    name: 新标签
+    role: button
+  从新标签打开:
+    name: 从新标签打开
+    role: button
+  长文件名:
+    name: 长文件名
+    role: list item
+  创建时间:
+    name: 创建时间
+  大小:
+    name: 大小
+  未知:
+    name: 未知
+  极小:
+    name: 极小
+  今天:
+    name: 今天
+  更早:
+    name: 更早
+  0-9:
+    name: 0-9
+  分组标签:
+    name: 分组标签
+  新窗口:
+    name: 新窗口
+    role: button
+  默认目录:
+    name: 默认目录
+    role: button
+  指定目录:
+    name: 指定目录
+    role: button
+  自定义目录:
+    name: 自定义目录
+    role: button
+  添加目录:
+    name: 添加目录
+    role: button
+  打开行为:
+    name: 打开行为
+    role: button
+  重复打开文件夹时激活已有窗口:
+    name: 重复打开文件夹时激活已有窗口
+  高级设置:
+    name: 高级设置
+    role: button
+  外部存储设备:
+    name: 外部存储设备
+    role: button
+  性能优先:
+    name: 性能优先
+    role: check box
+  U盘:
+    name: U盘
+    role: list item
+  数据实时同步:
+    name: 数据实时同步
+  类型:
+    name: 类型
+  abc上的b:
+    name: abc上的b
+  合并显示Samba共享目录入口:
+    name: 合并显示Samba共享目录入口
+    role: check box
+  abc上的a:
+    name: abc上的a
+  办公机Aa1@smb:
+    name: 办公机Aa1@smb
+  1 /smb:
+    name: 1 /smb
+  密钥删除:
+    name: 密钥删除
+    role: button
+  上锁时间:
+    name: 上锁时间
+  我的保险箱:
+    name: 我的保险箱
+  设置解锁方式:
+    name: 设置解锁方式
+  加密保险箱:
+    name: 加密保险箱
+  密钥加密:
+    name: 密钥加密
+  加密方式:
+    name: 加密方式
+  设置解锁方式窗口:
+    name: 设置解锁方式窗口
+  文件A:
+    name: 文件A
+    role: list item
+  替换:
+    name: 替换
+    role: button
+  共存:
+    name: 共存
+    role: button
+  名称:
+    name: 名称
+    role: list item
+  原始路径:
+    name: 原始路径
+    role: list item
+  删除时间:
+    name: 删除时间
+    role: list item
+  在新窗口中打开:
+    name: 在新窗口中打开
+  排列方式:
+    name: 排列方式
+  全选:
+    name: 全选
+  back_button:
+    name: back_button
+    role: button
+  forword_button:
+    name: forword_button
+    role: button
+  AddressToolBar:
+    name: AddressToolBar
+    role: text
+  复制路径:
+    name: 复制路径
+  test1:
+    name: test1
+    role: list item
+  test2:
+    name: test2
+    role: list item
+  test3:
+    name: test3
+    role: list item
+  test4:
+    name: test4
+    role: list item
+  内置磁盘:
+    name: 内置磁盘
+  挂载分区和光盘:
+    name: 挂载分区和光盘
+  已挂载的共享文件夹:
+    name: 已挂载的共享文件夹
+  已添加的标签:
+    name: 已添加的标签
+  搜索专项测试.txt:
+    name: 搜索专项测试.txt
+  test-1.txt:
+    name: test-1.txt
+  搜索专项测试-仅文件名.txt:
+    name: 搜索专项测试-仅文件名.txt
+  截图_选择区域_202aa（副本）.png:
+    name: 截图_选择区域_202aa（副本）.png
+  search.txt:
+    name: search.txt
+  DLineEditClearButton:
+    name: DLineEditClearButton
+    role: button
+  打开文件所在位置:
+    name: 打开文件所在位置
+  '1':
+    name: '1'
+  deepin:
+    name: deepin
+  天:
+    name: 天
+  ss:
+    name: ss
+  '44':
+    name: '44'
+  ss123:
+    name: ss123
+  呼龍4:
+    name: 呼龍4
+  s呼:
+    name: s呼
+  10.8.11.132:
+    name: 10.8.11.132
+  列表视图:
+    name: 列表视图
+  搜索范围:
+    name: 搜索范围
+  test目录:
+    name: test目录
+  test-cc:
+    name: test-cc
+    role: list item
+  用户下载:
+    name: 用户下载
+    role: list item
+  合并:
+    name: 合并
+    role: button
+  创建链接失败:
+    name: 创建链接失败
+  前进、后退:
+    name: 前进、后退
+  高级搜索:
+    name: 高级搜索
+  图标视图、列表视图、树形:
+    name: 图标视图、列表视图、树形
+  详情视图:
+    name: 详情视图
+  打印:
+    name: 打印
+    role: button
+  打印管理器:
+    name: 打印管理器
+  查看:
+    name: 查看
+  刷新:
+    name: 刷新
+    role: list item
+  '[':
+    name: '['
+    role: list item
+  '] ':
+    name: '] '
+    role: list item
+  '+ ':
+    name: '+ '
+    role: list item
+  '= ':
+    name: '= '
+    role: list item
+  ' , ':
+    name: ' , '
+    role: list item
+  '[ ] + = ,':
+    name: '[ ] + = ,'
+  '[ ':
+    name: '[ '
+  '=':
+    name: '='
+  ',':
+    name: ','
+  复制:
+    name: 复制
+    role: list item
+  文件名1234567890:
+    name: 文件名1234567890
+    role: list item
+  在文件夹中显示:
+    name: 在文件夹中显示
+    role: button
+  归档管理器:
+    name: 归档管理器
+  右键菜单选项:
+    name: 右键菜单选项
+    role: list item
+  整理桌面:
+    name: 整理桌面
+  不同文件:
+    name: 不同文件
+    role: list item
+  应用程序:
+    name: 应用程序
+    role: check box
+  其他:
+    name: 其他
+    role: check box
+  松开鼠标:
+    name: 松开鼠标
+  标题栏右侧:
+    name: 标题栏右侧
+    role: button
+  集合尺寸:
+    name: 集合尺寸
+    role: button
+  点击新建文件夹:
+    name: 点击新建文件夹
+    role: list item
+  若点粘贴前未复制:
+    name: 若点粘贴前未复制
+  按修改时间正序排序:
+    name: 按修改时间正序排序
+  按修改时间降序排序:
+    name: 按修改时间降序排序
+  DTabBarAddButton:
+    name: DTabBarAddButton
+    role: button
+  默认大小:
+    name: 默认大小
+  标签分组:
+    name: 标签分组
+  水印:
+    name: 水印
+  修改磁盘密码需要认证:
+    name: 修改磁盘密码需要认证
+  为：正在修改磁盘密码，请:
+    name: 为：正在修改磁盘密码，请
+  修改过程中无法关闭窗口:
+    name: 修改过程中无法关闭窗口
+  磁盘密码修改成功:
+    name: 磁盘密码修改成功
+  新密码和旧密码不能相同:
+    name: 新密码和旧密码不能相同
+  密码不一致:
+    name: 密码不一致
+  修改磁盘密码入口:
+    name: 修改磁盘密码入口
+  当前密码:
+    name: 当前密码
+    role: button
+  新密码:
+    name: 新密码
+    role: button
+  重复密码:
+    name: 重复密码
+    role: button
+  关 闭:
+    name: 关 闭
+    role: button
+  无法获取加密磁盘列表:
+    name: 无法获取加密磁盘列表
+    role: button
+  多磁盘密码不一致:
+    name: 多磁盘密码不一致
+    role: button
+  初始化失败:
+    name: 初始化失败
+    role: button
+  修改磁盘密码:
+    name: 修改磁盘密码
+  正在修改磁盘密码，请稍候…:
+    name: 正在修改磁盘密码，请稍候…
+  磁盘密码修改失败:
+    name: 磁盘密码修改失败
+  计算机工作区隐藏第三方插件:
+    name: 计算机工作区隐藏第三方插件
+  计算机工作区隐藏我的目录:
+    name: 计算机工作区隐藏我的目录
+  在新窗口打开:
+    name: 在新窗口打开
+  （小版本号）:
+    name: （小版本号）
+  文件和文件夹混合排序:
+    name: 文件和文件夹混合排序
+    role: check box
+  隐藏:
+    name: 隐藏
+    role: button
+  隐藏文件提示弹窗:
+    name: 隐藏文件提示弹窗
+  快捷访问分组:
+    name: 快捷访问分组
+  分区分组:
+    name: 分区分组
+  网络分组:
+    name: 网络分组
+  显示文件扩展名:
+    name: 显示文件扩展名
+  操作文件的扩展名:
+    name: 操作文件的扩展名
+  开启普通删除提示:
+    name: 开启普通删除提示
+  test.tar.7z:
+    name: test.tar.7z
+  test.jpg.png:
+    name: test.jpg.png
+  后缀:
+    name: 后缀
+  UOS云盘:
+    name: UOS云盘
+    role: list item
+  文件同步中，请稍后处理:
+    name: 文件同步中，请稍后处理
+  集合:
+    name: 集合
+  自动排列:
+    name: 自动排列
+  拖拽对象:
+    name: 拖拽对象
+  选项:
+    name: 选项
+    role: button
+  sftp:
+    name: sftp
+    role: list item
+  ftp:
+    name: ftp
+    role: list item
+  10.8.12.197:
+    name: 10.8.12.197
+    role: list item
+  标签:
+    name: 标签
+    role: list item
+  新建标签页:
+    name: 新建标签页
+  排序下拉框:
+    name: 排序下拉框
+  列表高度:
+    name: 列表高度
+  网格密度:
+    name: 网格密度
+  图标大小:
+    name: 图标大小
+  视图选项:
+    name: 视图选项
+  搜索结果:
+    name: 搜索结果
+  折叠:
+    name: 折叠
+    role: button
+  black-path.txt:
+    name: black-path.txt
+  a-search.txt:
+    name: a-search.txt
+  .git:
+    name: .git
+  /home/uos/Desktop/yichangxi:
+    name: /home/uos/Desktop/yichangxi
+  abc-new.txt:
+    name: abc-new.txt
+  abc-test:
+    name: abc-test
+  black-path-1.txt:
+    name: black-path-1.txt
+  /home/uos/Desktop:
+    name: /home/uos/Desktop
+  new-file.txt:
+    name: new-file.txt
+  black-path:
+    name: black-path
+  deepin-anything-search-10wfile.sh:
+    name: deepin-anything-search-10wfile.sh
+  a-new.txt:
+    name: a-new.txt
+  搜索结果中的.sh:
+    name: 搜索结果中的.sh
+    role: list item
+  筛选:
+    name: 筛选
+  隐藏此文件夹:
+    name: 隐藏此文件夹
+    role: check box
+  呼龍:
+    name: 呼龍
+  s:
+    name: s
+  文件夹a:
+    name: 文件夹a
+  1.sh:
+    name: 1.sh
+  deepin-elf-verify服务，新增内容.pptx:
+    name: deepin-elf-verify服务，新增内容.pptx
+  搜索专项测试用例设计.xmind:
+    name: 搜索专项测试用例设计.xmind
+  abc:
+    name: abc
+    role: list item
+  test_files:
+    name: test_files
+    role: list item
+  aa.txt:
+    name: aa.txt
+  bb.txt:
+    name: bb.txt
+  搜索专项优化测试文档:
+    name: 搜索专项优化测试文档
+    role: list item
+  a-test.txt:
+    name: a-test.txt
+  .搜索专项优化测试文档:
+    name: .搜索专项优化测试文档
+  .hide.txt:
+    name: .hide.txt
+  new.txt:
+    name: new.txt
+  test_folder:
+    name: test_folder
+    role: list item
+  文件管理器:
+    name: 文件管理器
+    role: list item
+  主题:
+    name: 主题
+  不再询问:
+    name: 不再询问
+  Hide:
+    name: Hide
+  所有目录恢复默认视图:
+    name: 所有目录恢复默认视图
+  使用文件管理器的文件选择对话框:
+    name: 使用文件管理器的文件选择对话框
+  Samba共享端常驻显示挂载入口:
+    name: Samba共享端常驻显示挂载入口
+    role: check box
+  自动挂载后打开:
+    name: 自动挂载后打开
+  自动挂载:
+    name: 自动挂载
+  远程环境显示缩略图预览:
+    name: 远程环境显示缩略图预览
+  压缩文件预览:
+    name: 压缩文件预览
+    role: check box
+  文本预览:
+    name: 文本预览
+    role: check box
+  单击:
+    name: 单击
+    role: button
+  双击:
+    name: 双击
+    role: button
+  重命名弹窗:
+    name: 重命名弹窗
+  计算机工作区隐藏内置磁盘:
+    name: 计算机工作区隐藏内置磁盘
+    role: check box
+  创建链接:
+    name: 创建链接
+  文档预览:
+    name: 文档预览
+    role: check box
+  图片预览:
+    name: 图片预览
+    role: check box
+  视频预览:
+    name: 视频预览
+    role: check box
+  默认视图:
+    name: 默认视图
+    role: button
+  从默认窗口打开:
+    name: 从默认窗口打开
+  总是在新窗口打开文件夹:
+    name: 总是在新窗口打开文件夹
+  缩略图预览:
+    name: 缩略图预览
+  挂载:
+    name: 挂载
+  对话框:
+    name: 对话框
+  预览:
+    name: 预览
+  加载网络、手机、光盘目录的缩略图:
+    name: 加载网络、手机、光盘目录的缩略图
+  在磁盘图标上显示文件系统标签:
+    name: 在磁盘图标上显示文件系统标签
+  新窗口和新标签:
+    name: 新窗口和新标签
+  隐藏文件:
+    name: 隐藏文件
+  打开文件:
+    name: 打开文件
+  关于窗口:
+    name: 关于窗口
+  移至右边的工作区:
+    name: 移至右边的工作区
+  移至左边的工作区:
+    name: 移至左边的工作区
+  总在最前:
+    name: 总在最前
+  移动:
+    name: 移动
+  更改大小:
+    name: 更改大小
+  总在可见工作区:
+    name: 总在可见工作区
+  n0:
+    name: DMainWindow
+    role: frame
+  n1:
+    name: DMainWindowTitlebar
+    role: panel
+  n3:
+    name: DTitlebarIconLabel
+    role: button
+  n7:
+    name: DTitlebarRightArea
+    role: form
+  n8:
+    name: DTitlebarButtonArea
+    role: form
+  n9:
+    name: DTitlebarDWindowOptionButton
+    role: button
+  n10:
+    name: DTitlebarDWindowMinButton
+    role: button
+  n11:
+    name: DTitlebarDWindowMaxButton
+    role: button
+  n12:
+    name: DTitlebarDWindowQuitFullscreenButton
+    role: button
+  n13:
+    name: DTitlebarDWindowCloseButton
+    role: button
+  n14:
+    name: ''
+    role: panel
+  n15:
+    name: Form_
+    role: form
+  n16:
+    name: ''
+    role: split pane
+  n17:
+    name: ''
+    role: panel
+  n18:
+    name: ''
+    role: split pane
+  n19:
+    name: ''
+    role: panel
+  n20:
+    name: Form_
+    role: form
+  n21:
+    name: Form_
+    role: form
+  n22:
+    name: ''
+    role: panel
+  n24:
+    name: 清 空
+    role: button
+  n25:
+    name: Form_
+    role: form
+  n26:
+    name: Form_
+    role: form
+  n27:
+    name: Form_
+    role: form
+  n28:
+    name: ''
+    role: list
+  n29:
+    name: 我的目录
+    role: list item
+  n30:
+    name: 桌面
+    role: list item
+  n31:
+    name: 视频
+    role: list item
+  n32:
+    name: 音乐
+    role: list item
+  n33:
+    name: 图片
+    role: list item
+  n34:
+    name: 文档
+    role: list item
+  n35:
+    name: 下载
+    role: list item
+  n36:
+    name: 磁盘列表
+    role: list item
+  n37:
+    name: 系统盘
+    role: list item
+  n38:
+    name: 数据盘
+    role: list item
+  n39:
+    name: 10.8.12.197
+    role: list item
+  n40:
+    name: 10.8.12.94
+    role: list item
+  n45:
+    name: ''
+    role: list
+  n46:
+    name: .claude
+    role: list item
+  n47:
+    name: .git
+    role: list item
+  n48:
+    name: .github
+    role: list item
+  n49:
+    name: .obs
+    role: list item
+  n50:
+    name: .pms
+    role: list item
+  n51:
+    name: .trellis
+    role: list item
+  n52:
+    name: .tx
+    role: list item
+  n53:
+    name: 3rdparty
+    role: list item
+  n54:
+    name: assets
+    role: list item
+  n55:
+    name: autotest
+    role: list item
+  n56:
+    name: autotests
+    role: list item
+  n57:
+    name: build
+    role: list item
+  n58:
+    name: cmake
+    role: list item
+  n59:
+    name: debian
+    role: list item
+  n60:
+    name: docs
+    role: list item
+  n61:
+    name: examples
+    role: list item
+  n62:
+    name: include
+    role: list item
+  n63:
+    name: LICENSES
+    role: list item
+  n64:
+    name: obj-x86_64-linux-gnu
+    role: list item
+  n65:
+    name: src
+    role: list item
+  n66:
+    name: tests
+    role: list item
+  n67:
+    name: translations
+    role: list item
+  n68:
+    name: .clang-format
+    role: list item
+  n69:
+    name: .clog.toml
+    role: list item
+  n70:
+    name: .gitignore
+    role: list item
+  n71:
+    name: .gitlab-ci.yml
+    role: list item
+  n72:
+    name: .project.json
+    role: list item
+  n73:
+    name: .qmake.conf
+    role: list item
+  n74:
+    name: 统信桌面操作系统 V25-用例.xlsx
+    role: list item
+  n75:
+    name: AGENTS.md
+    role: list item
+  n76:
+    name: CMakeLists.txt
+    role: list item
+  n77:
+    name: LICENSE
+    role: list item
+  n78:
+    name: README.md
+    role: list item
+  n79:
+    name: README.zh_CN.md
+    role: list item
+  n80:
+    name: REUSE.toml
+    role: list item
+  n81:
+    name: computer_title_bar
+    role: panel
+  n82:
+    name: AddressToolBar
+    role: panel
+  n84:
+    name: '...'
+    role: button
+  n85:
+    name: 文档
+    role: button
+  n86:
+    name: AT-TEST
+    role: button
+  n87:
+    name: dde-file-manager
+    role: button
+  n88:
+    name: Form_
+    role: form
+  n90:
+    name: Form_
+    role: form
+  n91:
+    name: DLineEditChildLineEdit
+    role: text
+  n92:
+    name: DLineEditClearButton
+    role: button
+  n93:
+    name: DSearchEditIconButton
+    role: button
+  n94:
+    name: DSearchEditIconWidget
+    role: form
+  n95:
+    name: DSearchEditIconButton
+    role: button
+  n98:
+    name: ContollerToolBar
+    role: form
+  n99:
+    name: viewoptions_button
+    role: button
+  n102:
+    name: iconView_button
+    role: check box
+  n103:
+    name: listView_button
+    role: check box
+  n104:
+    name: treeView_button
+    role: check box
+  n105:
+    name: ''
+    role: panel
+  n107:
+    name: DTitlebarIconLabel
+    role: button
+  n111:
+    name: DTitlebarRightArea
+    role: form
+  n112:
+    name: DTitlebarButtonArea
+    role: form
+  n113:
+    name: DTitlebarDWindowOptionButton
+    role: button
+  n114:
+    name: DTitlebarDWindowMinButton
+    role: button
+  n115:
+    name: DTitlebarDWindowMaxButton
+    role: button
+  n116:
+    name: DTitlebarDWindowQuitFullscreenButton
+    role: button
+  n117:
+    name: DTitlebarDWindowCloseButton
+    role: button
+  n118:
+    name: Form_
+    role: form
+  n120:
+    name: Form_
+    role: form
+  n121:
+    name: dde-file-manager
+    role: page tab list
+  n122:
+    name: dde-file-manager
+    role: page tab
+  n123:
+    name: 向左滚动
+    role: button
+  n124:
+    name: 向右滚动
+    role: button
+  n125:
+    name: DTabBarAddButton
+    role: button
+  n128:
+    name: Form_
+    role: form
+  n129:
+    name: back_button
+    role: button
+  n130:
+    name: forword_button
+    role: button
+  n131:
+    name: ''
+    role: text
+  n134:
+    name: left_side_bar
+    role: panel
+  n135:
+    name: Form_
+    role: form
+  n136:
+    name: side_bar_view
+    role: tree
+  n163:
+    name: DTitlebarMainMenu
+    role: popup menu
+  n164:
+    name: 主题
+    role: menu item
+  n165:
+    name: DTitlebarThemeMenu
+    role: popup menu
+  n166:
+    name: 浅色
+    role: menu item
+  n167:
+    name: 深色
+    role: menu item
+  n168:
+    name: 跟随系统
+    role: menu item
+  n169:
+    name: 帮助
+    role: menu item
+  n170:
+    name: 关于
+    role: menu item
+  n171:
+    name: 退出
+    role: menu item
+  n172:
+    name: 新建窗口
+    role: menu item
+  n173:
+    name: 新建标签页
+    role: menu item
+  n174:
+    name: 连接到服务器
+    role: menu item
+  n175:
+    name: 设置共享密码
+    role: menu item
+  n176:
+    name: 设置
+    role: menu item
+  n179:
+    name: ''
+    role: popup menu
+  n180:
+    name: 图标视图
+    role: menu item
+  n181:
+    name: 列表视图
+    role: menu item
+  n182:
+    name: 树形视图
+    role: menu item
+  n184:
+    name: DTitlebarThemeMenu
+    role: popup menu
+  n185:
+    name: 浅色
+    role: menu item
+  n186:
+    name: 深色
+    role: menu item
+  n187:
+    name: 跟随系统
+    role: menu item
+  n188:
+    name: ''
+    role: panel
+  n189:
+    name: ''
+    role: list
+  n190:
+    name: 名称之前
+    role: list item
+  n191:
+    name: 名称之后
+    role: list item
+  n194:
+    name: ''
+    role: panel
+  n195:
+    name: ''
+    role: list
+  n196:
+    name: 替换文本
+    role: list item
+  n197:
+    name: 添加文本
+    role: list item
+  n198:
+    name: 自定义文本
+    role: list item

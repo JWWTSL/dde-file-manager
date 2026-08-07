@@ -1,0 +1,375 @@
+name: 主界面区域_固定目录_回收站(#110837)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_固定目录_回收站(#110837)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110837__1_s1
+  name: 主界面区域/固定目录/回收站(#110837)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 回收站
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 回收站
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: escape
+  - action: mouse_drag
+    selector:
+      name: 回收站
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 新建文件
+    - 删除
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: mouse_drag
+    selector:
+      name: 回收站
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 新建文件
+    - 删除
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 新建文件
+    - 删除
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 新建文件
+    - 删除
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 删除
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 新建文件夹
+    - 删除
+  - action: keyboard_hot_key
+    key: shift+delete
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 全部还原
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 新建文件
+    - 删除
+  - action: dtk_context_menu
+    selector:
+      name: A
+      role: list item
+    items:
+    - 新建文件
+    - 还原
+    - 打开
+  - action: element_action
+    selector:
+      name: 弹窗上最小化
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 弹窗上X关闭
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 显示预览
+      role: check box
+    do: click
+  - action: element_action
+    selector:
+      name: 弹窗上跳过
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 弹窗上合并
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 弹窗上共存
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 新建文件夹
+    - 删除
+  - action: dtk_context_menu
+    selector:
+      name: 文件夹A-右键属性-权限管理下权限改为只读
+      role: list item
+    items:
+    - 属性
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 还原
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 大量文件
+      role: list item
+    items:
+    - 还原
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: element_action
+    selector:
+      name: 暂停
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 终止
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 大文件
+      role: list item
+    items:
+    - 还原
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: shift+delete
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+alt
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+- id: suite__110837__2_s1
+  name: 主界面区域/固定目录/回收站(#110837)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 单击表头--取消勾选原始路径
+      role: list item
+    items:
+    - 删除
+  - action: dtk_context_menu
+    selector:
+      name: 单击表头--可重新勾选原始路径
+      role: list item
+    items:
+    - 删除
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 右侧出现滚动条
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+teardown:
+- action: session_stop

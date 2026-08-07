@@ -1,0 +1,227 @@
+name: 2500 U1需求_无法删除时支持彻底删除文件(#131275)_suite
+app: dde-file-manager
+description: ''
+module: 2500 U1需求_无法删除时支持彻底删除文件(#131275)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite_2500_U1_131275__s2
+  name: 2500 U1需求/无法删除时支持彻底删除文件(#131275)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 删除
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: window
+    items:
+    - 删除
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 删除
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: delete
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 跳过
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: '%1'
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite_2500_U1_131275__s3
+  name: 2500 U1需求/无法删除时支持彻底删除文件(#131275)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 删除
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 删除
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite_2500_U1_131275__s4
+  name: 2500 U1需求/无法删除时支持彻底删除文件(#131275)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: shift+delete
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: window
+    items:
+    - 删除
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite_2500_U1_131275__s5
+  name: 2500 U1需求/无法删除时支持彻底删除文件(#131275)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+a
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 删除
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: delete
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: window
+    items:
+    - 删除
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 彻底删除
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+teardown:
+- action: session_stop

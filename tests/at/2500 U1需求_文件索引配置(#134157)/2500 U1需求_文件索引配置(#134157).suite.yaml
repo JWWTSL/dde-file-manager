@@ -1,0 +1,706 @@
+name: 2500 U1需求_文件索引配置(#134157)_suite
+app: dde-file-manager
+description: ''
+module: 2500 U1需求_文件索引配置(#134157)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite_2500_U1_134157__1_s1
+  name: 2500 U1需求/文件索引配置(#134157)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 立即更新索引
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 立即更新索引
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 立即更新索引
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 立即更新索引
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 立即更新索引
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 立即更新索引
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+- id: suite_2500_U1_134157__2_s1
+  name: 2500 U1需求/文件索引配置(#134157)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 立即更新索引
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 文件索引
+      role: check box
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 文件索引
+      role: check box
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 立即更新索引
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: update-test.txt
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 立即更新索引
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: .hidden-file
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: same-name.txt
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: delete-test.txt
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: delete-test.txt
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: test.txt
+      role: list item
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_type
+    text: new-test.txt
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: new-test.txt
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test.txt
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 我的目录
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: new-a.txt
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: dir-new
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 搜索
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 搜索
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: 文件索引
+      role: check box
+    do: click
+  - action: element_action
+    selector:
+      name: 取消
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 文件索引
+      role: check box
+    do: click
+  - action: element_action
+    selector:
+      name: 确认
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 立即更新索引
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 立即更新索引
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 重新更新索引
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 文件索引
+      role: check box
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 搜索
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 全文检索
+  - action: assert_element
+    selector:
+      name: update-test.txt
+  - action: assert_element
+    selector:
+      name: .hidden-file
+  - action: assert_element
+    selector:
+      name: same-name.txt
+  - action: assert_element
+    selector:
+      name: delete-test.txt
+  - action: assert_element
+    selector:
+      name: delete-test.txt
+  - action: assert_not_exists
+    selector:
+      name: delete-test.txt
+  - action: assert_element
+    selector:
+      name: new-test.txt
+  - action: assert_not_exists
+    selector:
+      name: test.txt
+  - action: assert_element
+    selector:
+      name: new-a.txt
+  - action: assert_element
+    selector:
+      name: dir-new
+  - action: assert_element
+    selector:
+      name: new-a.txt
+  - action: assert_element
+    selector:
+      name: dir-new
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 若关闭，文件搜索时将遍历文件系统，严重影响搜索速度。
+  - action: assert_element
+    selector:
+      name: 文件索引
+  - action: assert_element
+    selector:
+      name: 文件索引
+  - action: assert_element
+    selector:
+      name: 立即更新索引
+  - action: assert_element
+    selector:
+      name: 索引更新失败，请尝试重新更新索引
+  - action: assert_element
+    selector:
+      name: 正在更新索引
+  - action: assert_element
+    selector:
+      name: 索引更新完成
+  - action: assert_element
+    selector:
+      name: 开启后立即创建文件索引，支持快速搜索文件名
+- id: suite_2500_U1_134157__3_s1
+  name: 2500 U1需求/文件索引配置(#134157)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 搜索
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: 文件索引
+      role: check box
+    do: click
+  - action: element_action
+    selector:
+      name: 恢复默认
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 我的目录
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowOptionButton
+      role: button
+    do: click
+  - action: dtk_main_menu
+    items:
+    - 设置
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 全文检索
+  - action: assert_element
+    selector:
+      name: 文件索引
+  - action: assert_element
+    selector:
+      name: 文件索引
+  - action: assert_element
+    selector:
+      name: 全文检索
+  - action: assert_element
+    selector:
+      name: 文件索引
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 搜索
+      role: list item
+  - action: assert_element
+    selector:
+      name: 文件索引
+      role: check box
+teardown:
+- action: session_stop

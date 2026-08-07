@@ -1,0 +1,153 @@
+name: 主界面区域_文件操作_home目录支持长文件名(#132147)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_文件操作_home目录支持长文件名(#132147)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__home_132147__s1
+  name: 主界面区域/文件操作/home目录支持长文件名(#132147)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: delete
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: mouse_double_click
+    selector:
+      name: 文件夹
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: 文件夹
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 文件夹
+      role: list item
+    items:
+    - 发送到
+    - 创建链接
+  - action: element_action
+    selector:
+      name: 保存
+      role: button
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 文件夹
+      role: list item
+    items:
+    - 发送到
+    - 发送到桌面
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 错误提示
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 错误提示
+  - action: assert_element
+    selector:
+      name: 文件夹
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 图片
+  - action: assert_element
+    selector:
+      name: 文件夹
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 文件夹
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件名无效或含有无效字符
+  - action: assert_element
+    selector:
+      name: 文件名过长
+  - action: assert_element
+    selector:
+      name: 文件夹
+  - action: assert_element
+    selector:
+      name: 文件夹
+  - action: assert_element
+    selector:
+      name: 文件夹
+teardown:
+- action: session_stop

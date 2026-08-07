@@ -1,0 +1,611 @@
+name: 冒烟用例_保险箱(#132277)_suite
+app: dde-file-manager
+description: ''
+module: 冒烟用例_保险箱(#132277)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__132277__1_s1
+  name: 冒烟用例/保险箱(#132277)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 删除保险箱
+  - action: element_action
+    selector:
+      name: 密钥删除
+      role: button
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 删除保险箱
+  - action: element_action
+    selector:
+      name: 密钥删除
+      role: button
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 删除保险箱
+  - action: element_action
+    selector:
+      name: 密钥删除
+      role: button
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 删除保险箱
+  - action: element_action
+    selector:
+      name: 密钥删除
+      role: button
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 删除保险箱
+  - action: element_action
+    selector:
+      name: 密钥删除
+      role: button
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 删除保险箱
+  - action: element_action
+    selector:
+      name: 密钥删除
+      role: button
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 删除保险箱
+  - action: element_action
+    selector:
+      name: 密钥删除
+      role: button
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 删除保险箱
+  - action: element_action
+    selector:
+      name: 密钥删除
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 新建文档
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 新建文件夹
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 刷新
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 排序方式
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 属性
+    - 显示方式
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 打开方式
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 属性
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 全选
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 粘贴
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: Aa!12345
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: wrong_key_123
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: keyboard_type
+    text: Aa!12345
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 复制
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 复制
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 新建窗口
+  - action: dtk_main_menu
+    items:
+    - 新建窗口
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 在新窗口打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 立即上锁
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 打开
+  - action: mouse_right_click
+    selector:
+      name: 保险箱
+      role: window
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 上锁时间
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__132277__2_s1
+  name: 冒烟用例/保险箱(#132277)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 立即上锁
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 保险箱
+      role: window
+  - action: mouse_right_click
+    selector:
+      name: 保险箱
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 删除保险箱
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowCloseButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 保险箱
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 保险箱
+      role: list item
+  - action: keyboard_type
+    text: Aa!12345
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 保险箱
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 保险箱
+      role: window
+  - action: mouse_right_click
+    selector:
+      name: 保险箱
+      role: window
+  - action: keyboard_type
+    text: Aa!12345
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 取消
+  - action: assert_element
+    selector:
+      name: 确定
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 我的保险箱
+  - action: assert_element
+    selector:
+      name: 解锁
+  - action: assert_element
+    selector:
+      name: 解锁
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 我的保险箱
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 上锁时间
+  - action: assert_element
+    selector:
+      name: 上锁时间
+  - action: assert_element
+    selector:
+      name: 上锁时间
+  - action: assert_element
+    selector:
+      name: 上锁时间
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 设置解锁方式
+  - action: assert_element
+    selector:
+      name: 加密保险箱
+  - action: assert_element
+    selector:
+      name: 密钥加密
+  - action: assert_element
+    selector:
+      name: 设置解锁方式
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 类型
+  - action: assert_element
+    selector:
+      name: 加密方式
+  - action: assert_element
+    selector:
+      name: 设置解锁方式窗口
+  - action: assert_element
+    selector:
+      name: 类型
+  - action: assert_element
+    selector:
+      name: 密钥加密
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__132277__3_s1
+  name: 冒烟用例/保险箱(#132277)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: mouse_right_click
+    selector:
+      name: 保险箱
+      role: window
+  assert_steps:
+  - action: assert_window
+teardown:
+- action: session_stop

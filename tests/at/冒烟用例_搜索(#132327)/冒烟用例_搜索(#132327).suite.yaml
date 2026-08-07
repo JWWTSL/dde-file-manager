@@ -1,0 +1,743 @@
+name: 冒烟用例_搜索(#132327)_suite
+app: dde-file-manager
+description: ''
+module: 冒烟用例_搜索(#132327)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__132327__1_s1
+  name: 冒烟用例/搜索(#132327)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 搜索专项测试
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 数据盘
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: 我的目录
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test-1.txt
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 搜索专项测试
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: shift+space
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 截图 区域 a
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 截图 区域
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 搜索专项优化测试文档
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+f
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: mouse_click
+    x: 700
+    y: 400
+  - action: element_action
+    selector:
+      name: DLineEditClearButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 保险箱
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 重命名
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DSearchEditIconButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: '1'
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowMaxButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: deepin
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: 搜索专项测试.txt
+  - action: assert_element
+    selector:
+      name: 搜索专项测试.txt
+  - action: assert_element
+    selector:
+      name: test-1.txt
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: test-1.txt
+  - action: assert_element
+    selector:
+      name: 搜索专项测试.txt
+  - action: assert_element
+    selector:
+      name: 搜索专项测试.txt
+  - action: assert_element
+    selector:
+      name: 搜索专项测试.txt
+  - action: assert_element
+    selector:
+      name: 搜索专项测试-仅文件名.txt
+  - action: assert_element
+    selector:
+      name: 搜索专项测试.txt
+  - action: assert_element
+    selector:
+      name: 搜索专项测试.txt
+  - action: assert_element
+    selector:
+      name: 搜索专项测试.txt
+  - action: assert_element
+    selector:
+      name: 搜索专项测试-仅文件名.txt
+  - action: assert_element
+    selector:
+      name: DLineEditChildLineEdit
+  - action: assert_element
+    selector:
+      name: 截图_选择区域_202aa（副本）.png
+  - action: assert_element
+    selector:
+      name: 截图_选择区域_202aa（副本）.png
+  - action: assert_element
+    selector:
+      name: 截图_选择区域_202aa（副本）.png
+  - action: assert_element
+    selector:
+      name: 设置
+  - action: assert_element
+    selector:
+      name: search.txt
+  - action: assert_element
+    selector:
+      name: 设置
+  - action: assert_element
+    selector:
+      name: search.txt
+  - action: assert_element
+    selector:
+      name: DLineEditChildLineEdit
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: DLineEditChildLineEdit
+  - action: assert_element
+    selector:
+      name: DLineEditChildLineEdit
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 保险箱
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: 显示方式
+  - action: assert_element
+    selector:
+      name: 打开文件所在位置
+  - action: assert_element
+    selector:
+      name: 打开文件所在位置
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: DLineEditChildLineEdit
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: '1'
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: deepin
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+- id: suite__132327__2_s1
+  name: 冒烟用例/搜索(#132327)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 天
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: ss
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: '44'
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: ss123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 呼龍4
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: s呼
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 天ss123空s44下雨lllll  呼龍4s呼      mm22
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: smb://10.8.11.132
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: ftp://10.8.11.132
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: sftp://10.8.11.132
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 显示方式
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 全选
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+f
+  - action: keyboard_hot_key
+    key: ctrl+f
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: 设置
+  - action: assert_element
+    selector:
+      name: 设置
+  - action: assert_element
+    selector:
+      name: 设置
+  - action: assert_element
+    selector:
+      name: 设置
+  - action: assert_element
+    selector:
+      name: 设置
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: test_input_123
+  - action: assert_element
+    selector:
+      name: 天
+  - action: assert_element
+    selector:
+      name: ss
+  - action: assert_element
+    selector:
+      name: '44'
+  - action: assert_element
+    selector:
+      name: ss123
+  - action: assert_element
+    selector:
+      name: 呼龍4
+  - action: assert_element
+    selector:
+      name: s呼
+  - action: assert_element
+    selector:
+      name: 天
+  - action: assert_element
+    selector:
+      name: 10.8.11.132
+  - action: assert_element
+    selector:
+      name: 10.8.11.132
+  - action: assert_element
+    selector:
+      name: 10.8.11.132
+  - action: assert_element
+    selector:
+      name: 显示方式
+  - action: assert_element
+    selector:
+      name: 显示方式
+  - action: assert_element
+    selector:
+      name: 列表视图
+  - action: assert_element
+    selector:
+      name: 名称
+  - action: assert_element
+    selector:
+      name: 全选
+  - action: assert_element
+    selector:
+      name: 搜索范围
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 搜索范围
+  - action: assert_window
+teardown:
+- action: session_stop

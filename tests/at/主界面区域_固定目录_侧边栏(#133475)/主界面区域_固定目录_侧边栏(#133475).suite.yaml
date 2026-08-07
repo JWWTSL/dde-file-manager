@@ -1,0 +1,233 @@
+name: 主界面区域_固定目录_侧边栏(#133475)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_固定目录_侧边栏(#133475)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__133475__s1
+  name: 主界面区域/固定目录/侧边栏(#133475)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 添加到快捷访问
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 删除
+  - action: keyboard_hot_key
+    key: ctrl+shift+n
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 文管
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+teardown:
+- action: session_stop

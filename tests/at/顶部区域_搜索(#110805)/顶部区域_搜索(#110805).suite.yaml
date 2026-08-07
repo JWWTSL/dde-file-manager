@@ -1,0 +1,1842 @@
+name: 顶部区域_搜索(#110805)_suite
+app: dde-file-manager
+description: ''
+module: 顶部区域_搜索(#110805)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110805__1_s1
+  name: 顶部区域/搜索(#110805)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: a-search.txt
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: black-path.txt
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_element
+    selector:
+      name: black-path.txt
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_element
+    selector:
+      name: a-search.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: a-search.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: .git
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_element
+    selector:
+      name: /home/uos/Desktop/yichangxi
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: black-path.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: black-path.txt
+  - action: assert_element
+    selector:
+      name: abc-new.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: black-path.txt
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: abc-test
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: black-path-1.txt
+  - action: assert_element
+    selector:
+      name: black-path.txt
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: black-path.txt
+  - action: assert_element
+    selector:
+      name: black-path.txt
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: /home/uos/Desktop
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: new-file.txt
+  - action: assert_element
+    selector:
+      name: new-file.txt
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: black-path.txt
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: black-path
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: .git
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: a.txt
+- id: suite__110805__2_s1
+  name: 顶部区域/搜索(#110805)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: kw_500000
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: kw_500000
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 打开文件所在位置
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 打开文件所在位置
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 在新窗口打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 剪切
+    - 粘贴
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 在终端中打开
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 搜索结果中的.sh
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 打开文件所在位置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowMaxButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: deepin-anything-search-10wfile.sh
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: a-new.txt
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: a-new.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 全文检索
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__110805__3_s1
+  name: 顶部区域/搜索(#110805)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: DSearchEditIconButton
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 筛选
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 属性
+  - action: element_action
+    selector:
+      name: 隐藏此文件夹
+      role: check box
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 属性
+  - action: element_action
+    selector:
+      name: 隐藏此文件夹
+      role: check box
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 属性
+  - action: element_action
+    selector:
+      name: 隐藏此文件夹
+      role: check box
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 属性
+  - action: element_action
+    selector:
+      name: 隐藏此文件夹
+      role: check box
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 属性
+  - action: element_action
+    selector:
+      name: 隐藏此文件夹
+      role: check box
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 属性
+  - action: element_action
+    selector:
+      name: 隐藏此文件夹
+      role: check box
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 属性
+  - action: element_action
+    selector:
+      name: 隐藏此文件夹
+      role: check box
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 属性
+  - action: element_action
+    selector:
+      name: 隐藏此文件夹
+      role: check box
+    do: click
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: tab
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DSearchEditIconButton
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 筛选
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 筛选
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 筛选
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 筛选
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 筛选
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 筛选
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 筛选
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 筛选
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DSearchEditIconButton
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 筛选
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DSearchEditIconButton
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DSearchEditIconButton
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 筛选
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 筛选
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DSearchEditIconButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 搜索结果中的.sh
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 打开文件所在位置
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 文件A
+      role: list item
+    items:
+    - 打开文件所在位置
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 复制路径
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 框输入deepin*.doc
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+f
+  - action: keyboard_hot_key
+    key: ctrl+l
+  - action: keyboard_press
+    key: home
+  - action: keyboard_press
+    key: end
+  - action: keyboard_press
+    key: left
+  - action: keyboard_press
+    key: right
+  - action: keyboard_hot_key
+    key: shift+home
+  - action: keyboard_hot_key
+    key: shift+end
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: shift+right
+  - action: keyboard_press
+    key: backspace
+  - action: keyboard_press
+    key: escape
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 天
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 下雨
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 下雨lllll
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 呼呼
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: mm
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 龍
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: s
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 風測試
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 風測試lllll
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: mm
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 筛选
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 筛选
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 筛选
+  - action: assert_element
+    selector:
+      name: 筛选
+  - action: assert_element
+    selector:
+      name: 筛选
+  - action: assert_element
+    selector:
+      name: 筛选
+  - action: assert_element
+    selector:
+      name: 筛选
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 筛选
+  - action: assert_element
+    selector:
+      name: 筛选
+  - action: assert_element
+    selector:
+      name: 筛选
+  - action: assert_element
+    selector:
+      name: 筛选
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__110805__4_s1
+  name: 顶部区域/搜索(#110805)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: m     m搜索
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: search:?url=file:///home/hailin/Demo&keyword=%23
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: search:?url=recent:///&keyword=1
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: recent:///
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: trash:///
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 天
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: ss
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: '44'
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: ss123
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 呼龍4
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: s呼
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: . . .
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: -1.-1.-1.-1
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 256:256:256:256
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 0.0.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 255.255.255
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 0.0.0.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 255.255.255.255
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 10.8.13.125
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 10.8.13.125.123
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: tag.gz.zip.rar
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 新建窗口
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 共享ip地址
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: '1'
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 天
+  - action: assert_element
+    selector:
+      name: ss
+  - action: assert_element
+    selector:
+      name: '44'
+  - action: assert_element
+    selector:
+      name: ss
+  - action: assert_element
+    selector:
+      name: 呼龍
+  - action: assert_element
+    selector:
+      name: s
+  - action: assert_element
+    selector:
+      name: 天
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_element
+    selector:
+      name: DLineEditChildLineEdit
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+- id: suite__110805__5_s1
+  name: 顶部区域/搜索(#110805)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 当前文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 当前文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 当前文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 当前文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 当前文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 当前文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 当前文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 当前文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 所有子文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 所有子文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 所有子文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 所有子文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 所有子文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 所有子文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 所有子文件夹
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 所有子文件夹
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 绝对路径：/etc/apt
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 绝对路径：/etc/apt
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 绝对路径：/etc/apt
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 绝对路径：/etc/apt
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 绝对路径：/etc/apt
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 绝对路径：/etc/apt
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 绝对路径：/etc/apt
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 绝对路径：/etc/apt
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: computer:///
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: computer:///
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: computer:///
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: computer:///
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: computer:///
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: computer:///
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: computer:///
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: computer:///
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 路径：~/Downloads
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 路径：~/Downloads
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 路径：~/Downloads
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 路径：~/Downloads
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 路径：~/Downloads
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 路径：~/Downloads
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 路径：~/Downloads
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 路径：~/Downloads
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹a
+  - action: assert_element
+    selector:
+      name: 文档
+  - action: assert_element
+    selector:
+      name: 音乐
+  - action: assert_element
+    selector:
+      name: 文件夹a
+  - action: assert_element
+    selector:
+      name: 文档
+  - action: assert_element
+    selector:
+      name: 音乐
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 1.sh
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+teardown:
+- action: session_stop

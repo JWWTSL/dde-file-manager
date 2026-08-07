@@ -1,0 +1,353 @@
+name: 主界面区域_文件操作_拖拽(#110851)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_文件操作_拖拽(#110851)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110851__1_s1
+  name: 主界面区域/文件操作/拖拽(#110851)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: mouse_drag
+    selector:
+      name: aaa
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: aaa
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 最近使用、主目录、回收站、书签、我的共享、网络共享、标记
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 文件夹B
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹B
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__110851__2_s1
+  name: 主界面区域/文件操作/拖拽(#110851)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+teardown:
+- action: session_stop

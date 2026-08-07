@@ -1,0 +1,1311 @@
+name: 冒烟用例_2500U1需求(#132303)_suite
+app: dde-file-manager
+description: ''
+module: 冒烟用例_2500U1需求(#132303)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__2500U1_132303__1_s1
+  name: 冒烟用例/2500U1需求(#132303)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 基础设置
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 新标签
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 从新标签打开
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 计算机
+      role: button
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+n
+  - action: keyboard_hot_key
+    key: ctrl+n
+  - action: element_action
+    selector:
+      name: 桌面
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 视频
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 音乐
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 图片
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 文档
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 下载
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 我的目录
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 计算机
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 长文件名
+      role: list item
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 删除
+  - action: element_action
+    selector:
+      name: 跳过
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 删除
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: smb
+      role: list item
+    do: click
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 音乐
+      role: list item
+    do: click
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+a
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: keyboard_hot_key
+    key: ctrl+a
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: smb
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_hot_key
+    key: ctrl+shift+c
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 分组方式
+    - 类型
+  - action: element_action
+    selector:
+      name: 音乐
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 大小
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 分组方式
+    - 大小
+  - action: element_action
+    selector:
+      name: 视频
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 修改时间
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 分组方式
+    - 修改时间
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 分组方式
+    - 创建时间
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 分组方式
+    - 名称
+  - action: mouse_double_click
+    selector:
+      name: 数据盘
+      role: list item
+  - action: element_action
+    selector:
+      name: 分组标签
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 分组标签
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 基础设置
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 新窗口
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 默认目录
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 指定目录
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 取消
+      role: button
+    do: click
+  - action: mouse_double_click
+    selector:
+      name: A1
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 基础设置
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 新窗口
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 自定义目录
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 添加目录
+      role: button
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+n
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+n
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_element
+    selector:
+      name: 主目录
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 长文件名
+  - action: assert_element
+    selector:
+      name: 长文件名
+  - action: assert_element
+    selector:
+      name: 长文件名
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 长文件名
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 目录
+  - action: assert_element
+    selector:
+      name: 目录
+  - action: assert_element
+    selector:
+      name: 创建时间
+  - action: assert_element
+    selector:
+      name: 目录
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 大小
+  - action: assert_element
+    selector:
+      name: 未知
+  - action: assert_element
+    selector:
+      name: 极小
+  - action: assert_element
+    selector:
+      name: 修改时间
+  - action: assert_element
+    selector:
+      name: 未知
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 大小
+  - action: assert_element
+    selector:
+      name: 大小
+  - action: assert_element
+    selector:
+      name: 大小
+  - action: assert_element
+    selector:
+      name: 大小
+  - action: assert_element
+    selector:
+      name: 大小
+  - action: assert_element
+    selector:
+      name: 大小
+  - action: assert_element
+    selector:
+      name: 大小
+  - action: assert_element
+    selector:
+      name: 大小
+  - action: assert_element
+    selector:
+      name: 修改时间
+  - action: assert_element
+    selector:
+      name: 今天
+  - action: assert_element
+    selector:
+      name: 今天
+  - action: assert_element
+    selector:
+      name: 今天
+  - action: assert_element
+    selector:
+      name: 今天
+  - action: assert_element
+    selector:
+      name: 今天
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 更早
+  - action: assert_element
+    selector:
+      name: 今天
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 0-9
+  - action: assert_element
+    selector:
+      name: 0-9
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 分组标签
+  - action: assert_element
+    selector:
+      name: 0-9
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 分组标签
+  - action: assert_element
+    selector:
+      name: 分组标签
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 指定目录
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: A1
+  - action: assert_element
+    selector:
+      name: 添加目录
+  - action: assert_element
+    selector:
+      name: A1
+  - action: assert_element
+    selector:
+      name: B1
+  - action: assert_element
+    selector:
+      name: 默认目录
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: A1
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: B1
+  - action: assert_element
+    selector:
+      name: 默认目录
+- id: suite__2500U1_132303__2_s1
+  name: 冒烟用例/2500U1需求(#132303)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 基础设置
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 新窗口
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 自定义目录
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 添加目录
+      role: button
+    do: click
+  - action: mouse_double_click
+    selector:
+      name: 视频
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: 文件夹A1
+      role: list item
+  - action: keyboard_hot_key
+    key: ctrl+n
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 基础设置
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 新窗口
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 默认目录
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 主目录
+      role: button
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+n
+  - action: element_action
+    selector:
+      name: 我的目录
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+n
+  - action: element_action
+    selector:
+      name: 桌面
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 视频
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 音乐
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 图片
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 文档
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 下载
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 我的目录
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 文件夹A
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: 文件夹A1
+      role: list item
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowMinButton
+      role: button
+    do: click
+  - action: mouse_double_click
+    selector:
+      name: 文件夹B
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 文件夹A
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: 文件夹B
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 基础设置
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 打开行为
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 在新标签页中打开新文件夹
+      role: check box
+    do: click
+  - action: mouse_double_click
+    selector:
+      name: 文件夹A
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: 文件夹B
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 文件夹C
+      role: list item
+    items:
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 我的目录
+      role: list item
+    items:
+    - 文件粉碎
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 文件粉碎
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 高级设置
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 文件粉碎
+      role: button
+    do: click
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 文件粉碎
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 反选
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 高级设置
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 外部存储设备
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 性能优先
+      role: check box
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: U盘
+      role: list item
+    items:
+    - 安全移除
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 高级设置
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 外部存储设备
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文档
+    - 办公文档
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文档
+    - 电子表格
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文档
+    - 演示文档
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文档
+    - 办公文档
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文档
+    - 电子表格
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文档
+    - 演示文档
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文档
+    - 办公文档
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文档
+    - 电子表格
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文档
+    - 演示文档
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文档
+    - 办公文档
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文档
+    - 电子表格
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文档
+    - 演示文档
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 名称
+  - action: element_action
+    selector:
+      name: smb
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 名称
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 名称
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 类型
+  - action: element_action
+    selector:
+      name: 类型
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 类型
+      role: button
+    do: click
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 类型
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: A1
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: A1
+  - action: assert_element
+    selector:
+      name: A1
+  - action: assert_element
+    selector:
+      name: 主目录
+  - action: assert_element
+    selector:
+      name: 指定目录
+  - action: assert_element
+    selector:
+      name: 主目录
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_element
+    selector:
+      name: 文件夹A1
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹B
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_element
+    selector:
+      name: 文件夹B
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_element
+    selector:
+      name: 文件夹B
+  - action: assert_element
+    selector:
+      name: 打开行为
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_element
+    selector:
+      name: 文件夹B
+  - action: assert_element
+    selector:
+      name: 文件夹C
+  - action: assert_element
+    selector:
+      name: 重复打开文件夹时激活已有窗口
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_element
+    selector:
+      name: 文件夹B
+  - action: assert_element
+    selector:
+      name: 文件夹C
+  - action: assert_element
+    selector:
+      name: 文件粉碎
+  - action: assert_element
+    selector:
+      name: 文件粉碎
+  - action: assert_element
+    selector:
+      name: 文件粉碎
+  - action: assert_element
+    selector:
+      name: 文件粉碎
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件粉碎
+  - action: assert_element
+    selector:
+      name: 文件粉碎
+  - action: assert_element
+    selector:
+      name: 文件粉碎
+  - action: assert_not_exists
+    selector:
+      name: 文件粉碎
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件粉碎
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 外部存储设备
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 外部存储设备
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 数据实时同步
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 新建Excel文档.xlsx
+  - action: assert_element
+    selector:
+      name: 类型
+  - action: assert_element
+    selector:
+      name: 新建Excel文档.xlsx
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 新建Excel文档.xlsx
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 新建Excel文档.xlsx
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 类型
+  - action: assert_element
+    selector:
+      name: 类型
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 类型
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 类型
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 类型
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+- id: suite__2500U1_132303__3_s1
+  name: 冒烟用例/2500U1需求(#132303)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 计算机
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 重命名
+  - action: keyboard_type
+    text: abc上的a
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 合并显示Samba共享目录入口
+      role: check box
+    do: click
+  - action: element_action
+    selector:
+      name: 计算机
+      role: button
+    do: click
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_action
+    selector:
+      name: 合并显示Samba共享目录入口
+      role: check box
+    do: click
+  - action: element_action
+    selector:
+      name: 计算机
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: smb
+      role: list item
+    items:
+    - 重命名
+  - action: element_action
+    selector:
+      name: 计算机
+      role: list item
+    do: click
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_type
+    text: 办公机Aa1@smb
+  - action: element_action
+    selector:
+      name: smb
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+n
+  - action: element_action
+    selector:
+      name: smb
+      role: list item
+    do: click
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_type
+    text: 1 /smb
+  - action: element_action
+    selector:
+      name: 计算机
+      role: list item
+    do: click
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: abc上的b
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_element
+    selector:
+      name: abc上的a
+  - action: assert_element
+    selector:
+      name: abc上的b
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_element
+    selector:
+      name: abc上的a
+  - action: assert_element
+    selector:
+      name: 办公机Aa1@smb
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_element
+    selector:
+      name: smb
+  - action: assert_element
+    selector:
+      name: 1 /smb
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_element
+    selector:
+      name: smb
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: smb
+  - action: assert_window
+teardown:
+- action: session_stop

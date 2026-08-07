@@ -1,0 +1,162 @@
+name: 主界面区域_固定目录_主目录(#110835)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_固定目录_主目录(#110835)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110835__s1
+  name: 主界面区域/固定目录/主目录(#110835)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: mouse_double_click
+    selector:
+      name: 主目录
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 主目录
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 主目录
+      role: list item
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowMaxButton
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowMinButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowCloseButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 主目录
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 主目录
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 主目录
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 主目录
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 主目录
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 主目录
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 主目录
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: 主目录
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_file_exists
+  - action: assert_element
+    selector:
+      name: 我的目录
+  - action: assert_process_running
+  - action: assert_file_exists
+  - action: assert_element
+    selector:
+      name: 我的目录
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 打开
+  - action: assert_element
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_not_running
+  - action: assert_element
+    selector:
+      name: 我的目录
+  - action: assert_element
+    selector:
+      name: 我的目录
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+teardown:
+- action: session_stop

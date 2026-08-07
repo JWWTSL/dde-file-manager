@@ -1,0 +1,3032 @@
+version: '1.0'
+app: dde-file-manager
+tree:
+- role: frame
+  name: DMainWindow
+  object_name: ''
+  accessible_id: ''
+  description: ''
+  actions: []
+  index_in_parent: 0
+  states:
+  - enabled
+  - resizable
+  - sensitive
+  - showing
+  - visible
+  source: runtime
+  children:
+  - role: panel
+    name: DMainWindowTitlebar
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - SetFocus
+    index_in_parent: 0
+    states:
+    - enabled
+    - focusable
+    - sensitive
+    - showing
+    - visible
+    source: runtime
+    children:
+    - role: button
+      name: DTitlebarIconLabel
+      object_name: ''
+      accessible_id: ''
+      description: ''
+      actions:
+      - Press
+      index_in_parent: 1
+      states:
+      - enabled
+      - sensitive
+      source: runtime
+      id: n3
+      classification: interactive
+      state_labels: &id001 []
+      class_name: ''
+      comment: ''
+      annotation_status: draft
+    - role: form
+      name: DTitlebarRightArea
+      object_name: ''
+      accessible_id: ''
+      description: ''
+      actions: []
+      index_in_parent: 5
+      states:
+      - enabled
+      - sensitive
+      - showing
+      - visible
+      source: runtime
+      children:
+      - role: form
+        name: DTitlebarButtonArea
+        object_name: ''
+        accessible_id: ''
+        description: ''
+        actions: []
+        index_in_parent: 0
+        states:
+        - enabled
+        - sensitive
+        - showing
+        - visible
+        source: runtime
+        children:
+        - role: button
+          name: DTitlebarDWindowOptionButton
+          object_name: ''
+          accessible_id: ''
+          description: ''
+          actions:
+          - Press
+          - SetFocus
+          index_in_parent: 0
+          states:
+          - enabled
+          - focusable
+          - sensitive
+          - showing
+          - visible
+          source: runtime
+          id: n9
+          classification: interactive
+          state_labels: *id001
+          class_name: ''
+          comment: ''
+          annotation_status: draft
+        - role: button
+          name: DTitlebarDWindowMinButton
+          object_name: ''
+          accessible_id: ''
+          description: ''
+          actions:
+          - Press
+          - SetFocus
+          index_in_parent: 1
+          states:
+          - enabled
+          - focusable
+          - sensitive
+          - showing
+          - visible
+          source: runtime
+          id: n10
+          classification: interactive
+          state_labels: *id001
+          class_name: ''
+          comment: ''
+          annotation_status: draft
+        - role: button
+          name: DTitlebarDWindowMaxButton
+          object_name: ''
+          accessible_id: ''
+          description: ''
+          actions:
+          - Press
+          - SetFocus
+          index_in_parent: 2
+          states:
+          - enabled
+          - focusable
+          - sensitive
+          - showing
+          - visible
+          source: runtime
+          id: n11
+          classification: interactive
+          state_labels: *id001
+          class_name: ''
+          comment: ''
+          annotation_status: draft
+        - role: button
+          name: DTitlebarDWindowQuitFullscreenButton
+          object_name: ''
+          accessible_id: ''
+          description: ''
+          actions:
+          - Press
+          - SetFocus
+          index_in_parent: 3
+          states:
+          - enabled
+          - focusable
+          - sensitive
+          source: runtime
+          id: n12
+          classification: interactive
+          state_labels: *id001
+          class_name: ''
+          comment: ''
+          annotation_status: draft
+        - role: button
+          name: DTitlebarDWindowCloseButton
+          object_name: ''
+          accessible_id: ''
+          description: ''
+          actions:
+          - Press
+          - SetFocus
+          index_in_parent: 4
+          states:
+          - enabled
+          - focusable
+          - sensitive
+          - showing
+          - visible
+          source: runtime
+          id: n13
+          classification: interactive
+          state_labels: *id001
+          class_name: ''
+          comment: ''
+          annotation_status: draft
+        id: n8
+        classification: container
+        state_labels: *id001
+        class_name: ''
+        comment: ''
+        annotation_status: draft
+      id: n7
+      classification: container
+      state_labels: *id001
+      class_name: ''
+      comment: ''
+      annotation_status: draft
+    id: n1
+    classification: container
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  - role: panel
+    name: ''
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions: []
+    index_in_parent: 1
+    states:
+    - enabled
+    - sensitive
+    - showing
+    - visible
+    source: runtime
+    children:
+    - role: form
+      name: Form_
+      object_name: ''
+      accessible_id: ''
+      description: ''
+      actions: []
+      index_in_parent: 0
+      states:
+      - enabled
+      - sensitive
+      - showing
+      - visible
+      source: runtime
+      children:
+      - role: split pane
+        name: ''
+        object_name: ''
+        accessible_id: ''
+        description: ''
+        actions: []
+        index_in_parent: 0
+        states:
+        - enabled
+        - sensitive
+        - showing
+        - visible
+        source: runtime
+        children:
+        - role: panel
+          name: ''
+          object_name: ''
+          accessible_id: ''
+          description: ''
+          actions: []
+          index_in_parent: 0
+          states:
+          - enabled
+          - sensitive
+          - showing
+          - visible
+          source: runtime
+          children:
+          - role: split pane
+            name: ''
+            object_name: ''
+            accessible_id: ''
+            description: ''
+            actions: []
+            index_in_parent: 0
+            states:
+            - enabled
+            - sensitive
+            - showing
+            - visible
+            source: runtime
+            children:
+            - role: panel
+              name: ''
+              object_name: ''
+              accessible_id: ''
+              description: ''
+              actions: []
+              index_in_parent: 0
+              states:
+              - enabled
+              - sensitive
+              - showing
+              - visible
+              source: runtime
+              children:
+              - role: form
+                name: Form_
+                object_name: ''
+                accessible_id: ''
+                description: ''
+                actions: []
+                index_in_parent: 0
+                states:
+                - enabled
+                - sensitive
+                - showing
+                - visible
+                source: runtime
+                children:
+                - role: form
+                  name: Form_
+                  object_name: ''
+                  accessible_id: ''
+                  description: ''
+                  actions: []
+                  index_in_parent: 0
+                  states:
+                  - enabled
+                  - sensitive
+                  - showing
+                  - visible
+                  source: runtime
+                  children:
+                  - role: panel
+                    name: ''
+                    object_name: ''
+                    accessible_id: ''
+                    description: ''
+                    actions: []
+                    index_in_parent: 1
+                    states:
+                    - enabled
+                    - sensitive
+                    source: runtime
+                    children:
+                    - role: button
+                      name: 清 空
+                      object_name: ''
+                      accessible_id: ''
+                      description: 清空回收站
+                      actions:
+                      - Press
+                      - SetFocus
+                      index_in_parent: 1
+                      states:
+                      - enabled
+                      - focusable
+                      - sensitive
+                      source: runtime
+                      id: n24
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    id: n22
+                    classification: container
+                    state_labels: *id001
+                    class_name: ''
+                    comment: ''
+                    annotation_status: draft
+                  id: n21
+                  classification: container
+                  state_labels: *id001
+                  class_name: ''
+                  comment: ''
+                  annotation_status: draft
+                - role: form
+                  name: Form_
+                  object_name: ''
+                  accessible_id: ''
+                  description: ''
+                  actions: []
+                  index_in_parent: 1
+                  states:
+                  - enabled
+                  - sensitive
+                  - showing
+                  - visible
+                  source: runtime
+                  children:
+                  - role: form
+                    name: Form_
+                    object_name: ''
+                    accessible_id: ''
+                    description: ''
+                    actions: []
+                    index_in_parent: 0
+                    states:
+                    - enabled
+                    - sensitive
+                    source: runtime
+                    children:
+                    - role: form
+                      name: Form_
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions: []
+                      index_in_parent: 0
+                      states:
+                      - enabled
+                      - sensitive
+                      source: runtime
+                      children:
+                      - role: list
+                        name: ''
+                        object_name: ''
+                        accessible_id: ''
+                        description: ''
+                        actions: []
+                        index_in_parent: 0
+                        states:
+                        - enabled
+                        - focusable
+                        - manages_descendants
+                        - sensitive
+                        source: runtime
+                        children:
+                        - role: list item
+                          name: 我的目录
+                          object_name: ''
+                          accessible_id: ''
+                          description: ''
+                          actions:
+                          - Toggle
+                          index_in_parent: 0
+                          states:
+                          - enabled
+                          - sensitive
+                          - showing
+                          - transient
+                          - visible
+                          source: runtime
+                          id: n29
+                          classification: interactive
+                          state_labels: *id001
+                          class_name: ''
+                          comment: ''
+                          annotation_status: draft
+                        - role: list item
+                          name: 桌面
+                          object_name: ''
+                          accessible_id: ''
+                          description: ''
+                          actions:
+                          - Toggle
+                          index_in_parent: 1
+                          states:
+                          - enabled
+                          - focusable
+                          - selectable
+                          - sensitive
+                          - showing
+                          - transient
+                          - visible
+                          source: runtime
+                          id: n30
+                          classification: interactive
+                          state_labels: *id001
+                          class_name: ''
+                          comment: ''
+                          annotation_status: draft
+                        - role: list item
+                          name: 视频
+                          object_name: ''
+                          accessible_id: ''
+                          description: ''
+                          actions:
+                          - Toggle
+                          index_in_parent: 2
+                          states:
+                          - enabled
+                          - focusable
+                          - selectable
+                          - sensitive
+                          - showing
+                          - transient
+                          - visible
+                          source: runtime
+                          id: n31
+                          classification: interactive
+                          state_labels: *id001
+                          class_name: ''
+                          comment: ''
+                          annotation_status: draft
+                        - role: list item
+                          name: 音乐
+                          object_name: ''
+                          accessible_id: ''
+                          description: ''
+                          actions:
+                          - Toggle
+                          index_in_parent: 3
+                          states:
+                          - enabled
+                          - focusable
+                          - selectable
+                          - sensitive
+                          - showing
+                          - transient
+                          - visible
+                          source: runtime
+                          id: n32
+                          classification: interactive
+                          state_labels: *id001
+                          class_name: ''
+                          comment: ''
+                          annotation_status: draft
+                        - role: list item
+                          name: 图片
+                          object_name: ''
+                          accessible_id: ''
+                          description: ''
+                          actions:
+                          - Toggle
+                          index_in_parent: 4
+                          states:
+                          - enabled
+                          - focusable
+                          - selectable
+                          - sensitive
+                          - showing
+                          - transient
+                          - visible
+                          source: runtime
+                          id: n33
+                          classification: interactive
+                          state_labels: *id001
+                          class_name: ''
+                          comment: ''
+                          annotation_status: draft
+                        - role: list item
+                          name: 文档
+                          object_name: ''
+                          accessible_id: ''
+                          description: ''
+                          actions:
+                          - Toggle
+                          index_in_parent: 5
+                          states:
+                          - enabled
+                          - focusable
+                          - selectable
+                          - sensitive
+                          - showing
+                          - transient
+                          - visible
+                          source: runtime
+                          id: n34
+                          classification: interactive
+                          state_labels: *id001
+                          class_name: ''
+                          comment: ''
+                          annotation_status: draft
+                        - role: list item
+                          name: 下载
+                          object_name: ''
+                          accessible_id: ''
+                          description: ''
+                          actions:
+                          - Toggle
+                          index_in_parent: 6
+                          states:
+                          - enabled
+                          - focusable
+                          - selectable
+                          - sensitive
+                          - showing
+                          - transient
+                          - visible
+                          source: runtime
+                          id: n35
+                          classification: interactive
+                          state_labels: *id001
+                          class_name: ''
+                          comment: ''
+                          annotation_status: draft
+                        - role: list item
+                          name: 磁盘列表
+                          object_name: ''
+                          accessible_id: ''
+                          description: ''
+                          actions:
+                          - Toggle
+                          index_in_parent: 7
+                          states:
+                          - enabled
+                          - sensitive
+                          - showing
+                          - transient
+                          - visible
+                          source: runtime
+                          id: n36
+                          classification: interactive
+                          state_labels: *id001
+                          class_name: ''
+                          comment: ''
+                          annotation_status: draft
+                        - role: list item
+                          name: 系统盘
+                          object_name: ''
+                          accessible_id: ''
+                          description: ''
+                          actions:
+                          - Toggle
+                          index_in_parent: 8
+                          states:
+                          - enabled
+                          - focusable
+                          - selectable
+                          - sensitive
+                          - showing
+                          - transient
+                          - visible
+                          source: runtime
+                          id: n37
+                          classification: interactive
+                          state_labels: *id001
+                          class_name: ''
+                          comment: ''
+                          annotation_status: draft
+                        - role: list item
+                          name: 数据盘
+                          object_name: ''
+                          accessible_id: ''
+                          description: ''
+                          actions:
+                          - Toggle
+                          index_in_parent: 9
+                          states:
+                          - enabled
+                          - focusable
+                          - selectable
+                          - sensitive
+                          - showing
+                          - transient
+                          - visible
+                          source: runtime
+                          id: n38
+                          classification: interactive
+                          state_labels: *id001
+                          class_name: ''
+                          comment: ''
+                          annotation_status: draft
+                        - role: list item
+                          name: 10.8.12.197
+                          object_name: ''
+                          accessible_id: ''
+                          description: ''
+                          actions:
+                          - Toggle
+                          index_in_parent: 10
+                          states:
+                          - enabled
+                          - focusable
+                          - selectable
+                          - sensitive
+                          - showing
+                          - transient
+                          - visible
+                          source: runtime
+                          id: n39
+                          classification: interactive
+                          state_labels: *id001
+                          class_name: ''
+                          comment: ''
+                          annotation_status: draft
+                        - role: list item
+                          name: 10.8.12.94
+                          object_name: ''
+                          accessible_id: ''
+                          description: ''
+                          actions:
+                          - Toggle
+                          index_in_parent: 11
+                          states:
+                          - enabled
+                          - focusable
+                          - selectable
+                          - sensitive
+                          - showing
+                          - transient
+                          - visible
+                          source: runtime
+                          id: n40
+                          classification: interactive
+                          state_labels: *id001
+                          class_name: ''
+                          comment: ''
+                          annotation_status: draft
+                        id: n28
+                        classification: container
+                        state_labels: *id001
+                        class_name: ''
+                        comment: ''
+                        annotation_status: draft
+                      id: n27
+                      classification: container
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    id: n26
+                    classification: container
+                    state_labels: *id001
+                    class_name: ''
+                    comment: ''
+                    annotation_status: draft
+                  - role: list
+                    name: ''
+                    object_name: ''
+                    accessible_id: ''
+                    description: ''
+                    actions: []
+                    index_in_parent: 2
+                    states:
+                    - enabled
+                    - focusable
+                    - manages_descendants
+                    - sensitive
+                    - showing
+                    - visible
+                    source: runtime
+                    children:
+                    - role: list item
+                      name: .claude
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 0
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n46
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: .git
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 1
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n47
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: .github
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 2
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n48
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: .obs
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 3
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n49
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: .pms
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 4
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n50
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: .trellis
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 5
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n51
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: .tx
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 6
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n52
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: 3rdparty
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 7
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n53
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: assets
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 8
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n54
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: autotest
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 9
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n55
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: autotests
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 10
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n56
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: build
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 11
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n57
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: cmake
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 12
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n58
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: debian
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 13
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n59
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: docs
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 14
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n60
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: examples
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 15
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n61
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: include
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 16
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n62
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: LICENSES
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 17
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n63
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: obj-x86_64-linux-gnu
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 18
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n64
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: src
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 19
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n65
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: tests
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 20
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n66
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: translations
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 21
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n67
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: .clang-format
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 22
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n68
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: .clog.toml
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 23
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n69
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: .gitignore
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 24
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n70
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: .gitlab-ci.yml
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 25
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n71
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: .project.json
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 26
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n72
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: .qmake.conf
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 27
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n73
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: 统信桌面操作系统 V25-用例.xlsx
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 28
+                      states:
+                      - enabled
+                      - focusable
+                      - focused
+                      - selectable
+                      - selected
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n74
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: AGENTS.md
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 29
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n75
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: CMakeLists.txt
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 30
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n76
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: LICENSE
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 31
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n77
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: README.md
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 32
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n78
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: README.zh_CN.md
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 33
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n79
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: list item
+                      name: REUSE.toml
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Toggle
+                      index_in_parent: 34
+                      states:
+                      - enabled
+                      - focusable
+                      - selectable
+                      - sensitive
+                      - showing
+                      - transient
+                      - visible
+                      source: runtime
+                      id: n80
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    id: n45
+                    classification: container
+                    state_labels: *id001
+                    class_name: ''
+                    comment: ''
+                    annotation_status: draft
+                  id: n25
+                  classification: container
+                  state_labels: *id001
+                  class_name: ''
+                  comment: ''
+                  annotation_status: draft
+                id: n20
+                classification: container
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              id: n19
+              classification: container
+              state_labels: *id001
+              class_name: ''
+              comment: ''
+              annotation_status: draft
+            id: n18
+            classification: container
+            state_labels: *id001
+            class_name: ''
+            comment: ''
+            annotation_status: draft
+          - role: panel
+            name: computer_title_bar
+            object_name: ''
+            accessible_id: ''
+            description: ''
+            actions: []
+            index_in_parent: 1
+            states:
+            - enabled
+            - sensitive
+            - showing
+            - visible
+            source: runtime
+            children:
+            - role: panel
+              name: AddressToolBar
+              object_name: ''
+              accessible_id: ''
+              description: ''
+              actions: []
+              index_in_parent: 0
+              states:
+              - enabled
+              - sensitive
+              - showing
+              - visible
+              source: runtime
+              children:
+              - role: button
+                name: '...'
+                object_name: ''
+                accessible_id: ''
+                description: ''
+                actions:
+                - Press
+                - SetFocus
+                index_in_parent: 1
+                states:
+                - enabled
+                - focusable
+                - sensitive
+                source: runtime
+                id: n84
+                classification: interactive
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              - role: button
+                name: 文档
+                object_name: ''
+                accessible_id: ''
+                description: ''
+                actions:
+                - Press
+                - SetFocus
+                index_in_parent: 2
+                states:
+                - enabled
+                - focusable
+                - sensitive
+                - showing
+                - visible
+                source: runtime
+                id: n85
+                classification: interactive
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              - role: button
+                name: AT-TEST
+                object_name: ''
+                accessible_id: ''
+                description: ''
+                actions:
+                - Press
+                - SetFocus
+                index_in_parent: 3
+                states:
+                - enabled
+                - focusable
+                - sensitive
+                - showing
+                - visible
+                source: runtime
+                id: n86
+                classification: interactive
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              - role: button
+                name: dde-file-manager
+                object_name: ''
+                accessible_id: ''
+                description: ''
+                actions:
+                - Press
+                - SetFocus
+                index_in_parent: 4
+                states:
+                - enabled
+                - focusable
+                - sensitive
+                - showing
+                - visible
+                source: runtime
+                id: n87
+                classification: interactive
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              id: n82
+              classification: container
+              state_labels: *id001
+              class_name: ''
+              comment: ''
+              annotation_status: draft
+            - role: form
+              name: Form_
+              object_name: ''
+              accessible_id: ''
+              description: ''
+              actions: []
+              index_in_parent: 1
+              states:
+              - enabled
+              - sensitive
+              - showing
+              - visible
+              source: runtime
+              children:
+              - role: form
+                name: Form_
+                object_name: ''
+                accessible_id: ''
+                description: ''
+                actions:
+                - SetFocus
+                index_in_parent: 1
+                states:
+                - enabled
+                - focusable
+                - sensitive
+                - showing
+                - visible
+                source: runtime
+                children:
+                - role: text
+                  name: DLineEditChildLineEdit
+                  object_name: ''
+                  accessible_id: ''
+                  description: ''
+                  actions:
+                  - SetFocus
+                  index_in_parent: 0
+                  states:
+                  - editable
+                  - enabled
+                  - focusable
+                  - sensitive
+                  - showing
+                  - visible
+                  source: runtime
+                  children:
+                  - role: button
+                    name: DLineEditClearButton
+                    object_name: ''
+                    accessible_id: ''
+                    description: ''
+                    actions:
+                    - Press
+                    index_in_parent: 0
+                    states:
+                    - enabled
+                    - sensitive
+                    source: runtime
+                    id: n92
+                    classification: interactive
+                    state_labels: *id001
+                    class_name: ''
+                    comment: ''
+                    annotation_status: draft
+                  - role: button
+                    name: DSearchEditIconButton
+                    object_name: ''
+                    accessible_id: ''
+                    description: ''
+                    actions:
+                    - Press
+                    index_in_parent: 1
+                    states:
+                    - enabled
+                    - sensitive
+                    source: runtime
+                    id: n93
+                    classification: interactive
+                    state_labels: *id001
+                    class_name: ''
+                    comment: ''
+                    annotation_status: draft
+                  - role: form
+                    name: DSearchEditIconWidget
+                    object_name: ''
+                    accessible_id: ''
+                    description: ''
+                    actions: []
+                    index_in_parent: 2
+                    states:
+                    - enabled
+                    - sensitive
+                    - showing
+                    - visible
+                    source: runtime
+                    children:
+                    - role: button
+                      name: DSearchEditIconButton
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Press
+                      index_in_parent: 0
+                      states:
+                      - enabled
+                      - sensitive
+                      - showing
+                      - visible
+                      source: runtime
+                      id: n95
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    id: n94
+                    classification: container
+                    state_labels: *id001
+                    class_name: ''
+                    comment: ''
+                    annotation_status: draft
+                  id: n91
+                  classification: interactive
+                  state_labels: *id001
+                  class_name: ''
+                  comment: ''
+                  annotation_status: draft
+                id: n90
+                classification: container
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              id: n88
+              classification: container
+              state_labels: *id001
+              class_name: ''
+              comment: ''
+              annotation_status: draft
+            - role: form
+              name: ContollerToolBar
+              object_name: ''
+              accessible_id: ''
+              description: ''
+              actions: []
+              index_in_parent: 2
+              states:
+              - enabled
+              - sensitive
+              - showing
+              - visible
+              source: runtime
+              children:
+              - role: button
+                name: viewoptions_button
+                object_name: ''
+                accessible_id: ''
+                description: 视图选项
+                actions:
+                - Press
+                index_in_parent: 0
+                states:
+                - enabled
+                - sensitive
+                - showing
+                - visible
+                source: runtime
+                id: n99
+                classification: interactive
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              - role: check box
+                name: iconView_button
+                object_name: ''
+                accessible_id: ''
+                description: 图标视图
+                actions:
+                - Toggle
+                - Press
+                index_in_parent: 3
+                states:
+                - checkable
+                - checked
+                - enabled
+                - sensitive
+                - showing
+                - visible
+                source: runtime
+                id: n102
+                classification: interactive
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              - role: check box
+                name: listView_button
+                object_name: ''
+                accessible_id: ''
+                description: 列表视图
+                actions:
+                - Toggle
+                - Press
+                index_in_parent: 4
+                states:
+                - checkable
+                - enabled
+                - sensitive
+                - showing
+                - visible
+                source: runtime
+                id: n103
+                classification: interactive
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              - role: check box
+                name: treeView_button
+                object_name: ''
+                accessible_id: ''
+                description: 树形视图
+                actions:
+                - Toggle
+                - Press
+                index_in_parent: 5
+                states:
+                - checkable
+                - enabled
+                - sensitive
+                - showing
+                - visible
+                source: runtime
+                id: n104
+                classification: interactive
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              id: n98
+              classification: container
+              state_labels: *id001
+              class_name: ''
+              comment: ''
+              annotation_status: draft
+            - role: panel
+              name: ''
+              object_name: ''
+              accessible_id: ''
+              description: ''
+              actions:
+              - SetFocus
+              index_in_parent: 3
+              states:
+              - enabled
+              - focusable
+              - sensitive
+              - showing
+              - visible
+              source: runtime
+              children:
+              - role: button
+                name: DTitlebarIconLabel
+                object_name: ''
+                accessible_id: ''
+                description: ''
+                actions:
+                - Press
+                index_in_parent: 1
+                states:
+                - enabled
+                - sensitive
+                source: runtime
+                id: n107
+                classification: interactive
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              - role: form
+                name: DTitlebarRightArea
+                object_name: ''
+                accessible_id: ''
+                description: ''
+                actions: []
+                index_in_parent: 5
+                states:
+                - enabled
+                - sensitive
+                - showing
+                - visible
+                source: runtime
+                children:
+                - role: form
+                  name: DTitlebarButtonArea
+                  object_name: ''
+                  accessible_id: ''
+                  description: ''
+                  actions: []
+                  index_in_parent: 0
+                  states:
+                  - enabled
+                  - sensitive
+                  - showing
+                  - visible
+                  source: runtime
+                  children:
+                  - role: button
+                    name: DTitlebarDWindowOptionButton
+                    object_name: ''
+                    accessible_id: ''
+                    description: ''
+                    actions:
+                    - Press
+                    - SetFocus
+                    index_in_parent: 0
+                    states:
+                    - enabled
+                    - focusable
+                    - sensitive
+                    - showing
+                    - visible
+                    source: runtime
+                    id: n113
+                    classification: interactive
+                    state_labels: *id001
+                    class_name: ''
+                    comment: ''
+                    annotation_status: draft
+                  - role: button
+                    name: DTitlebarDWindowMinButton
+                    object_name: ''
+                    accessible_id: ''
+                    description: ''
+                    actions:
+                    - Press
+                    - SetFocus
+                    index_in_parent: 1
+                    states:
+                    - enabled
+                    - focusable
+                    - sensitive
+                    - showing
+                    - visible
+                    source: runtime
+                    id: n114
+                    classification: interactive
+                    state_labels: *id001
+                    class_name: ''
+                    comment: ''
+                    annotation_status: draft
+                  - role: button
+                    name: DTitlebarDWindowMaxButton
+                    object_name: ''
+                    accessible_id: ''
+                    description: ''
+                    actions:
+                    - Press
+                    - SetFocus
+                    index_in_parent: 2
+                    states:
+                    - enabled
+                    - focusable
+                    - sensitive
+                    - showing
+                    - visible
+                    source: runtime
+                    id: n115
+                    classification: interactive
+                    state_labels: *id001
+                    class_name: ''
+                    comment: ''
+                    annotation_status: draft
+                  - role: button
+                    name: DTitlebarDWindowQuitFullscreenButton
+                    object_name: ''
+                    accessible_id: ''
+                    description: ''
+                    actions:
+                    - Press
+                    - SetFocus
+                    index_in_parent: 3
+                    states:
+                    - enabled
+                    - focusable
+                    - sensitive
+                    source: runtime
+                    id: n116
+                    classification: interactive
+                    state_labels: *id001
+                    class_name: ''
+                    comment: ''
+                    annotation_status: draft
+                  - role: button
+                    name: DTitlebarDWindowCloseButton
+                    object_name: ''
+                    accessible_id: ''
+                    description: ''
+                    actions:
+                    - Press
+                    - SetFocus
+                    index_in_parent: 4
+                    states:
+                    - enabled
+                    - focusable
+                    - sensitive
+                    - showing
+                    - visible
+                    source: runtime
+                    id: n117
+                    classification: interactive
+                    state_labels: *id001
+                    class_name: ''
+                    comment: ''
+                    annotation_status: draft
+                  id: n112
+                  classification: container
+                  state_labels: *id001
+                  class_name: ''
+                  comment: ''
+                  annotation_status: draft
+                id: n111
+                classification: container
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              - role: form
+                name: Form_
+                object_name: ''
+                accessible_id: ''
+                description: ''
+                actions: []
+                index_in_parent: 6
+                states:
+                - enabled
+                - sensitive
+                - showing
+                - visible
+                source: runtime
+                children:
+                - role: form
+                  name: Form_
+                  object_name: ''
+                  accessible_id: ''
+                  description: ''
+                  actions: []
+                  index_in_parent: 1
+                  states:
+                  - enabled
+                  - sensitive
+                  - showing
+                  - visible
+                  source: runtime
+                  children:
+                  - role: page tab list
+                    name: dde-file-manager
+                    object_name: ''
+                    accessible_id: ''
+                    description: ''
+                    actions: []
+                    index_in_parent: 0
+                    states:
+                    - enabled
+                    - sensitive
+                    - showing
+                    - visible
+                    source: runtime
+                    children:
+                    - role: page tab
+                      name: dde-file-manager
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions:
+                      - Press
+                      index_in_parent: 0
+                      states:
+                      - enabled
+                      - focused
+                      - selectable
+                      - selected
+                      - sensitive
+                      - showing
+                      - visible
+                      source: runtime
+                      id: n122
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: button
+                      name: 向左滚动
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions: []
+                      index_in_parent: 1
+                      states:
+                      - focusable
+                      source: runtime
+                      id: n123
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    - role: button
+                      name: 向右滚动
+                      object_name: ''
+                      accessible_id: ''
+                      description: ''
+                      actions: []
+                      index_in_parent: 2
+                      states:
+                      - focusable
+                      source: runtime
+                      id: n124
+                      classification: interactive
+                      state_labels: *id001
+                      class_name: ''
+                      comment: ''
+                      annotation_status: draft
+                    id: n121
+                    classification: interactive
+                    state_labels: *id001
+                    class_name: ''
+                    comment: ''
+                    annotation_status: draft
+                  - role: button
+                    name: DTabBarAddButton
+                    object_name: ''
+                    accessible_id: ''
+                    description: ''
+                    actions:
+                    - Press
+                    index_in_parent: 1
+                    states:
+                    - enabled
+                    - sensitive
+                    - showing
+                    - visible
+                    source: runtime
+                    id: n125
+                    classification: interactive
+                    state_labels: *id001
+                    class_name: ''
+                    comment: ''
+                    annotation_status: draft
+                  id: n120
+                  classification: container
+                  state_labels: *id001
+                  class_name: ''
+                  comment: ''
+                  annotation_status: draft
+                id: n118
+                classification: container
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              id: n105
+              classification: container
+              state_labels: *id001
+              class_name: ''
+              comment: ''
+              annotation_status: draft
+            - role: form
+              name: Form_
+              object_name: ''
+              accessible_id: ''
+              description: ''
+              actions: []
+              index_in_parent: 4
+              states:
+              - enabled
+              - sensitive
+              - showing
+              - visible
+              source: runtime
+              children:
+              - role: button
+                name: back_button
+                object_name: ''
+                accessible_id: ''
+                description: 后退
+                actions:
+                - Press
+                - SetFocus
+                index_in_parent: 0
+                states:
+                - enabled
+                - focusable
+                - sensitive
+                - showing
+                - visible
+                source: runtime
+                id: n129
+                classification: interactive
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              - role: button
+                name: forword_button
+                object_name: ''
+                accessible_id: ''
+                description: 前进
+                actions: []
+                index_in_parent: 1
+                states:
+                - focusable
+                - showing
+                - visible
+                source: runtime
+                id: n130
+                classification: interactive
+                state_labels: *id001
+                class_name: ''
+                comment: ''
+                annotation_status: draft
+              id: n128
+              classification: container
+              state_labels: *id001
+              class_name: ''
+              comment: ''
+              annotation_status: draft
+            - role: text
+              name: ''
+              object_name: ''
+              accessible_id: ''
+              description: ''
+              actions:
+              - SetFocus
+              index_in_parent: 5
+              states:
+              - editable
+              - enabled
+              - focusable
+              - sensitive
+              source: runtime
+              children: []
+              id: n131
+              classification: interactive
+              state_labels: *id001
+              class_name: ''
+              comment: ''
+              annotation_status: draft
+            id: n81
+            classification: container
+            state_labels: *id001
+            class_name: ''
+            comment: ''
+            annotation_status: draft
+          id: n17
+          classification: container
+          state_labels: *id001
+          class_name: ''
+          comment: ''
+          annotation_status: draft
+        - role: panel
+          name: left_side_bar
+          object_name: ''
+          accessible_id: ''
+          description: ''
+          actions: []
+          index_in_parent: 1
+          states:
+          - enabled
+          - sensitive
+          - showing
+          - visible
+          source: runtime
+          children:
+          - role: form
+            name: Form_
+            object_name: ''
+            accessible_id: ''
+            description: ''
+            actions: []
+            index_in_parent: 0
+            states:
+            - enabled
+            - sensitive
+            - showing
+            - visible
+            source: runtime
+            children:
+            - role: tree
+              name: side_bar_view
+              object_name: ''
+              accessible_id: ''
+              description: ''
+              actions: []
+              index_in_parent: 0
+              states:
+              - enabled
+              - focusable
+              - manages_descendants
+              - sensitive
+              - showing
+              - visible
+              source: runtime
+              children: []
+              id: n136
+              classification: interactive
+              state_labels: *id001
+              class_name: ''
+              comment: ''
+              annotation_status: draft
+            id: n135
+            classification: container
+            state_labels: *id001
+            class_name: ''
+            comment: ''
+            annotation_status: draft
+          id: n134
+          classification: container
+          state_labels: *id001
+          class_name: ''
+          comment: ''
+          annotation_status: draft
+        id: n16
+        classification: container
+        state_labels: *id001
+        class_name: ''
+        comment: ''
+        annotation_status: draft
+      id: n15
+      classification: container
+      state_labels: *id001
+      class_name: ''
+      comment: ''
+      annotation_status: draft
+    id: n14
+    classification: container
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  id: n0
+  classification: container
+  state_labels: *id001
+  class_name: ''
+  comment: ''
+  annotation_status: draft
+- role: popup menu
+  name: DTitlebarMainMenu
+  object_name: ''
+  accessible_id: ''
+  description: ''
+  actions: []
+  index_in_parent: 1
+  states:
+  - enabled
+  - resizable
+  - sensitive
+  source: runtime
+  children:
+  - role: menu item
+    name: 主题
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - ShowMenu
+    index_in_parent: 0
+    states:
+    - enabled
+    - sensitive
+    source: runtime
+    children:
+    - role: popup menu
+      name: DTitlebarThemeMenu
+      object_name: ''
+      accessible_id: ''
+      description: ''
+      actions: []
+      index_in_parent: 0
+      states:
+      - enabled
+      - resizable
+      - sensitive
+      source: runtime
+      children:
+      - role: menu item
+        name: 浅色
+        object_name: ''
+        accessible_id: ''
+        description: ''
+        actions:
+        - Press
+        index_in_parent: 0
+        states:
+        - checkable
+        - enabled
+        - sensitive
+        source: runtime
+        id: n166
+        classification: interactive
+        state_labels: *id001
+        class_name: ''
+        comment: ''
+        annotation_status: draft
+      - role: menu item
+        name: 深色
+        object_name: ''
+        accessible_id: ''
+        description: ''
+        actions:
+        - Press
+        index_in_parent: 1
+        states:
+        - checkable
+        - enabled
+        - sensitive
+        source: runtime
+        id: n167
+        classification: interactive
+        state_labels: *id001
+        class_name: ''
+        comment: ''
+        annotation_status: draft
+      - role: menu item
+        name: 跟随系统
+        object_name: ''
+        accessible_id: ''
+        description: ''
+        actions:
+        - Press
+        index_in_parent: 2
+        states:
+        - checkable
+        - enabled
+        - sensitive
+        source: runtime
+        id: n168
+        classification: interactive
+        state_labels: *id001
+        class_name: ''
+        comment: ''
+        annotation_status: draft
+      id: n165
+      classification: container
+      state_labels: *id001
+      class_name: ''
+      comment: ''
+      annotation_status: draft
+    id: n164
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  - role: menu item
+    name: 帮助
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - Press
+    index_in_parent: 2
+    states: []
+    source: runtime
+    id: n169
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  - role: menu item
+    name: 关于
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - Press
+    index_in_parent: 3
+    states:
+    - enabled
+    - sensitive
+    source: runtime
+    id: n170
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  - role: menu item
+    name: 退出
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - Press
+    index_in_parent: 4
+    states:
+    - enabled
+    - sensitive
+    source: runtime
+    id: n171
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  - role: menu item
+    name: 新建窗口
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - Press
+    index_in_parent: 0
+    states:
+    - enabled
+    - sensitive
+    source: runtime
+    id: n172
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  - role: menu item
+    name: 新建标签页
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - Press
+    index_in_parent: 1
+    states:
+    - enabled
+    - sensitive
+    source: runtime
+    id: n173
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  - role: menu item
+    name: 连接到服务器
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - Press
+    index_in_parent: 3
+    states:
+    - enabled
+    - sensitive
+    source: runtime
+    id: n174
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  - role: menu item
+    name: 设置共享密码
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - Press
+    index_in_parent: 4
+    states:
+    - enabled
+    - sensitive
+    source: runtime
+    id: n175
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  - role: menu item
+    name: 设置
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - Press
+    index_in_parent: 5
+    states:
+    - enabled
+    - sensitive
+    source: runtime
+    id: n176
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  id: n163
+  classification: container
+  state_labels: *id001
+  class_name: ''
+  comment: ''
+  annotation_status: draft
+- role: popup menu
+  name: ''
+  object_name: ''
+  accessible_id: ''
+  description: ''
+  actions: []
+  index_in_parent: 4
+  states:
+  - enabled
+  - resizable
+  - sensitive
+  source: runtime
+  children:
+  - role: menu item
+    name: 图标视图
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - Press
+    index_in_parent: 0
+    states:
+    - checkable
+    - enabled
+    - sensitive
+    source: runtime
+    id: n180
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  - role: menu item
+    name: 列表视图
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - Press
+    index_in_parent: 1
+    states:
+    - checkable
+    - enabled
+    - sensitive
+    source: runtime
+    id: n181
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  - role: menu item
+    name: 树形视图
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - Press
+    index_in_parent: 2
+    states:
+    - checkable
+    - enabled
+    - sensitive
+    source: runtime
+    id: n182
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  id: n179
+  classification: container
+  state_labels: *id001
+  class_name: ''
+  comment: ''
+  annotation_status: draft
+- role: popup menu
+  name: DTitlebarThemeMenu
+  object_name: ''
+  accessible_id: ''
+  description: ''
+  actions: []
+  index_in_parent: 0
+  states:
+  - enabled
+  - resizable
+  - sensitive
+  source: runtime
+  children:
+  - role: menu item
+    name: 浅色
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - Press
+    index_in_parent: 0
+    states:
+    - checkable
+    - enabled
+    - sensitive
+    source: runtime
+    id: n185
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  - role: menu item
+    name: 深色
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - Press
+    index_in_parent: 1
+    states:
+    - checkable
+    - enabled
+    - sensitive
+    source: runtime
+    id: n186
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  - role: menu item
+    name: 跟随系统
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions:
+    - Press
+    index_in_parent: 2
+    states:
+    - checkable
+    - enabled
+    - sensitive
+    source: runtime
+    id: n187
+    classification: interactive
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  id: n184
+  classification: container
+  state_labels: *id001
+  class_name: ''
+  comment: ''
+  annotation_status: draft
+- role: panel
+  name: ''
+  object_name: ''
+  accessible_id: ''
+  description: ''
+  actions: []
+  index_in_parent: 10
+  states:
+  - enabled
+  - resizable
+  - sensitive
+  source: runtime
+  children:
+  - role: list
+    name: ''
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions: []
+    index_in_parent: 0
+    states:
+    - enabled
+    - focusable
+    - manages_descendants
+    - sensitive
+    source: runtime
+    children:
+    - role: list item
+      name: 名称之前
+      object_name: ''
+      accessible_id: ''
+      description: ''
+      actions:
+      - Toggle
+      index_in_parent: 0
+      states:
+      - enabled
+      - focusable
+      - focused
+      - selectable
+      - selected
+      - sensitive
+      - showing
+      - transient
+      - visible
+      source: runtime
+      id: n190
+      classification: interactive
+      state_labels: *id001
+      class_name: ''
+      comment: ''
+      annotation_status: draft
+    - role: list item
+      name: 名称之后
+      object_name: ''
+      accessible_id: ''
+      description: ''
+      actions:
+      - Toggle
+      index_in_parent: 1
+      states:
+      - enabled
+      - focusable
+      - selectable
+      - sensitive
+      - showing
+      - transient
+      - visible
+      source: runtime
+      id: n191
+      classification: interactive
+      state_labels: *id001
+      class_name: ''
+      comment: ''
+      annotation_status: draft
+    id: n189
+    classification: container
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  id: n188
+  classification: container
+  state_labels: *id001
+  class_name: ''
+  comment: ''
+  annotation_status: draft
+- role: panel
+  name: ''
+  object_name: ''
+  accessible_id: ''
+  description: ''
+  actions: []
+  index_in_parent: 11
+  states:
+  - enabled
+  - resizable
+  - sensitive
+  source: runtime
+  children:
+  - role: list
+    name: ''
+    object_name: ''
+    accessible_id: ''
+    description: ''
+    actions: []
+    index_in_parent: 0
+    states:
+    - enabled
+    - focusable
+    - manages_descendants
+    - sensitive
+    source: runtime
+    children:
+    - role: list item
+      name: 替换文本
+      object_name: ''
+      accessible_id: ''
+      description: ''
+      actions:
+      - Toggle
+      index_in_parent: 0
+      states:
+      - enabled
+      - focusable
+      - focused
+      - selectable
+      - selected
+      - sensitive
+      - showing
+      - transient
+      - visible
+      source: runtime
+      id: n196
+      classification: interactive
+      state_labels: *id001
+      class_name: ''
+      comment: ''
+      annotation_status: draft
+    - role: list item
+      name: 添加文本
+      object_name: ''
+      accessible_id: ''
+      description: ''
+      actions:
+      - Toggle
+      index_in_parent: 1
+      states:
+      - enabled
+      - focusable
+      - selectable
+      - sensitive
+      - showing
+      - transient
+      - visible
+      source: runtime
+      id: n197
+      classification: interactive
+      state_labels: *id001
+      class_name: ''
+      comment: ''
+      annotation_status: draft
+    - role: list item
+      name: 自定义文本
+      object_name: ''
+      accessible_id: ''
+      description: ''
+      actions:
+      - Toggle
+      index_in_parent: 2
+      states:
+      - enabled
+      - focusable
+      - selectable
+      - sensitive
+      - showing
+      - transient
+      - visible
+      source: runtime
+      id: n198
+      classification: interactive
+      state_labels: *id001
+      class_name: ''
+      comment: ''
+      annotation_status: draft
+    id: n195
+    classification: container
+    state_labels: *id001
+    class_name: ''
+    comment: ''
+    annotation_status: draft
+  id: n194
+  classification: container
+  state_labels: *id001
+  class_name: ''
+  comment: ''
+  annotation_status: draft

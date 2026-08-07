@@ -1,0 +1,678 @@
+name: 配置_埋点(#126281)_suite
+app: dde-file-manager
+description: ''
+module: 配置_埋点(#126281)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__126281__1_s1
+  name: 配置/埋点(#126281)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: sftp
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: ftp
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 10.8.12.197
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 我的目录
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 我的目录
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 在新窗口打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开方式
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开方式
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开方式
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开方式
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开方式
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开方式
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开方式
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开方式
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开方式
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 创建保险箱
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 以管理员身份打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 桌面设置
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 修改时间
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: sftp
+  - action: assert_file_exists
+  - action: assert_element
+    selector:
+      name: ftp
+  - action: assert_file_exists
+  - action: assert_element
+    selector:
+      name: 10.8.12.197
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_element
+    selector:
+      name: 我的目录
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+- id: suite__126281__2_s1
+  name: 配置/埋点(#126281)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 显示方式
+    - 列表视图
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文档
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 在终端中打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 以管理员身份打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 设置壁纸
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 添加到快捷访问
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到光驱
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到光驱
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到光驱
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到光驱
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到光驱
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到光驱
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到光驱
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到光驱
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到光驱
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到桌面
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到桌面
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到桌面
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到桌面
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到桌面
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到桌面
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到桌面
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到桌面
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到桌面
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 创建链接
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 创建链接
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 创建链接
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 创建链接
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 创建链接
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 创建链接
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 创建链接
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 创建链接
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 创建链接
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 共享文件夹
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 属性
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 属性
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 属性
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 属性
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 属性
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 属性
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 属性
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 属性
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 删除
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 删除
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 删除
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 删除
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 删除
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 删除
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 删除
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 删除
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 删除
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 下载
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  assert_steps:
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+- id: suite__126281__3_s1
+  name: 配置/埋点(#126281)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 保险箱
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 系统盘
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 数据盘
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 我的共享
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 10.8.12.197
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: ftp
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: sftp
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 标签
+      role: list item
+    do: click
+  assert_steps:
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+  - action: assert_file_exists
+teardown:
+- action: session_stop

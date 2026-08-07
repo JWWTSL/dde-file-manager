@@ -1,0 +1,2424 @@
+name: 2500 U2需求_智能语义搜索(#135953)_suite
+app: dde-file-manager
+description: ''
+module: 2500 U2需求_智能语义搜索(#135953)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite_2500_U2_135953__1_s1
+  name: 2500 U2需求/智能语义搜索(#135953)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 25年十二月创建的表格
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 二五年十二月创建的表格
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 二五年12月创建的表格
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 去年12月创建的表格
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 音乐目录里的pdf
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 音乐目录里的归档
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 音乐目录里的源码包
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 音乐目录里的打包文件
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 音乐目录里的zip
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 音乐目录里的rar
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 音乐目录里的压缩包
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 回收站里的压缩包
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 音乐目录里的音频
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 音乐目录里的音乐
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 音乐目录里的录音
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 音乐目录里的语音
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 音乐目录里的歌
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: mp3的歌
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的录像
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的电影
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的动画
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的短片
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的片子
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的wmv视频
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的视频
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的图片
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的截图
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的图
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的壁纸
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的海报
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的相片
+  - action: keyboard_press
+    key: enter
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的表情包
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的gif图片
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录下的照片
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 1月33日创建的文件
+  - action: keyboard_press
+    key: enter
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: pdf
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: mp3
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: wmv
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: gif
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+- id: suite_2500_U2_135953__2_s1
+  name: 2500 U2需求/智能语义搜索(#135953)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 5月1日创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 5月1号创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 五月一日创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 5月一号创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 5月一号创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 12月5日创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 5月创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 5月份创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 2025年创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 25年创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 2026年5月1日创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 2026-5-1创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 2026.5.1创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 26.05.01创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 去年创建的表格
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 本年创建的表格
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 这年创建的表格
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今年创建的表格
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 这个月创建的excel表格
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 当月创建的excel表格
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 本月创建的excel表格
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 上个星期创建的pdf
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 上星期创建的pdf
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 上周创建的pdf
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 这周创建的Word文档
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 这个星期创建的Word文档
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 本周创建的Word文档
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 前天创建的文档
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨日创建的文档
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨晚创建的文档
+  - action: keyboard_press
+    key: enter
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: pdf
+  - action: assert_element
+    selector:
+      name: pdf
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: pdf
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: docx
+  - action: assert_element
+    selector:
+      name: docx
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: docx
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite_2500_U2_135953__3_s1
+  name: 2500 U2需求/智能语义搜索(#135953)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天创建的文档
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天微信的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天vx的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天微信里的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天微信群的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天微信发我的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天微信接受的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档目录里的sketch文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 相册里的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 图片库的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 图片目录的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档里的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 文档库的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 我的文档里的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天下载的
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 下载目录
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天下下来的
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天浏览器下载的图片
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 浏览器下载的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天下载文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 桌面上的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 显示桌面上的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的超过1G的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 100MB以内的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的大于500MB的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 大于500M的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: sketch
+  - action: assert_element
+    selector:
+      name: sketch
+  - action: assert_element
+    selector:
+      name: 开启
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 开启
+  - action: assert_element
+    selector:
+      name: 设置
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 设置
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 设置
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: check-search-result.sh
+  - action: assert_element
+    selector:
+      name: check-search-result.sh
+  - action: assert_element
+    selector:
+      name: check-search-result.sh
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite_2500_U2_135953__4_s1
+  name: 2500 U2需求/智能语义搜索(#135953)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天创建的psd源文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天创建的设计稿
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天创建的psd
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天创建的矢量图
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天创建的工程文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天创建的源文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天创建的软件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天创建的应用
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天创建的脚本
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天创建的程序
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天创建的包
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天创建的安装包
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 音乐目录下wmv的录像
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天的统计表
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天的报表
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天的名单
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天的数据表
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天的数据
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天的明细
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天的表格
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 500M
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 500M
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 500M
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 2025年3月16日创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 2025-3-16创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 2025/3/16创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 2025年3月创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 2025-3创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 25.3创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 25.03创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 2025年3月创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 25年3月份创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 音乐
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 2025年7月点开过的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 7月点开过的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 七月点开过的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 音乐
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 上点开过的文件
+  - action: keyboard_press
+    key: enter
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: wmv
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 开启
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 开启
+  - action: assert_element
+    selector:
+      name: 开启
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 开启
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 查看索引状态
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 开启
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 查看索引状态
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 上
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 上
+- id: suite_2500_U2_135953__5_s1
+  name: 2500 U2需求/智能语义搜索(#135953)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 音乐
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 上个月点开过的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 上月点开过的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 下载
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 上一年浏览过的文件
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 去年一整年浏览过的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 下载
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 去年浏览过的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天新建的ppt
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天新建的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天存下来的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 昨天创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今日创建的文档
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今日份创建的文档
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的文档
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的word
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的pdf
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的excel
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的ppt
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的文档
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的表格
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的幻灯片
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的图片
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的视频
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的音频
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的压缩包
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的安装包
+  - action: keyboard_press
+    key: enter
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: 今天创建的源文件
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 今天创建的文档.md
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 今天创建的文档.md
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 今天创建的文档.md
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 今天创建的文档.md
+  - action: assert_element
+    selector:
+      name: 精确匹配
+  - action: assert_element
+    selector:
+      name: 精确匹配
+  - action: assert_element
+    selector:
+      name: 全部显示
+  - action: assert_element
+    selector:
+      name: 智能匹配
+  - action: assert_element
+    selector:
+      name: 全部显示
+  - action: assert_element
+    selector:
+      name: 智能匹配
+  - action: assert_element
+    selector:
+      name: 精确匹配
+  - action: assert_element
+    selector:
+      name: 精确匹配
+  - action: assert_element
+    selector:
+      name: 精确匹配
+  - action: assert_element
+    selector:
+      name: 智能匹配
+  - action: assert_element
+    selector:
+      name: 全部显示
+  - action: assert_element
+    selector:
+      name: 智能匹配
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 智能匹配
+  - action: assert_element
+    selector:
+      name: 智能匹配
+  - action: assert_element
+    selector:
+      name: docx
+  - action: assert_element
+    selector:
+      name: pdf
+  - action: assert_element
+    selector:
+      name: xlsx
+  - action: assert_element
+    selector:
+      name: pptx
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 智能匹配  30项
+  - action: assert_element
+    selector:
+      name: 全部显示
+  - action: assert_element
+    selector:
+      name: 智能匹配  50项
+  - action: assert_element
+    selector:
+      name: 智能匹配  30项
+  - action: assert_element
+    selector:
+      name: 智能匹配  30项
+  - action: assert_element
+    selector:
+      name: 全部显示
+  - action: assert_element
+    selector:
+      name: 智能匹配  50项
+  - action: assert_element
+    selector:
+      name: 智能匹配  30项
+teardown:
+- action: session_stop

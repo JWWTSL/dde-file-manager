@@ -1,0 +1,223 @@
+name: 主界面区域_固定目录_分组折叠(#133439)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_固定目录_分组折叠(#133439)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__133439__1_s1
+  name: 主界面区域/固定目录/分组折叠(#133439)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: test_input_123
+      role: list item
+    items:
+    - 添加到快捷访问
+  - action: mouse_right_click
+    selector:
+      name: test_input_123
+      role: list item
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 从快捷访问移除
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: test_input_123
+      role: list item
+    items:
+    - 添加到快捷访问
+  - action: dtk_context_menu
+    selector:
+      name: test_input_123
+      role: list item
+    items:
+    - 从快捷访问移除
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: C
+      role: list item
+    items:
+    - 添加到快捷访问
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 快捷访问
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 从快捷访问移除
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 计算机
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__133439__2_s1
+  name: 主界面区域/固定目录/分组折叠(#133439)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+teardown:
+- action: session_stop

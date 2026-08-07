@@ -1,0 +1,1197 @@
+version: '1.0'
+tree:
+- id: n0
+  role: frame
+  name: DMainWindow
+  object_name: ''
+  accessible_id: ''
+  classification: container
+  comment: ''
+  annotation_status: draft
+  children:
+  - id: n1
+    role: panel
+    name: DMainWindowTitlebar
+    object_name: ''
+    accessible_id: ''
+    classification: container
+    comment: ''
+    annotation_status: draft
+    children:
+    - id: n3
+      role: button
+      name: DTitlebarIconLabel
+      object_name: ''
+      accessible_id: ''
+      classification: interactive
+      comment: 'GUI位置: 标题栏最左侧应用图标 | 功能: 应用图标按钮'
+      annotation_status: reviewed
+    - id: n7
+      role: form
+      name: DTitlebarRightArea
+      object_name: ''
+      accessible_id: ''
+      classification: container
+      comment: ''
+      annotation_status: draft
+      children:
+      - id: n8
+        role: form
+        name: DTitlebarButtonArea
+        object_name: ''
+        accessible_id: ''
+        classification: container
+        comment: ''
+        annotation_status: draft
+        children:
+        - id: n9
+          role: button
+          name: DTitlebarDWindowOptionButton
+          object_name: ''
+          accessible_id: ''
+          classification: interactive
+          comment: 'GUI位置: 标题栏右侧菜单按钮 | 功能: 打开主菜单'
+          annotation_status: reviewed
+        - id: n10
+          role: button
+          name: DTitlebarDWindowMinButton
+          object_name: ''
+          accessible_id: ''
+          classification: interactive
+          comment: 'GUI位置: 标题栏最小化按钮 | 功能: 最小化窗口'
+          annotation_status: reviewed
+        - id: n11
+          role: button
+          name: DTitlebarDWindowMaxButton
+          object_name: ''
+          accessible_id: ''
+          classification: interactive
+          comment: 'GUI位置: 标题栏最大化按钮 | 功能: 最大化/还原窗口'
+          annotation_status: reviewed
+        - id: n12
+          role: button
+          name: DTitlebarDWindowQuitFullscreenButton
+          object_name: ''
+          accessible_id: ''
+          classification: interactive
+          comment: 'GUI位置: 标题栏退出全屏按钮 | 功能: 退出全屏'
+          annotation_status: reviewed
+        - id: n13
+          role: button
+          name: DTitlebarDWindowCloseButton
+          object_name: ''
+          accessible_id: ''
+          classification: interactive
+          comment: 'GUI位置: 标题栏关闭按钮 | 功能: 关闭窗口'
+          annotation_status: reviewed
+  - id: n14
+    role: panel
+    name: ''
+    object_name: ''
+    accessible_id: ''
+    classification: container
+    comment: ''
+    annotation_status: draft
+    children:
+    - id: n15
+      role: form
+      name: Form_
+      object_name: ''
+      accessible_id: ''
+      classification: container
+      comment: ''
+      annotation_status: draft
+      children:
+      - id: n16
+        role: split pane
+        name: ''
+        object_name: ''
+        accessible_id: ''
+        classification: container
+        comment: ''
+        annotation_status: draft
+        children:
+        - id: n17
+          role: panel
+          name: ''
+          object_name: ''
+          accessible_id: ''
+          classification: container
+          comment: ''
+          annotation_status: draft
+          children:
+          - id: n18
+            role: split pane
+            name: ''
+            object_name: ''
+            accessible_id: ''
+            classification: container
+            comment: ''
+            annotation_status: draft
+            children:
+            - id: n19
+              role: panel
+              name: ''
+              object_name: ''
+              accessible_id: ''
+              classification: container
+              comment: ''
+              annotation_status: draft
+              children:
+              - id: n20
+                role: form
+                name: Form_
+                object_name: ''
+                accessible_id: ''
+                classification: container
+                comment: ''
+                annotation_status: draft
+                children:
+                - id: n21
+                  role: form
+                  name: Form_
+                  object_name: ''
+                  accessible_id: ''
+                  classification: container
+                  comment: ''
+                  annotation_status: draft
+                  children:
+                  - id: n22
+                    role: panel
+                    name: ''
+                    object_name: ''
+                    accessible_id: ''
+                    classification: container
+                    comment: ''
+                    annotation_status: draft
+                    children:
+                    - id: n24
+                      role: button
+                      name: 清 空
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 搜索框内清空按钮 | 功能: 清空搜索内容'
+                      annotation_status: reviewed
+                - id: n25
+                  role: form
+                  name: Form_
+                  object_name: ''
+                  accessible_id: ''
+                  classification: container
+                  comment: ''
+                  annotation_status: draft
+                  children:
+                  - id: n26
+                    role: form
+                    name: Form_
+                    object_name: ''
+                    accessible_id: ''
+                    classification: container
+                    comment: ''
+                    annotation_status: draft
+                    children:
+                    - id: n27
+                      role: form
+                      name: Form_
+                      object_name: ''
+                      accessible_id: ''
+                      classification: container
+                      comment: ''
+                      annotation_status: draft
+                      children:
+                      - id: n28
+                        role: list
+                        name: ''
+                        object_name: ''
+                        accessible_id: ''
+                        classification: container
+                        comment: ''
+                        annotation_status: draft
+                        children:
+                        - id: n29
+                          role: list item
+                          name: 我的目录
+                          object_name: ''
+                          accessible_id: ''
+                          classification: interactive
+                          comment: 'GUI位置: 左侧栏-我的目录 | 功能: 打开主目录'
+                          annotation_status: reviewed
+                        - id: n30
+                          role: list item
+                          name: 桌面
+                          object_name: ''
+                          accessible_id: ''
+                          classification: interactive
+                          comment: 'GUI位置: 左侧栏-桌面 | 功能: 打开桌面目录'
+                          annotation_status: reviewed
+                        - id: n31
+                          role: list item
+                          name: 视频
+                          object_name: ''
+                          accessible_id: ''
+                          classification: interactive
+                          comment: 'GUI位置: 左侧栏-视频 | 功能: 打开视频目录'
+                          annotation_status: reviewed
+                        - id: n32
+                          role: list item
+                          name: 音乐
+                          object_name: ''
+                          accessible_id: ''
+                          classification: interactive
+                          comment: 'GUI位置: 左侧栏-音乐 | 功能: 打开音乐目录'
+                          annotation_status: reviewed
+                        - id: n33
+                          role: list item
+                          name: 图片
+                          object_name: ''
+                          accessible_id: ''
+                          classification: interactive
+                          comment: 'GUI位置: 左侧栏-图片 | 功能: 打开图片目录'
+                          annotation_status: reviewed
+                        - id: n34
+                          role: list item
+                          name: 文档
+                          object_name: ''
+                          accessible_id: ''
+                          classification: interactive
+                          comment: 'GUI位置: 左侧栏-文档 | 功能: 打开文档目录'
+                          annotation_status: reviewed
+                        - id: n35
+                          role: list item
+                          name: 下载
+                          object_name: ''
+                          accessible_id: ''
+                          classification: interactive
+                          comment: 'GUI位置: 左侧栏-下载 | 功能: 打开下载目录'
+                          annotation_status: reviewed
+                        - id: n36
+                          role: list item
+                          name: 磁盘列表
+                          object_name: ''
+                          accessible_id: ''
+                          classification: interactive
+                          comment: 'GUI位置: 左侧栏-磁盘列表 | 功能: 展开磁盘列表'
+                          annotation_status: reviewed
+                        - id: n37
+                          role: list item
+                          name: 系统盘
+                          object_name: ''
+                          accessible_id: ''
+                          classification: interactive
+                          comment: 'GUI位置: 左侧栏-系统盘 | 功能: 打开系统盘'
+                          annotation_status: reviewed
+                        - id: n38
+                          role: list item
+                          name: 数据盘
+                          object_name: ''
+                          accessible_id: ''
+                          classification: interactive
+                          comment: 'GUI位置: 左侧栏-数据盘 | 功能: 打开数据盘'
+                          annotation_status: reviewed
+                        - id: n39
+                          role: list item
+                          name: 10.8.12.197
+                          object_name: ''
+                          accessible_id: ''
+                          classification: interactive
+                          comment: 'GUI位置: 左侧栏-SMB服务器10.8.12.197 | 功能: 打开SMB共享'
+                          annotation_status: reviewed
+                        - id: n40
+                          role: list item
+                          name: 10.8.12.94
+                          object_name: ''
+                          accessible_id: ''
+                          classification: interactive
+                          comment: 'GUI位置: 左侧栏-SMB服务器10.8.12.94 | 功能: 打开SMB共享'
+                          annotation_status: reviewed
+                  - id: n45
+                    role: list
+                    name: ''
+                    object_name: ''
+                    accessible_id: ''
+                    classification: container
+                    comment: ''
+                    annotation_status: draft
+                    children:
+                    - id: n46
+                      role: list item
+                      name: .claude
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n47
+                      role: list item
+                      name: .git
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n48
+                      role: list item
+                      name: .github
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n49
+                      role: list item
+                      name: .obs
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n50
+                      role: list item
+                      name: .pms
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n51
+                      role: list item
+                      name: .trellis
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n52
+                      role: list item
+                      name: .tx
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n53
+                      role: list item
+                      name: 3rdparty
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n54
+                      role: list item
+                      name: assets
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n55
+                      role: list item
+                      name: autotest
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n56
+                      role: list item
+                      name: autotests
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n57
+                      role: list item
+                      name: build
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n58
+                      role: list item
+                      name: cmake
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n59
+                      role: list item
+                      name: debian
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n60
+                      role: list item
+                      name: docs
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n61
+                      role: list item
+                      name: examples
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n62
+                      role: list item
+                      name: include
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n63
+                      role: list item
+                      name: LICENSES
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n64
+                      role: list item
+                      name: obj-x86_64-linux-gnu
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n65
+                      role: list item
+                      name: src
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n66
+                      role: list item
+                      name: tests
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n67
+                      role: list item
+                      name: translations
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n68
+                      role: list item
+                      name: .clang-format
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n69
+                      role: list item
+                      name: .clog.toml
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n70
+                      role: list item
+                      name: .gitignore
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n71
+                      role: list item
+                      name: .gitlab-ci.yml
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n72
+                      role: list item
+                      name: .project.json
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n73
+                      role: list item
+                      name: .qmake.conf
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n74
+                      role: list item
+                      name: 统信桌面操作系统 V25-用例.xlsx
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n75
+                      role: list item
+                      name: AGENTS.md
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n76
+                      role: list item
+                      name: CMakeLists.txt
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n77
+                      role: list item
+                      name: LICENSE
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n78
+                      role: list item
+                      name: README.md
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n79
+                      role: list item
+                      name: README.zh_CN.md
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+                    - id: n80
+                      role: list item
+                      name: REUSE.toml
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 文件列表项 | 功能: 选择/打开文件或文件夹'
+                      annotation_status: reviewed
+          - id: n81
+            role: panel
+            name: computer_title_bar
+            object_name: ''
+            accessible_id: ''
+            classification: container
+            comment: ''
+            annotation_status: draft
+            children:
+            - id: n82
+              role: panel
+              name: AddressToolBar
+              object_name: ''
+              accessible_id: ''
+              classification: container
+              comment: ''
+              annotation_status: draft
+              children:
+              - id: n84
+                role: button
+                name: '...'
+                object_name: ''
+                accessible_id: ''
+                classification: interactive
+                comment: 'GUI位置: 地址栏路径下拉按钮 | 功能: 显示路径历史'
+                annotation_status: reviewed
+              - id: n85
+                role: button
+                name: 文档
+                object_name: ''
+                accessible_id: ''
+                classification: interactive
+                comment: 'GUI位置: 地址栏路径按钮-文档 | 功能: 跳转到文档目录'
+                annotation_status: reviewed
+              - id: n86
+                role: button
+                name: AT-TEST
+                object_name: ''
+                accessible_id: ''
+                classification: interactive
+                comment: 'GUI位置: 地址栏路径按钮-AT-TEST | 功能: 跳转到AT-TEST目录'
+                annotation_status: reviewed
+              - id: n87
+                role: button
+                name: dde-file-manager
+                object_name: ''
+                accessible_id: ''
+                classification: interactive
+                comment: 'GUI位置: 地址栏路径按钮-dde-file-manager | 功能: 跳转到dde-file-manager目录'
+                annotation_status: reviewed
+            - id: n88
+              role: form
+              name: Form_
+              object_name: ''
+              accessible_id: ''
+              classification: container
+              comment: ''
+              annotation_status: draft
+              children:
+              - id: n90
+                role: form
+                name: Form_
+                object_name: ''
+                accessible_id: ''
+                classification: container
+                comment: ''
+                annotation_status: draft
+                children:
+                - id: n91
+                  role: text
+                  name: DLineEditChildLineEdit
+                  object_name: ''
+                  accessible_id: ''
+                  classification: interactive
+                  comment: 'GUI位置: 顶部搜索/地址输入框 | 功能: 输入路径或搜索关键词'
+                  annotation_status: reviewed
+                  children:
+                  - id: n92
+                    role: button
+                    name: DLineEditClearButton
+                    object_name: ''
+                    accessible_id: ''
+                    classification: interactive
+                    comment: 'GUI位置: 搜索框清空按钮 | 功能: 清空输入'
+                    annotation_status: reviewed
+                  - id: n93
+                    role: button
+                    name: DSearchEditIconButton
+                    object_name: ''
+                    accessible_id: ''
+                    classification: interactive
+                    comment: 'GUI位置: 搜索框搜索图标 | 功能: 触发搜索'
+                    annotation_status: reviewed
+                  - id: n94
+                    role: form
+                    name: DSearchEditIconWidget
+                    object_name: ''
+                    accessible_id: ''
+                    classification: container
+                    comment: ''
+                    annotation_status: draft
+                    children:
+                    - id: n95
+                      role: button
+                      name: DSearchEditIconButton
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 搜索框搜索图标按钮 | 功能: 触发搜索'
+                      annotation_status: reviewed
+            - id: n98
+              role: form
+              name: ContollerToolBar
+              object_name: ''
+              accessible_id: ''
+              classification: container
+              comment: ''
+              annotation_status: draft
+              children:
+              - id: n99
+                role: button
+                name: viewoptions_button
+                object_name: ''
+                accessible_id: ''
+                classification: interactive
+                comment: 'GUI位置: 工具栏视图选项按钮 | 功能: 打开视图选项菜单'
+                annotation_status: reviewed
+              - id: n102
+                role: check box
+                name: iconView_button
+                object_name: ''
+                accessible_id: ''
+                classification: interactive
+                comment: 'GUI位置: 工具栏图标视图按钮 | 功能: 切换图标视图'
+                annotation_status: reviewed
+              - id: n103
+                role: check box
+                name: listView_button
+                object_name: ''
+                accessible_id: ''
+                classification: interactive
+                comment: 'GUI位置: 工具栏列表视图按钮 | 功能: 切换列表视图'
+                annotation_status: reviewed
+              - id: n104
+                role: check box
+                name: treeView_button
+                object_name: ''
+                accessible_id: ''
+                classification: interactive
+                comment: 'GUI位置: 工具栏树形视图按钮 | 功能: 切换树形视图'
+                annotation_status: reviewed
+            - id: n105
+              role: panel
+              name: ''
+              object_name: ''
+              accessible_id: ''
+              classification: container
+              comment: ''
+              annotation_status: draft
+              children:
+              - id: n107
+                role: button
+                name: DTitlebarIconLabel
+                object_name: ''
+                accessible_id: ''
+                classification: interactive
+                comment: 'GUI位置: 工具栏左侧应用图标 | 功能: 应用图标'
+                annotation_status: reviewed
+              - id: n111
+                role: form
+                name: DTitlebarRightArea
+                object_name: ''
+                accessible_id: ''
+                classification: container
+                comment: ''
+                annotation_status: draft
+                children:
+                - id: n112
+                  role: form
+                  name: DTitlebarButtonArea
+                  object_name: ''
+                  accessible_id: ''
+                  classification: container
+                  comment: ''
+                  annotation_status: draft
+                  children:
+                  - id: n113
+                    role: button
+                    name: DTitlebarDWindowOptionButton
+                    object_name: ''
+                    accessible_id: ''
+                    classification: interactive
+                    comment: 'GUI位置: 工具栏右侧菜单按钮 | 功能: 打开主菜单'
+                    annotation_status: reviewed
+                  - id: n114
+                    role: button
+                    name: DTitlebarDWindowMinButton
+                    object_name: ''
+                    accessible_id: ''
+                    classification: interactive
+                    comment: 'GUI位置: 工具栏最小化按钮 | 功能: 最小化窗口'
+                    annotation_status: reviewed
+                  - id: n115
+                    role: button
+                    name: DTitlebarDWindowMaxButton
+                    object_name: ''
+                    accessible_id: ''
+                    classification: interactive
+                    comment: 'GUI位置: 工具栏最大化按钮 | 功能: 最大化/还原窗口'
+                    annotation_status: reviewed
+                  - id: n116
+                    role: button
+                    name: DTitlebarDWindowQuitFullscreenButton
+                    object_name: ''
+                    accessible_id: ''
+                    classification: interactive
+                    comment: 'GUI位置: 工具栏退出全屏按钮 | 功能: 退出全屏'
+                    annotation_status: reviewed
+                  - id: n117
+                    role: button
+                    name: DTitlebarDWindowCloseButton
+                    object_name: ''
+                    accessible_id: ''
+                    classification: interactive
+                    comment: 'GUI位置: 工具栏关闭按钮 | 功能: 关闭窗口'
+                    annotation_status: reviewed
+              - id: n118
+                role: form
+                name: Form_
+                object_name: ''
+                accessible_id: ''
+                classification: container
+                comment: ''
+                annotation_status: draft
+                children:
+                - id: n120
+                  role: form
+                  name: Form_
+                  object_name: ''
+                  accessible_id: ''
+                  classification: container
+                  comment: ''
+                  annotation_status: draft
+                  children:
+                  - id: n121
+                    role: page tab list
+                    name: dde-file-manager
+                    object_name: ''
+                    accessible_id: ''
+                    classification: interactive
+                    comment: 'GUI位置: 标签页列表区域 | 功能: 多标签页导航'
+                    annotation_status: reviewed
+                    children:
+                    - id: n122
+                      role: page tab
+                      name: dde-file-manager
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 当前标签页 | 功能: 当前打开的标签页'
+                      annotation_status: reviewed
+                    - id: n123
+                      role: button
+                      name: 向左滚动
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 标签页栏向左滚动按钮 | 功能: 向左滚动标签页'
+                      annotation_status: reviewed
+                    - id: n124
+                      role: button
+                      name: 向右滚动
+                      object_name: ''
+                      accessible_id: ''
+                      classification: interactive
+                      comment: 'GUI位置: 标签页栏向右滚动按钮 | 功能: 向右滚动标签页'
+                      annotation_status: reviewed
+                  - id: n125
+                    role: button
+                    name: DTabBarAddButton
+                    object_name: ''
+                    accessible_id: ''
+                    classification: interactive
+                    comment: 'GUI位置: 标签页栏新建标签按钮 | 功能: 新建标签页'
+                    annotation_status: reviewed
+            - id: n128
+              role: form
+              name: Form_
+              object_name: ''
+              accessible_id: ''
+              classification: container
+              comment: ''
+              annotation_status: draft
+              children:
+              - id: n129
+                role: button
+                name: back_button
+                object_name: ''
+                accessible_id: ''
+                classification: interactive
+                comment: 'GUI位置: 工具栏后退按钮 | 功能: 返回上一目录'
+                annotation_status: reviewed
+              - id: n130
+                role: button
+                name: forword_button
+                object_name: ''
+                accessible_id: ''
+                classification: interactive
+                comment: 'GUI位置: 工具栏前进按钮 | 功能: 前进到下一目录'
+                annotation_status: reviewed
+            - id: n131
+              role: text
+              name: ''
+              object_name: ''
+              accessible_id: ''
+              classification: interactive
+              comment: 'GUI位置: 主界面滚动区域 | 功能: 文件列表滚动区域'
+              annotation_status: reviewed
+        - id: n134
+          role: panel
+          name: left_side_bar
+          object_name: ''
+          accessible_id: ''
+          classification: container
+          comment: ''
+          annotation_status: draft
+          children:
+          - id: n135
+            role: form
+            name: Form_
+            object_name: ''
+            accessible_id: ''
+            classification: container
+            comment: ''
+            annotation_status: draft
+            children:
+            - id: n136
+              role: tree
+              name: side_bar_view
+              object_name: ''
+              accessible_id: ''
+              classification: interactive
+              comment: 'GUI位置: 左侧栏树视图 | 功能: 侧边栏导航'
+              annotation_status: reviewed
+- id: n163
+  role: popup menu
+  name: DTitlebarMainMenu
+  object_name: ''
+  accessible_id: ''
+  classification: container
+  comment: ''
+  annotation_status: draft
+  children:
+  - id: n164
+    role: menu item
+    name: 主题
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 主菜单-主题 | 功能: 打开主题子菜单'
+    annotation_status: reviewed
+    children:
+    - id: n165
+      role: popup menu
+      name: DTitlebarThemeMenu
+      object_name: ''
+      accessible_id: ''
+      classification: container
+      comment: ''
+      annotation_status: draft
+      children:
+      - id: n166
+        role: menu item
+        name: 浅色
+        object_name: ''
+        accessible_id: ''
+        classification: interactive
+        comment: 'GUI位置: 主题菜单-浅色 | 功能: 切换浅色主题'
+        annotation_status: reviewed
+      - id: n167
+        role: menu item
+        name: 深色
+        object_name: ''
+        accessible_id: ''
+        classification: interactive
+        comment: 'GUI位置: 主题菜单-深色 | 功能: 切换深色主题'
+        annotation_status: reviewed
+      - id: n168
+        role: menu item
+        name: 跟随系统
+        object_name: ''
+        accessible_id: ''
+        classification: interactive
+        comment: 'GUI位置: 主题菜单-跟随系统 | 功能: 主题跟随系统'
+        annotation_status: reviewed
+  - id: n169
+    role: menu item
+    name: 帮助
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 主菜单-帮助 | 功能: 打开帮助'
+    annotation_status: reviewed
+  - id: n170
+    role: menu item
+    name: 关于
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 主菜单-关于 | 功能: 打开关于对话框'
+    annotation_status: reviewed
+  - id: n171
+    role: menu item
+    name: 退出
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 主菜单-退出 | 功能: 退出应用'
+    annotation_status: reviewed
+  - id: n172
+    role: menu item
+    name: 新建窗口
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 主菜单-新建窗口 | 功能: 新建窗口'
+    annotation_status: reviewed
+  - id: n173
+    role: menu item
+    name: 新建标签页
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 主菜单-新建标签页 | 功能: 新建标签页'
+    annotation_status: reviewed
+  - id: n174
+    role: menu item
+    name: 连接到服务器
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 主菜单-连接到服务器 | 功能: 打开连接服务器对话框'
+    annotation_status: reviewed
+  - id: n175
+    role: menu item
+    name: 设置共享密码
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 主菜单-设置共享密码 | 功能: 设置共享密码'
+    annotation_status: reviewed
+  - id: n176
+    role: menu item
+    name: 设置
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 主菜单-设置 | 功能: 打开设置对话框'
+    annotation_status: reviewed
+- id: n179
+  role: popup menu
+  name: ''
+  object_name: ''
+  accessible_id: ''
+  classification: container
+  comment: ''
+  annotation_status: draft
+  children:
+  - id: n180
+    role: menu item
+    name: 图标视图
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 视图菜单-图标视图 | 功能: 切换图标视图'
+    annotation_status: reviewed
+  - id: n181
+    role: menu item
+    name: 列表视图
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 视图菜单-列表视图 | 功能: 切换列表视图'
+    annotation_status: reviewed
+  - id: n182
+    role: menu item
+    name: 树形视图
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 视图菜单-树形视图 | 功能: 切换树形视图'
+    annotation_status: reviewed
+- id: n184
+  role: popup menu
+  name: DTitlebarThemeMenu
+  object_name: ''
+  accessible_id: ''
+  classification: container
+  comment: ''
+  annotation_status: draft
+  children:
+  - id: n185
+    role: menu item
+    name: 浅色
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 主题菜单-浅色 | 功能: 切换浅色主题'
+    annotation_status: reviewed
+  - id: n186
+    role: menu item
+    name: 深色
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 主题菜单-深色 | 功能: 切换深色主题'
+    annotation_status: reviewed
+  - id: n187
+    role: menu item
+    name: 跟随系统
+    object_name: ''
+    accessible_id: ''
+    classification: interactive
+    comment: 'GUI位置: 主题菜单-跟随系统 | 功能: 主题跟随系统'
+    annotation_status: reviewed
+- id: n188
+  role: panel
+  name: ''
+  object_name: ''
+  accessible_id: ''
+  classification: container
+  comment: ''
+  annotation_status: draft
+  children:
+  - id: n189
+    role: list
+    name: ''
+    object_name: ''
+    accessible_id: ''
+    classification: container
+    comment: ''
+    annotation_status: draft
+    children:
+    - id: n190
+      role: list item
+      name: 名称之前
+      object_name: ''
+      accessible_id: ''
+      classification: interactive
+      comment: 'GUI位置: 排序菜单-名称之前 | 功能: 按名称排序'
+      annotation_status: reviewed
+    - id: n191
+      role: list item
+      name: 名称之后
+      object_name: ''
+      accessible_id: ''
+      classification: interactive
+      comment: 'GUI位置: 排序菜单-名称之后 | 功能: 按名称排序'
+      annotation_status: reviewed
+- id: n194
+  role: panel
+  name: ''
+  object_name: ''
+  accessible_id: ''
+  classification: container
+  comment: ''
+  annotation_status: draft
+  children:
+  - id: n195
+    role: list
+    name: ''
+    object_name: ''
+    accessible_id: ''
+    classification: container
+    comment: ''
+    annotation_status: draft
+    children:
+    - id: n196
+      role: list item
+      name: 替换文本
+      object_name: ''
+      accessible_id: ''
+      classification: interactive
+      comment: 'GUI位置: 重命名菜单-替换文本 | 功能: 批量重命名替换文本'
+      annotation_status: reviewed
+    - id: n197
+      role: list item
+      name: 添加文本
+      object_name: ''
+      accessible_id: ''
+      classification: interactive
+      comment: 'GUI位置: 重命名菜单-添加文本 | 功能: 批量重命名添加文本'
+      annotation_status: reviewed
+    - id: n198
+      role: list item
+      name: 自定义文本
+      object_name: ''
+      accessible_id: ''
+      classification: interactive
+      comment: 'GUI位置: 重命名菜单-自定义文本 | 功能: 批量重命名自定义文本'
+      annotation_status: reviewed

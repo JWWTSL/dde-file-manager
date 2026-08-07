@@ -1,0 +1,191 @@
+name: 主界面区域_文件属性(#110825)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_文件属性(#110825)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110825__s1
+  name: 主界面区域/文件属性(#110825)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 编辑按钮
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 视频
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 图片
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 编辑按钮
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+a
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+i
+  - action: keyboard_hot_key
+    key: ctrl+i
+  - action: keyboard_hot_key
+    key: ctrl+i
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 打开属性窗口
+      role: list item
+    items:
+    - 打开
+    - 属性
+  - action: dtk_context_menu
+    selector:
+      name: 打开属性窗口
+      role: list item
+    items:
+    - 打开
+    - 属性
+  - action: dtk_context_menu
+    selector:
+      name: 打开属性窗口
+      role: list item
+    items:
+    - 打开
+    - 属性
+  - action: dtk_context_menu
+    selector:
+      name: 打开属性窗口
+      role: list item
+    items:
+    - 打开
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 打开属性窗口
+      role: list item
+    items:
+    - 打开
+    - 属性
+  - action: dtk_context_menu
+    selector:
+      name: 打开属性窗口
+      role: list item
+    items:
+    - 打开
+    - 属性
+  - action: dtk_context_menu
+    selector:
+      name: 打开属性窗口
+      role: list item
+    items:
+    - 打开
+    - 属性
+  - action: dtk_context_menu
+    selector:
+      name: 打开属性窗口
+      role: list item
+    items:
+    - 打开
+    - 属性
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 重命名成功
+  - action: assert_element
+    selector:
+      name: 重命名成功
+  - action: assert_element
+    selector:
+      name: 重命名成功
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 重命名成功
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 重命名成功
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 复制成功
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 可以正常全选
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 弹窗展示属性窗口
+  - action: assert_element
+    selector:
+      name: 弹窗展示属性窗口
+  - action: assert_not_exists
+    selector:
+      name: 无响应
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 文件立即显示
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 文件夹立即显示
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 文件立即显示
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 文件夹立即显示
+teardown:
+- action: session_stop

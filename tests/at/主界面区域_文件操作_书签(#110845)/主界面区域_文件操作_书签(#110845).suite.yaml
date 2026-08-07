@@ -1,0 +1,363 @@
+name: 主界面区域_文件操作_书签(#110845)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_文件操作_书签(#110845)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110845__1_s1
+  name: 主界面区域/文件操作/书签(#110845)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 添加到快捷访问
+  - action: keyboard_press
+    key: f2
+  - action: element_action
+    selector:
+      name: 我的目录
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 快捷访问
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 添加到快捷访问
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 添加到快捷访问
+  - action: mouse_right_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: keyboard_press
+    key: escape
+  - action: element_action
+    selector:
+      name: 移除
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: a.txt
+      role: list item
+  - action: element_action
+    selector:
+      name: 取消
+      role: button
+    do: click
+  - action: mouse_double_click
+    selector:
+      name: a.txt
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 视频
+      role: list item
+    items:
+    - 添加到快捷访问
+  - action: dtk_context_menu
+    selector:
+      name: 视频
+      role: list item
+    items:
+    - 移除快捷访问
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 我的目录
+      role: list item
+    items:
+    - 重命名
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 添加到快捷访问
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 添加到快捷访问
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 添加到快捷访问
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 添加到快捷访问
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 我的目录
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 添加到快捷访问
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 添加到快捷访问
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 我的目录
+      role: list item
+    do: click
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_not_exists
+    selector:
+      name: 快捷访问
+  - action: assert_not_exists
+    selector:
+      name: 快捷访问
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 我的目录
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 是否移除
+  - action: assert_element
+    selector:
+      name: 是否移除
+  - action: assert_element
+    selector:
+      name: 移除
+  - action: assert_not_exists
+    selector:
+      name: 是否移除
+  - action: assert_not_exists
+    selector:
+      name: 快捷访问
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 文件已被更改或移动
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_not_exists
+    selector:
+      name: a.txt
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_not_exists
+    selector:
+      name: 快捷访问
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 重命名
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 删除
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_element
+    selector:
+      name: 侧边栏
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 删除
+- id: suite__110845__2_s1
+  name: 主界面区域/文件操作/书签(#110845)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: mouse_right_click
+    selector:
+      name: 文件夹
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 文件夹
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 我的目录
+      role: list item
+  assert_steps:
+  - action: assert_not_exists
+    selector:
+      name: 添加快捷访问
+  - action: assert_not_exists
+    selector:
+      name: 添加快捷访问
+  - action: assert_element
+    selector:
+      name: 添加快捷访问
+teardown:
+- action: session_stop

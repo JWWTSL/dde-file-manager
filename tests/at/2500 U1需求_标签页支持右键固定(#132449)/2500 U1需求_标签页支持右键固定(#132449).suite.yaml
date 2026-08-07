@@ -1,0 +1,340 @@
+name: 2500 U1需求_标签页支持右键固定(#132449)_suite
+app: dde-file-manager
+description: ''
+module: 2500 U1需求_标签页支持右键固定(#132449)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite_2500_U1_132449__1_s1
+  name: 2500 U1需求/标签页支持右键固定(#132449)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 文件夹A
+      role: list item
+    items:
+    - 以管理员身份打开
+  - action: dtk_context_menu
+    selector:
+      name: dde-file-manager
+      role: page tab
+    items:
+    - 固定标签页
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 结果中的a.txt
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹B
+  - action: assert_element
+    selector:
+      name: 文件夹C
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A1
+  - action: assert_element
+    selector:
+      name: 文件夹B
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A1
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹B
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 固定标签页
+  - action: assert_not_exists
+    selector:
+      name: 固定标签页
+  - action: assert_not_exists
+    selector:
+      name: 固定标签页
+  - action: assert_not_exists
+    selector:
+      name: 固定标签页
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 固定标签页
+  - action: assert_not_exists
+    selector:
+      name: 固定标签页
+  - action: assert_not_exists
+    selector:
+      name: 固定标签页
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 关闭标签
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite_2500_U1_132449__2_s1
+  name: 2500 U1需求/标签页支持右键固定(#132449)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: dde-file-manager
+      role: page tab
+    items:
+    - 固定标签页
+    - 取消固定标签
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 文件夹A
+      role: list item
+    items:
+    - 固定标签页
+    - 打开
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 取消固定标签
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 取消固定标签
+  - action: assert_not_exists
+    selector:
+      name: 固定标签
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 取消固定
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 取消固定标签
+  - action: assert_not_exists
+    selector:
+      name: 固定标签
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_not_exists
+    selector:
+      name: test_file
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_element
+    selector:
+      name: 文件夹B
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+teardown:
+- action: session_stop

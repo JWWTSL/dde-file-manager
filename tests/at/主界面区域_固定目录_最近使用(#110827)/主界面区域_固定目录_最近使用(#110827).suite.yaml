@@ -1,0 +1,424 @@
+name: 主界面区域_固定目录_最近使用(#110827)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_固定目录_最近使用(#110827)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110827__1_s1
+  name: 主界面区域/固定目录/最近使用(#110827)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: 最近使用
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 最近使用
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 移除
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到
+    - 创建链接
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 最近使用
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: listView_button
+      role: check box
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 最近使用
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: 下载
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    x: 700
+    y: 400
+  - action: element_action
+    selector:
+      name: 最近使用
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 数据盘
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 移除
+  - action: element_action
+    selector:
+      name: 系统盘
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 移除
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 最近使用
+      role: list item
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 属性
+  assert_steps:
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: listView_button
+  - action: assert_element
+    selector:
+      name: listView_button
+  - action: assert_element
+    selector:
+      name: listView_button
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_window
+- id: suite__110827__2_s1
+  name: 主界面区域/固定目录/最近使用(#110827)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 移除
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到
+    - 发送到桌面
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到
+    - 创建链接
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开文件所在位置
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 移除
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 最近访问时间
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 最近访问时间
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 显示方式
+  - action: assert_element
+    selector:
+      name: 显示方式
+  - action: assert_element
+    selector:
+      name: 最近访问时间
+  - action: assert_element
+    selector:
+      name: 最近访问时间
+  - action: assert_element
+    selector:
+      name: 最近访问时间
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 最近使用
+teardown:
+- action: session_stop

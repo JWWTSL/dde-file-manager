@@ -1,0 +1,202 @@
+metadata:
+  generated_at: '2026-08-06T16:41:18.027399'
+  source: 统信桌面操作系统 V25-用例.xlsx
+cases:
+- id: case_1959183
+  name: 【home目录支持长文件名】xfs和brtfs格式的文件系统类型可开启ulnfs
+  module: /V25_2500（测试部专用）/A类核心模块/文件管理器/主界面区域/文件操作/home目录支持长文件名(#132147)
+  status: non_gui
+  steps:
+  - step_type: action
+    description: 1. 手动分区装机，home目录所在分区设置文件系统类型为xfs
+    needs_accessible_name: false
+  - step_type: action
+    description: 2. 开启ulnfs长文件名，开启后重启系统：
+    needs_accessible_name: false
+  - step_type: action
+    description: dde-dconfig --set -a org.deepin.dlnfs -r org.deepin.dlnfs -k ulnfs
+      -v true
+    needs_accessible_name: false
+  - step_type: assert
+    description: 3. 分别在图片目录和home目录下创建一个255个纯中文名称文件夹，检查是否创建成功
+    needs_accessible_name: false
+  - step_type: action
+    description: 4. 手动分区装机，home目录所在分区设置文件系统类型为btrfs
+    needs_accessible_name: false
+  - step_type: action
+    description: 5. 开启ulnfs长文件名，开启后重启系统：
+    needs_accessible_name: false
+  - step_type: action
+    description: dde-dconfig --set -a org.deepin.dlnfs -r org.deepin.dlnfs -k ulnfs
+      -v true
+    needs_accessible_name: false
+  - step_type: assert
+    description: 6. 分别在图片目录和home目录下创建一个255个纯中文名称文件夹，检查是否创建成功
+    needs_accessible_name: false
+  - step_type: assert
+    description: 1. 装机成功
+    needs_accessible_name: false
+  - step_type: assert
+    description: 2. 重启后，执行命令：dde-dconfig --get -a org.deepin.dlnfs -r org.deepin.dlnfs
+      -k ulnfs ，返回true
+    needs_accessible_name: false
+  - step_type: assert
+    description: 3. 创建成功，且正常读写删除
+    needs_accessible_name: false
+  - step_type: assert
+    description: 4. 装机成功
+    needs_accessible_name: false
+  - step_type: assert
+    description: 5. 重启后，执行命令：dde-dconfig --get -a org.deepin.dlnfs -r org.deepin.dlnfs
+      -k ulnfs ，返回true
+    needs_accessible_name: false
+  - step_type: assert
+    description: 6. 创建成功，且正常读写删除
+    needs_accessible_name: false
+- id: case_1828785
+  name: dde-file-manager-daemon移除
+  module: /V25_2500（测试部专用）/A类核心模块/文件管理器/配置/组策略(#110801)
+  status: non_gui
+  steps:
+  - step_type: assert
+    description: 1. 打开session bus，查看filemanager的dbus名称
+    needs_accessible_name: false
+  - step_type: assert
+    description: 2. 检查文件管理器标记
+    needs_accessible_name: false
+  - step_type: assert
+    description: 3. 检查文件基本操作
+    needs_accessible_name: false
+  - step_type: assert
+    description: 4. 检查外设管理
+    needs_accessible_name: false
+  - step_type: assert
+    description: 5. 检查文管保险箱加密
+    needs_accessible_name: false
+  - step_type: assert
+    description: 1. session bus中的名称变成了org.deepin.Filemanager.Daemon（历史版本为com.deepin.xxxx.xxxx）
+    needs_accessible_name: false
+  - step_type: assert
+    description: 2. 功能正常
+    needs_accessible_name: false
+  - step_type: assert
+    description: 3. 功能正常
+    needs_accessible_name: false
+  - step_type: assert
+    description: 4. 功能正常
+    needs_accessible_name: false
+  - step_type: assert
+    description: 5. 功能正常
+    needs_accessible_name: false
+- id: case_1828783
+  name: dde-file-manager-server优化
+  module: /V25_2500（测试部专用）/A类核心模块/文件管理器/配置/组策略(#110801)
+  status: non_gui
+  steps:
+  - step_type: assert
+    description: 1. 打开system bus，查看filemanager的dbus名称
+    needs_accessible_name: false
+  - step_type: assert
+    description: 2. 检查文管挂载服务，共享服务
+    needs_accessible_name: false
+  - step_type: assert
+    description: 3. 检查anything搜索
+    needs_accessible_name: false
+  - step_type: assert
+    description: 4. 检查文件管理器磁盘加密
+    needs_accessible_name: false
+  - step_type: assert
+    description: 5. 检查全局搜索
+    needs_accessible_name: false
+  - step_type: assert
+    description: 1. system bus中的名称变成了org.deepin.Filemanager.xxxxxxxxx（历史版本为com.deepin.xxxx.xxxx）
+    needs_accessible_name: false
+  - step_type: assert
+    description: 2. 功能正常
+    needs_accessible_name: false
+  - step_type: assert
+    description: 3. 功能正常
+    needs_accessible_name: false
+  - step_type: assert
+    description: 4. 功能正常
+    needs_accessible_name: false
+  - step_type: assert
+    description: 5. 功能正常
+    needs_accessible_name: false
+- id: case_1807265
+  name: 预览开关-文管打开多个标签关闭开启预览
+  module: /V25_2500（测试部专用）/A类核心模块/文件管理器/主界面区域/文件操作/预览(#110855)
+  status: non_gui
+  steps:
+  - step_type: action
+    description: 1. 命令行关闭预览
+    needs_accessible_name: false
+  - step_type: action
+    description: 2. 开启预览
+    needs_accessible_name: false
+  - step_type: assert
+    description: 1. 不能再次预览
+    needs_accessible_name: false
+  - step_type: assert
+    description: 2. 多个标签都可预览
+    needs_accessible_name: false
+- id: case_1807263
+  name: 预览开关-文管打开多个窗口关闭开启预览
+  module: /V25_2500（测试部专用）/A类核心模块/文件管理器/主界面区域/文件操作/预览(#110855)
+  status: non_gui
+  steps:
+  - step_type: action
+    description: 1. 命令行关闭预览
+    needs_accessible_name: false
+  - step_type: action
+    description: 2. 开启预览
+    needs_accessible_name: false
+  - step_type: assert
+    description: 1. 命令行关闭预览
+    needs_accessible_name: false
+  - step_type: assert
+    description: 2. 多个窗口都可预览
+    needs_accessible_name: false
+- id: case_1805909
+  name: 添加数据到回收站-添加同一属组不同用户的文件/文件夹到回收站
+  module: /V25_2500（测试部专用）/A类核心模块/文件管理器/主界面区域/固定目录/回收站(#110837)
+  status: non_gui
+  steps:
+  - step_type: action
+    description: 1. 新建文件/文件夹A，如在桌面新建
+    needs_accessible_name: false
+  - step_type: action
+    description: '2. 更改文件/文件夹A所属用户，命令行输入:'
+    needs_accessible_name: false
+  - step_type: action
+    description: chown 其他用户名  文件/文件夹A（前提是已切换到桌面路径下：cd ~/Desktop）
+    needs_accessible_name: false
+  - step_type: action
+    description: 3. 更改文件权限：chmod 777 文件/文件夹A
+    needs_accessible_name: false
+  - step_type: action
+    description: 4. 右键删除文件/文件夹A到回收站
+    needs_accessible_name: false
+  - step_type: assert
+    description: 1. 新建成功
+    needs_accessible_name: false
+  - step_type: assert
+    description: 2. 文件所属用户更改成功
+    needs_accessible_name: false
+  - step_type: assert
+    description: 3. 权限更改成功（若不更改权限，则直接不能删除文件到回收站）
+    needs_accessible_name: false
+  - step_type: assert
+    description: 4. 删除成功，回收站内正常显示该文件/文件夹
+    needs_accessible_name: false
+- id: case_1805341
+  name: 搜索-anything进程合并
+  module: /V25_2500（测试部专用）/A类核心模块/文件管理器/顶部区域/搜索(#110805)
+  status: non_gui
+  steps:
+  - step_type: assert
+    description: 1. 系统启动后，使用：ps -elf | grep deepin-anything 查看anything进程信息
+    needs_accessible_name: false
+  - step_type: assert
+    description: 1. 系统中没有：deepin-anything-tool --dbus、/usr/bin/deepin-anything-monitor两个进程，anything进程已合并至：/usr/bin/dde-file-manager-daemon
+    needs_accessible_name: false

@@ -1,0 +1,835 @@
+name: 主界面区域_文件操作(#110817)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_文件操作(#110817)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110817__1_s1
+  name: 主界面区域/文件操作(#110817)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 挂载
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件夹
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件夹
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件夹
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件夹
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 在终端中打开
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 在终端中打开
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 在终端中打开
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 在终端中打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 共享文件夹
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 取消共享
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 共享文件夹
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 取消共享
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 病毒查杀
+  - action: element_action
+    selector:
+      name: 立即体检
+      role: button
+    do: click
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 病毒查杀
+  - action: element_action
+    selector:
+      name: 立即体检
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 我的共享
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 安全中心
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 安全中心
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+- id: suite__110817__2_s1
+  name: 主界面区域/文件操作(#110817)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowCloseButton
+      role: button
+    do: click
+  - action: mouse_double_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowCloseButton
+      role: button
+    do: click
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: mouse_double_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 视图
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 新建文件夹
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 标记信息
+  - action: dtk_context_menu
+    selector:
+      name: 文档
+      role: list item
+    items:
+    - 标记信息
+  - action: dtk_context_menu
+    selector:
+      name: 图片
+      role: list item
+    items:
+    - 标记信息
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 标记信息
+  - action: dtk_context_menu
+    selector:
+      name: 音乐
+      role: list item
+    items:
+    - 标记信息
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 标记信息
+    - 压缩
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 标记信息
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 标记信息
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 标记信息
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到U盘
+    - 发送到
+  - action: dtk_context_menu
+    selector:
+      name: 文档
+      role: list item
+    items:
+    - 发送到U盘
+    - 发送到
+  - action: dtk_context_menu
+    selector:
+      name: 图片
+      role: list item
+    items:
+    - 发送到U盘
+    - 发送到
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到U盘
+    - 发送到
+  - action: dtk_context_menu
+    selector:
+      name: 音乐
+      role: list item
+    items:
+    - 发送到U盘
+    - 发送到
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到U盘
+    - 发送到
+    - 压缩
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到U盘
+    - 发送到
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到U盘
+    - 发送到
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到U盘
+    - 发送到
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 文档
+      role: list item
+    items:
+    - 发送到蓝牙
+    - 发送到
+  - action: dtk_context_menu
+    selector:
+      name: 图片
+      role: list item
+    items:
+    - 发送到蓝牙
+    - 发送到
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到蓝牙
+    - 发送到
+  - action: dtk_context_menu
+    selector:
+      name: 音乐
+      role: list item
+    items:
+    - 发送到蓝牙
+    - 发送到
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到蓝牙
+    - 发送到
+    - 压缩
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到蓝牙
+    - 发送到
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到蓝牙
+    - 发送到
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 发送到蓝牙
+    - 发送到
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift
+  - action: keyboard_hot_key
+    key: ctrl+shift
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: element_action
+    selector:
+      name: DSearchEditIconButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: ..
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: jpg
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: enter
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 唤起快捷键预览界面
+  - action: assert_element
+    selector:
+      name: 唤起快捷键预览界面
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 截断
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+- id: suite__110817__3_s1
+  name: 主界面区域/文件操作(#110817)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_press
+    key: enter
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 在序列输入框中输入超长字符
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+teardown:
+- action: session_stop

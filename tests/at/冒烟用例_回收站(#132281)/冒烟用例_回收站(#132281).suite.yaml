@@ -1,0 +1,798 @@
+name: 冒烟用例_回收站(#132281)_suite
+app: dde-file-manager
+description: ''
+module: 冒烟用例_回收站(#132281)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__132281__1_s1
+  name: 冒烟用例/回收站(#132281)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: keyboard_press
+    key: delete
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 文件A
+      role: list item
+    items:
+    - 还原
+  - action: element_action
+    selector:
+      name: 替换
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 共存
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 400
+    y: 300
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 回收站
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 打开
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 清空回收站
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 创建连接
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 回收站
+      role: list item
+  - action: mouse_right_click
+    selector:
+      name: 回收站
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 在新窗口打开
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 在新标签中打开
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 清空回收站
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: mouse_double_click
+    selector:
+      name: 回收站
+      role: list item
+  - action: mouse_right_click
+    selector:
+      name: 回收站
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 打开
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 属性
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 创建链接
+  - action: element_action
+    selector:
+      name: 我的目录
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 清空回收站
+  - action: element_action
+    selector:
+      name: 确定
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 400
+    y: 300
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 全部还原
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 清空回收站
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 显示方式
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 排序方式
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 400
+    y: 300
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 400
+    y: 300
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 400
+    y: 300
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: mouse_right_click
+    x: 400
+    y: 300
+  - action: mouse_right_click
+    x: 400
+    y: 300
+  - action: mouse_right_click
+    x: 400
+    y: 300
+  - action: mouse_right_click
+    x: 400
+    y: 300
+  - action: mouse_right_click
+    x: 400
+    y: 300
+  - action: mouse_right_click
+    x: 400
+    y: 300
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 全部还原
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 回收站
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 清空回收站
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 清空回收站
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 清空回收站
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 清空回收站
+  - action: element_action
+    selector:
+      name: 数据盘
+      role: list item
+    do: click
+  - action: mouse_double_click
+    selector:
+      name: 桌面
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 清空回收站
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 回收站
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 清空回收站
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 清空回收站
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 清空回收站
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 清空回收站
+  - action: element_action
+    selector:
+      name: 数据盘
+      role: list item
+    do: click
+  - action: mouse_double_click
+    selector:
+      name: 桌面
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 清空回收站
+  - action: keyboard_press
+    key: esc
+  - action: element_action
+    selector:
+      name: 取消
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 确定
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 名称
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: 原始路径
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: 删除时间
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: 大小
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: 类型
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 打开
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+- id: suite__132281__2_s1
+  name: 冒烟用例/回收站(#132281)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: keyboard_press
+    key: delete
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_press
+    key: delete
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_press
+    key: delete
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 400
+    y: 300
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 显示方式
+    - 列表视图
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 清空回收站
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 回收站
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 回收站
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: mouse_double_click
+    selector:
+      name: 回收站
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 打开
+  - action: element_action
+    selector:
+      name: 数据盘
+      role: list item
+    do: click
+  - action: mouse_double_click
+    selector:
+      name: 桌面
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: 回收站
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 回收站
+      role: list item
+    items:
+    - 打开
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+      role: text
+    text: trash:///
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 回收站
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 回收站
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 删除
+  - action: element_action
+    selector:
+      name: 视频
+      role: list item
+    do: click
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 删除
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: keyboard_press
+    key: delete
+  - action: keyboard_press
+    key: delete
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+teardown:
+- action: session_stop

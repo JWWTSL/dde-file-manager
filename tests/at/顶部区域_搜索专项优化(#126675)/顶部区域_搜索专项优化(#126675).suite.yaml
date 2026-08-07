@@ -1,0 +1,1109 @@
+name: 顶部区域_搜索专项优化(#126675)_suite
+app: dde-file-manager
+description: ''
+module: 顶部区域_搜索专项优化(#126675)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__126675__1_s1
+  name: 顶部区域/搜索专项优化(#126675)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: deepin-elf-verify服务，新增内容
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 桌面
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: test
+  - action: keyboard_press
+    key: backspace
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: mouse_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索不同文件系统类型下的文件
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: mouse_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 天ss123空s44下雨lllll 呼龍4s呼 123.456
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项测试
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项测试
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 视频
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项测试
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项测试
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项测试
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项测试
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项测试
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项测试
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项测试
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项测试
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项测试
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项测试
+  - action: element_action
+    selector:
+      name: listView_button
+      role: check box
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项测试
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: iconView_button
+      role: check box
+    do: click
+  - action: element_action
+    selector:
+      name: listView_button
+      role: check box
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: iconView_button
+      role: check box
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: test_input_123
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: deepin-elf-verify服务，新增内容.pptx
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 搜索专项测试用例设计.xmind
+  - action: assert_element
+    selector:
+      name: 搜索专项测试用例设计.xmind
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 搜索专项测试用例设计.xmind
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: a.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 搜索专项测试用例设计.xmind
+  - action: assert_not_exists
+    selector:
+      name: a.txt
+  - action: assert_element
+    selector:
+      name: 搜索专项测试用例设计.xmind
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 搜索专项测试用例设计.xmind
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 搜索专项测试用例设计.xmind
+  - action: assert_not_exists
+    selector:
+      name: a.txt
+  - action: assert_not_exists
+    selector:
+      name: 搜索专项测试用例设计.xmind
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: a.txt
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: a.txt
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: treeView_button
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: treeView_button
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__126675__2_s1
+  name: 顶部区域/搜索专项优化(#126675)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: iconView_button
+      role: check box
+    do: click
+  - action: element_action
+    selector:
+      name: listView_button
+      role: check box
+    do: click
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排列方式
+    - 名称
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: mouse_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: kw200000
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: abc
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: test_files
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: kw200000
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: a.txt
+      role: list item
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_type
+    text: a-new.txt
+  - action: keyboard_press
+    key: enter
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: mouse_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 全文检索
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: mouse_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 天 s s1 23空s44下雨 lll 呼龍 4s呼 123 .456
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排列方式
+    - 名称
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排列方式
+    - 路径
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排列方式
+    - 修改时间
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排列方式
+    - 大小
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排列方式
+    - 类型
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: mouse_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 天ss123空s44下雨lllll 呼龍4s呼 123.456
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排列方式
+    - 名称
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排列方式
+    - 路径
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排列方式
+    - 修改时间
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排列方式
+    - 大小
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排列方式
+    - 类型
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 测试 搜索 专项
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: deepin-elf-verify服务，新增内容
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排列方式
+    - 修改时间
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 名称
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项优化
+  - action: mouse_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项我是额外加的内容
+  - action: keyboard_press
+    key: backspace
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: backspace
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 天ss123空s44下雨lllll 呼龍4s呼 123.456
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: '1'
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: '12'
+  - action: element_action
+    selector:
+      name: 清 空
+      role: button
+    do: click
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: '1'
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项优化测试文档
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项优化测试文档
+  - action: mouse_double_click
+    selector:
+      name: 搜索专项优化测试文档
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: test_input_123
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: a-new.txt
+  - action: assert_not_exists
+    selector:
+      name: a.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: aa.txt
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: aa.txt
+  - action: assert_not_exists
+    selector:
+      name: bb.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: a-test.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__126675__3_s1
+  name: 顶部区域/搜索专项优化(#126675)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项优化测试文档
+  - action: mouse_click
+    selector:
+      name: search.txt
+      role: list item
+  - action: keyboard_press
+    key: delete
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项优化测试文档
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项优化测试文档
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项优化测试文档
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项优化测试文档
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项优化测试文档
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: 搜索专项优化测试文档
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_set_value
+    selector:
+      name: DLineEditChildLineEdit
+    text: this is a test file*()
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: search.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: search.txt
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: .搜索专项优化测试文档
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: .搜索专项优化测试文档
+  - action: assert_not_exists
+    selector:
+      name: .hide.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: new.txt
+  - action: assert_element
+    selector:
+      name: new.txt
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: new.txt
+  - action: assert_element
+    selector:
+      name: new.txt
+  - action: assert_element
+    selector:
+      name: new.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: new.txt
+  - action: assert_not_exists
+    selector:
+      name: search.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: a.txt
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+teardown:
+- action: session_stop

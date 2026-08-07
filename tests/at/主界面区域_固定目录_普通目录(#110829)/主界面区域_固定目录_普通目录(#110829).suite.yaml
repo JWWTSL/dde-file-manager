@@ -1,0 +1,168 @@
+name: 主界面区域_固定目录_普通目录(#110829)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_固定目录_普通目录(#110829)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110829__s1
+  name: 主界面区域/固定目录/普通目录(#110829)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 我的共享
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 网络邻居
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 视频
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 网络邻居
+      role: list item
+    do: click
+  - action: mouse_double_click
+    selector:
+      name: windows网络
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: windows网络
+      role: list item
+    items:
+    - 打开
+  - action: dtk_context_menu
+    selector:
+      name: windows网络
+      role: list item
+    items:
+    - 在新窗口打开
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 打开
+    - 打开方式
+    - 复制
+    - 剪切
+    - 重命名
+    - 发送到桌面
+    - 删除
+    - 标记信息
+    - 压缩
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: enter
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: keyboard_hot_key
+    key: ctrl+v
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_press
+    key: space
+  - action: keyboard_press
+    key: up
+  - action: keyboard_press
+    key: tab
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: side_bar_view
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 我的共享
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: viewoptions_button
+  - action: assert_element
+    selector:
+      name: 网络邻居
+  - action: assert_element
+    selector:
+      name: iconView_button
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 视频
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 网络邻居
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_process_running
+  - action: assert_process_running
+teardown:
+- action: session_stop

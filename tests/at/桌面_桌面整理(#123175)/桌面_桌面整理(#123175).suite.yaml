@@ -1,0 +1,1085 @@
+name: 桌面_桌面整理(#123175)_suite
+app: dde-file-manager
+description: ''
+module: 桌面_桌面整理(#123175)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__123175__1_s1
+  name: 桌面/桌面整理(#123175)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 开启桌面整理
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 开启桌面整理
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 一键整理桌面
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 打开
+  - action: keyboard_hot_key
+    key: alt+o
+  - action: keyboard_hot_key
+    key: alt+o
+  - action: mouse_click
+    x: 700
+    y: 400
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 开启桌面整理
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 一键整理桌面
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 整理桌面
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 图片
+      role: list item
+    items:
+    - 设为壁纸
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 自动排列
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 自动排列桌面图标
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 文档
+  - action: assert_element
+    selector:
+      name: 文档
+  - action: assert_element
+    selector:
+      name: 视频
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_not_exists
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_not_exists
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_not_exists
+    selector:
+      name: 桌面
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_not_exists
+    selector:
+      name: 自动排列
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 桌面
+- id: suite__123175__2_s1
+  name: 桌面/桌面整理(#123175)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  assert_steps:
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 拖拽对象
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+- id: suite__123175__3_s1
+  name: 桌面/桌面整理(#123175)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 整理桌面
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 整理桌面
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: list item
+  - action: element_action
+    selector:
+      name: 桌面
+      role: list item
+    do: click
+  - action: mouse_click
+    x: 700
+    y: 400
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_not_exists
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_not_exists
+    selector:
+      name: 桌面
+  - action: assert_not_exists
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__123175__4_s1
+  name: 桌面/桌面整理(#123175)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: keyboard_hot_key
+    key: ctrl+c
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 整理桌面
+  - action: keyboard_hot_key
+    key: ctrl+x
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 整理桌面
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 整理桌面
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_drag
+    selector:
+      name: 桌面
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+v
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+i
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 选项
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    x: 700
+    y: 400
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合尺寸
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_not_exists
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_not_exists
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_not_exists
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_not_exists
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 集合
+- id: suite__123175__5_s1
+  name: 桌面/桌面整理(#123175)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    x: 700
+    y: 400
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 集合
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 集合
+teardown:
+- action: session_stop

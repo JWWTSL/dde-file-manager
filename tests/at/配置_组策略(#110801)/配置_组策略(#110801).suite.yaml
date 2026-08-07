@@ -1,0 +1,921 @@
+name: 配置_组策略(#110801)_suite
+app: dde-file-manager
+description: ''
+module: 配置_组策略(#110801)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110801__s1
+  name: 配置/组策略(#110801)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 最近使用
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 最近使用
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 最近使用
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 最近使用
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 最近使用
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 最近使用
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 回收站
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 回收站
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 回收站
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 回收站
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 回收站
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 回收站
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 保险箱
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 保险箱
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 保险箱
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 保险箱
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 保险箱
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 保险箱
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_press
+    key: enter
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 桌面
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_hot_key
+    key: ctrl+shift+n
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: DMainWindow
+      role: window
+  - action: keyboard_hot_key
+    key: alt+m
+  - action: keyboard_hot_key
+    key: ctrl+shift+n
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_not_exists
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 新建文件夹
+  - action: assert_not_exists
+    selector:
+      name: 新建文件夹
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 新建文件夹
+  - action: assert_not_exists
+    selector:
+      name: 新建文件夹
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+teardown:
+- action: session_stop

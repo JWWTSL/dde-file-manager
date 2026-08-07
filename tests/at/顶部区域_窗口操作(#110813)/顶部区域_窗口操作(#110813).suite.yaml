@@ -1,0 +1,218 @@
+name: 顶部区域_窗口操作(#110813)_suite
+app: dde-file-manager
+description: ''
+module: 顶部区域_窗口操作(#110813)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110813__s1
+  name: 顶部区域/窗口操作(#110813)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: mouse_double_click
+    selector:
+      name: test_folder
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 计算机
+      role: list item
+    items:
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 文件管理器
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: DMainWindow
+      role: window
+    items:
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 计算机
+      role: list item
+    do: click
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__110813__s2
+  name: 顶部区域/窗口操作(#110813)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__110813__s3
+  name: 顶部区域/窗口操作(#110813)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 文件夹A
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 文件夹A
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 文件夹A
+      role: list item
+    items:
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 文件A
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 文件夹A
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 文件夹A
+      role: list item
+    items:
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 文件A
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 文件夹A
+      role: list item
+    items:
+    - 在新窗口中打开
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 文件A
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 文件夹A
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 文件夹A
+      role: list item
+    items:
+    - 打开
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_element
+    selector:
+      name: 回收站
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 文件夹A
+  - action: assert_element
+    selector:
+      name: 文件夹A
+teardown:
+- action: session_stop

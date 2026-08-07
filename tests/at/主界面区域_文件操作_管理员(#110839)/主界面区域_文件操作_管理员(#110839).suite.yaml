@@ -1,0 +1,73 @@
+name: 主界面区域_文件操作_管理员(#110839)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_文件操作_管理员(#110839)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110839__s1
+  name: 主界面区域/文件操作/管理员(#110839)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 以管理员身份打开
+  - action: mouse_double_click
+    selector:
+      name: 文档
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: 视频
+      role: list item
+  - action: mouse_right_click
+    selector:
+      name: 图片
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DMainWindow
+      role: window
+    do: click
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 打开
+  - action: assert_window
+teardown:
+- action: session_stop

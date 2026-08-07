@@ -1,0 +1,269 @@
+name: 顶部区域_顶部右键(#110811)_suite
+app: dde-file-manager
+description: ''
+module: 顶部区域_顶部右键(#110811)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110811__s1
+  name: 顶部区域/顶部右键(#110811)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 移至右边的工作区
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 移至右边的工作区
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 移至左边的工作区
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 移至左边的工作区
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 总在最前
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 总在最前
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 总在最前
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 移动
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: mouse_click
+    x: 700
+    y: 400
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 更改大小
+  - action: mouse_drag
+    selector:
+      name: DMainWindow
+      role: window
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowMaxButton
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowMaxButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowMinButton
+      role: button
+    do: click
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 移至右边的工作区
+  - action: assert_element
+    selector:
+      name: 移至右边的工作区
+  - action: assert_element
+    selector:
+      name: 移至右边的工作区
+  - action: assert_element
+    selector:
+      name: 移至右边的工作区
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 移至左边的工作区
+  - action: assert_element
+    selector:
+      name: 移至左边的工作区
+  - action: assert_element
+    selector:
+      name: 移至左边的工作区
+  - action: assert_element
+    selector:
+      name: 移至左边的工作区
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 总在最前
+  - action: assert_not_exists
+    selector:
+      name: 总在最前
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 总在最前
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 总在最前
+  - action: assert_element
+    selector:
+      name: 移动
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 更改大小
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: DTitlebarDWindowMaxButton
+  - action: assert_window
+- id: suite__110811__s2
+  name: 顶部区域/顶部右键(#110811)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowMinButton
+      role: button
+    do: click
+  assert_steps:
+  - action: assert_window
+- id: suite__110811__s3
+  name: 顶部区域/顶部右键(#110811)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowCloseButton
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowCloseButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: mouse_right_click
+    x: 700
+    y: 400
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowCloseButton
+      role: button
+    do: click
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_not_running
+  - action: assert_process_not_running
+  - action: assert_element
+    selector:
+      name: 总在可见工作区
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 总在可见工作区
+  - action: assert_element
+    selector:
+      name: 总在可见工作区
+  - action: assert_not_exists
+    selector:
+      name: 总在可见工作区
+  - action: assert_element
+    selector:
+      name: 总在可见工作区
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_not_running
+teardown:
+- action: session_stop

@@ -1,0 +1,476 @@
+name: 顶部区域_视图(#110809)_suite
+app: dde-file-manager
+description: ''
+module: 顶部区域_视图(#110809)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__110809__1_s1
+  name: 顶部区域/视图(#110809)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: listView_button
+      role: check box
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: test_input_123
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: iconView_button
+      role: check box
+    do: click
+  - action: mouse_click
+    selector:
+      name: test_input_123
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: listView_button
+      role: check box
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: listView_button
+      role: check box
+    do: click
+  - action: element_action
+    selector:
+      name: treeView_button
+      role: check box
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: listView_button
+      role: check box
+    do: click
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_right_click
+    selector:
+      name: test_input_123
+      role: list item
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: treeView_button
+      role: check box
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: treeView_button
+      role: check box
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: treeView_button
+      role: check box
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: iconView_button
+      role: check box
+    do: click
+  - action: element_action
+    selector:
+      name: listView_button
+      role: check box
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: treeView_button
+      role: check box
+    do: click
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 显示方式
+    - 树形视图
+  - action: mouse_click
+    selector:
+      name: 最近使用
+      role: list item
+  - action: keyboard_hot_key
+    key: ctrl+3
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: iconView_button
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 打开
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__110809__2_s1
+  name: 顶部区域/视图(#110809)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 名称
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 名称
+  - action: mouse_click
+    selector:
+      name: 桌面
+      role: list item
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 名称
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 名称
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 大小
+      role: column header
+  - action: mouse_drag
+    selector:
+      name: 名称
+      role: column header
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: test_input_123
+      role: list item
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_hot_key
+    key: ctrl+a
+  - action: mouse_click
+    selector:
+      name: test_input_123
+      role: list item
+  - action: keyboard_press
+    key: f2
+  - action: keyboard_hot_key
+    key: ctrl+a
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 修改时间
+  - action: mouse_drag
+    selector:
+      name: 大小
+      role: column header
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 桌面
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 大小
+      role: column header
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: escape
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: escape
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: mouse_click
+    selector:
+      name: 桌面
+      role: list item
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 修改时间
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 大小
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 类型
+  - action: element_action
+    selector:
+      name: listView_button
+      role: check box
+    do: click
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 修改时间
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 大小
+  - action: dtk_context_menu
+    x: 700
+    y: 400
+    items:
+    - 排序方式
+    - 类型
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      name: 修改时间
+      role: column header
+  - action: mouse_double_click
+    selector:
+      name: test_input_123
+      role: list item
+  - action: mouse_click
+    selector:
+      name: 桌面
+      role: list item
+  assert_steps:
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+teardown:
+- action: session_stop

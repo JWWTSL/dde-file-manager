@@ -1,0 +1,529 @@
+version: '1.0'
+app: dde-file-manager
+summary:
+  total_interactive: 104
+  with_accessible_id: 0
+  missing_accessible_id: 104
+gaps:
+- id: n3
+  name: DTitlebarIconLabel
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DTitlebarIconLabel") in source code
+- id: n9
+  name: DTitlebarDWindowOptionButton
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DTitlebarDWindowOptionButton") in source code
+- id: n10
+  name: DTitlebarDWindowMinButton
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DTitlebarDWindowMinButton") in source code
+- id: n11
+  name: DTitlebarDWindowMaxButton
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DTitlebarDWindowMaxButton") in source code
+- id: n12
+  name: DTitlebarDWindowQuitFullscreenButton
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DTitlebarDWindowQuitFullscreenButton") in source
+    code
+- id: n13
+  name: DTitlebarDWindowCloseButton
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DTitlebarDWindowCloseButton") in source code
+- id: n24
+  name: 清 空
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("清 空") in source code
+- id: n29
+  name: 我的目录
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("我的目录") in source code
+- id: n30
+  name: 桌面
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("桌面") in source code
+- id: n31
+  name: 视频
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("视频") in source code
+- id: n32
+  name: 音乐
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("音乐") in source code
+- id: n33
+  name: 图片
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("图片") in source code
+- id: n34
+  name: 文档
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("文档") in source code
+- id: n35
+  name: 下载
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("下载") in source code
+- id: n36
+  name: 磁盘列表
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("磁盘列表") in source code
+- id: n37
+  name: 系统盘
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("系统盘") in source code
+- id: n38
+  name: 数据盘
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("数据盘") in source code
+- id: n39
+  name: 10.8.12.197
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("10.8.12.197") in source code
+- id: n40
+  name: 10.8.12.94
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("10.8.12.94") in source code
+- id: n46
+  name: .claude
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName(".claude") in source code
+- id: n47
+  name: .git
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName(".git") in source code
+- id: n48
+  name: .github
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName(".github") in source code
+- id: n49
+  name: .obs
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName(".obs") in source code
+- id: n50
+  name: .pms
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName(".pms") in source code
+- id: n51
+  name: .trellis
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName(".trellis") in source code
+- id: n52
+  name: .tx
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName(".tx") in source code
+- id: n53
+  name: 3rdparty
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("3rdparty") in source code
+- id: n54
+  name: assets
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("assets") in source code
+- id: n55
+  name: autotest
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("autotest") in source code
+- id: n56
+  name: autotests
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("autotests") in source code
+- id: n57
+  name: build
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("build") in source code
+- id: n58
+  name: cmake
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("cmake") in source code
+- id: n59
+  name: debian
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("debian") in source code
+- id: n60
+  name: docs
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("docs") in source code
+- id: n61
+  name: examples
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("examples") in source code
+- id: n62
+  name: include
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("include") in source code
+- id: n63
+  name: LICENSES
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("LICENSES") in source code
+- id: n64
+  name: obj-x86_64-linux-gnu
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("obj-x86_64-linux-gnu") in source code
+- id: n65
+  name: src
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("src") in source code
+- id: n66
+  name: tests
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("tests") in source code
+- id: n67
+  name: translations
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("translations") in source code
+- id: n68
+  name: .clang-format
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName(".clang-format") in source code
+- id: n69
+  name: .clog.toml
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName(".clog.toml") in source code
+- id: n70
+  name: .gitignore
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName(".gitignore") in source code
+- id: n71
+  name: .gitlab-ci.yml
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName(".gitlab-ci.yml") in source code
+- id: n72
+  name: .project.json
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName(".project.json") in source code
+- id: n73
+  name: .qmake.conf
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName(".qmake.conf") in source code
+- id: n74
+  name: 统信桌面操作系统 V25-用例.xlsx
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("统信桌面操作系统 V25-用例.xlsx") in source code
+- id: n75
+  name: AGENTS.md
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("AGENTS.md") in source code
+- id: n76
+  name: CMakeLists.txt
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("CMakeLists.txt") in source code
+- id: n77
+  name: LICENSE
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("LICENSE") in source code
+- id: n78
+  name: README.md
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("README.md") in source code
+- id: n79
+  name: README.zh_CN.md
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("README.zh_CN.md") in source code
+- id: n80
+  name: REUSE.toml
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("REUSE.toml") in source code
+- id: n84
+  name: '...'
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("...") in source code
+- id: n85
+  name: 文档
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("文档") in source code
+- id: n86
+  name: AT-TEST
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("AT-TEST") in source code
+- id: n87
+  name: dde-file-manager
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("dde-file-manager") in source code
+- id: n91
+  name: DLineEditChildLineEdit
+  role: text
+  class_name: ''
+  suggestion: Add setAccessibleName("DLineEditChildLineEdit") in source code
+- id: n92
+  name: DLineEditClearButton
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DLineEditClearButton") in source code
+- id: n93
+  name: DSearchEditIconButton
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DSearchEditIconButton") in source code
+- id: n95
+  name: DSearchEditIconButton
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DSearchEditIconButton") in source code
+- id: n99
+  name: viewoptions_button
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("viewoptions_button") in source code
+- id: n102
+  name: iconView_button
+  role: check box
+  class_name: ''
+  suggestion: Add setAccessibleName("iconView_button") in source code
+- id: n103
+  name: listView_button
+  role: check box
+  class_name: ''
+  suggestion: Add setAccessibleName("listView_button") in source code
+- id: n104
+  name: treeView_button
+  role: check box
+  class_name: ''
+  suggestion: Add setAccessibleName("treeView_button") in source code
+- id: n107
+  name: DTitlebarIconLabel
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DTitlebarIconLabel") in source code
+- id: n113
+  name: DTitlebarDWindowOptionButton
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DTitlebarDWindowOptionButton") in source code
+- id: n114
+  name: DTitlebarDWindowMinButton
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DTitlebarDWindowMinButton") in source code
+- id: n115
+  name: DTitlebarDWindowMaxButton
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DTitlebarDWindowMaxButton") in source code
+- id: n116
+  name: DTitlebarDWindowQuitFullscreenButton
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DTitlebarDWindowQuitFullscreenButton") in source
+    code
+- id: n117
+  name: DTitlebarDWindowCloseButton
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DTitlebarDWindowCloseButton") in source code
+- id: n121
+  name: dde-file-manager
+  role: page tab list
+  class_name: ''
+  suggestion: Add setAccessibleName("dde-file-manager") in source code
+- id: n122
+  name: dde-file-manager
+  role: page tab
+  class_name: ''
+  suggestion: Add setAccessibleName("dde-file-manager") in source code
+- id: n123
+  name: 向左滚动
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("向左滚动") in source code
+- id: n124
+  name: 向右滚动
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("向右滚动") in source code
+- id: n125
+  name: DTabBarAddButton
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("DTabBarAddButton") in source code
+- id: n129
+  name: back_button
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("back_button") in source code
+- id: n130
+  name: forword_button
+  role: button
+  class_name: ''
+  suggestion: Add setAccessibleName("forword_button") in source code
+- id: n131
+  name: ''
+  role: text
+  class_name: ''
+  suggestion: Add setAccessibleName("") in source code
+- id: n136
+  name: side_bar_view
+  role: tree
+  class_name: ''
+  suggestion: Add setAccessibleName("side_bar_view") in source code
+- id: n164
+  name: 主题
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("主题") in source code
+- id: n166
+  name: 浅色
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("浅色") in source code
+- id: n167
+  name: 深色
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("深色") in source code
+- id: n168
+  name: 跟随系统
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("跟随系统") in source code
+- id: n169
+  name: 帮助
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("帮助") in source code
+- id: n170
+  name: 关于
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("关于") in source code
+- id: n171
+  name: 退出
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("退出") in source code
+- id: n172
+  name: 新建窗口
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("新建窗口") in source code
+- id: n173
+  name: 新建标签页
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("新建标签页") in source code
+- id: n174
+  name: 连接到服务器
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("连接到服务器") in source code
+- id: n175
+  name: 设置共享密码
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("设置共享密码") in source code
+- id: n176
+  name: 设置
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("设置") in source code
+- id: n180
+  name: 图标视图
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("图标视图") in source code
+- id: n181
+  name: 列表视图
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("列表视图") in source code
+- id: n182
+  name: 树形视图
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("树形视图") in source code
+- id: n185
+  name: 浅色
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("浅色") in source code
+- id: n186
+  name: 深色
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("深色") in source code
+- id: n187
+  name: 跟随系统
+  role: menu item
+  class_name: ''
+  suggestion: Add setAccessibleName("跟随系统") in source code
+- id: n190
+  name: 名称之前
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("名称之前") in source code
+- id: n191
+  name: 名称之后
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("名称之后") in source code
+- id: n196
+  name: 替换文本
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("替换文本") in source code
+- id: n197
+  name: 添加文本
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("添加文本") in source code
+- id: n198
+  name: 自定义文本
+  role: list item
+  class_name: ''
+  suggestion: Add setAccessibleName("自定义文本") in source code

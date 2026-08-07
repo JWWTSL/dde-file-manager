@@ -1,0 +1,857 @@
+name: 冒烟用例_计算机界面_文管设置(#132333)_suite
+app: dde-file-manager
+description: ''
+module: 冒烟用例_计算机界面_文管设置(#132333)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__132333__1_s1
+  name: 冒烟用例/计算机界面/文管设置(#132333)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DMainWindow
+      role: window
+    do: click
+  - action: dtk_main_menu
+    items:
+    - 修改磁盘密码
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowCloseButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowCloseButton
+      role: button
+    do: click
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DMainWindow
+      role: window
+    do: click
+  - action: dtk_main_menu
+    items:
+    - 修改磁盘密码
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: '~`!@#$%^&*()-_+=|{}[]:'
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_type
+    text: test_input_123
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DMainWindow
+      role: window
+    do: click
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowOptionButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DMainWindow
+      role: window
+    do: click
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowOptionButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DMainWindow
+      role: window
+    do: click
+  - action: dtk_main_menu
+    items:
+    - 修改磁盘密码
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowOptionButton
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowOptionButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 当前密码
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 新密码
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 重复密码
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 新密码和旧密码不能相同
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowCloseButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 关 闭
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 无法获取加密磁盘列表
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 多磁盘密码不一致
+      role: button
+    do: click
+  - action: element_action
+    selector:
+      name: 初始化失败
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 计算机
+      role: list item
+    items:
+    - 在新窗口打开
+  - action: dtk_context_menu
+    selector:
+      name: 计算机
+      role: list item
+    items:
+    - 在新标签中打开
+  - action: dtk_context_menu
+    selector:
+      name: 计算机
+      role: list item
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 计算机
+      role: list item
+    items:
+    - 重命名
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 重命名
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  assert_steps:
+  - action: assert_not_exists
+    selector:
+      name: 标签分组
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 水印
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 打开
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 修改磁盘密码需要认证
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 为：正在修改磁盘密码，请
+  - action: assert_element
+    selector:
+      name: 修改过程中无法关闭窗口
+  - action: assert_element
+    selector:
+      name: 磁盘密码修改成功
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 新密码和旧密码不能相同
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 密码不一致
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_not_exists
+    selector:
+      name: 修改磁盘密码入口
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_not_exists
+    selector:
+      name: 修改磁盘密码入口
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 修改磁盘密码
+  - action: assert_element
+    selector:
+      name: 当前密码
+  - action: assert_element
+    selector:
+      name: 新密码
+  - action: assert_element
+    selector:
+      name: 重复密码
+  - action: assert_element
+    selector:
+      name: 修改磁盘密码需要认证
+  - action: assert_element
+    selector:
+      name: 新密码和旧密码不能相同
+  - action: assert_element
+    selector:
+      name: 正在修改磁盘密码，请稍候…
+  - action: assert_element
+    selector:
+      name: 修改过程中无法关闭窗口
+  - action: assert_element
+    selector:
+      name: 磁盘密码修改成功
+  - action: assert_element
+    selector:
+      name: 磁盘密码修改失败
+  - action: assert_element
+    selector:
+      name: 关 闭
+  - action: assert_element
+    selector:
+      name: 无法获取加密磁盘列表
+  - action: assert_element
+    selector:
+      name: 多磁盘密码不一致
+  - action: assert_element
+    selector:
+      name: 初始化失败
+  - action: assert_element
+    selector:
+      name: 系统盘
+  - action: assert_element
+    selector:
+      name: 系统盘
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 显示隐藏文件
+  - action: assert_process_running
+- id: suite__132333__2_s1
+  name: 冒烟用例/计算机界面/文管设置(#132333)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowOptionButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: DTitlebarDWindowOptionButton
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 桌面
+      role: list item
+  - action: dtk_context_menu
+    selector:
+      name: 计算机
+      role: list item
+    items:
+    - 属性
+  - action: dtk_context_menu
+    selector:
+      name: 计算机
+      role: list item
+    items:
+    - 打开
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 计算机
+      role: list item
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: mouse_drag
+    selector:
+      role: list item
+  - action: mouse_drag
+    selector:
+      role: list item
+  - action: mouse_drag
+    selector:
+      name: 回收站
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 系统盘
+      role: list item
+    items:
+    - 在新窗口打开
+  - action: dtk_context_menu
+    selector:
+      name: 系统盘
+      role: list item
+    items:
+    - 在新标签中打开
+  - action: dtk_context_menu
+    selector:
+      name: 系统盘
+      role: list item
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 计算机
+      role: list item
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 系统盘
+      role: list item
+    items:
+    - 在新窗口打开
+  - action: dtk_context_menu
+    selector:
+      name: 系统盘
+      role: list item
+    items:
+    - 在新标签中打开
+  - action: dtk_context_menu
+    selector:
+      name: 系统盘
+      role: list item
+    items:
+    - 属性
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 系统盘
+      role: list item
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 计算机
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: mouse_double_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: mouse_double_click
+    selector:
+      name: 我的目录
+      role: list item
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  assert_steps:
+  - action: assert_element
+    selector:
+      name: 计算机工作区隐藏第三方插件
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_element
+    selector:
+      name: 计算机工作区隐藏我的目录
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 我的目录
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 在新窗口打开
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 计算机
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: （小版本号）
+  - action: assert_element
+    selector:
+      name: 系统盘
+  - action: assert_element
+    selector:
+      name: 系统盘
+  - action: assert_element
+    selector:
+      name: 属性
+  - action: assert_element
+    selector:
+      name: 系统盘
+  - action: assert_element
+    selector:
+      name: 系统盘
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 视频
+  - action: assert_element
+    selector:
+      name: 音乐
+  - action: assert_element
+    selector:
+      name: 图片
+  - action: assert_element
+    selector:
+      name: 桌面
+  - action: assert_element
+    selector:
+      name: 下载
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+  - action: assert_window
+- id: suite__132333__2_s2
+  name: 冒烟用例/计算机界面/文管设置(#132333)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: element_action
+    selector:
+      name: DMainWindow
+      role: window
+    do: click
+  - action: element_action
+    selector:
+      name: 文件和文件夹混合排序
+      role: check box
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: element_action
+    selector:
+      name: 隐藏
+      role: button
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 显示隐藏文件
+      role: list item
+    items:
+    - 重命名
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 显示隐藏文件
+  - action: assert_element
+    selector:
+      name: 隐藏文件提示弹窗
+- id: suite__132333__3_s1
+  name: 冒烟用例/计算机界面/文管设置(#132333)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 开启普通删除提示
+      role: list item
+    items:
+    - 删除
+  - action: dtk_main_menu
+    items:
+    - 设置
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 删除
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 删除
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 删除
+  - action: dtk_context_menu
+    selector:
+      role: list item
+    items:
+    - 删除
+  - action: element_action
+    selector:
+      name: DLineEditClearButton
+      role: button
+    do: click
+  - action: dtk_context_menu
+    selector:
+      name: 保险箱
+      role: list item
+    items:
+    - 删除
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 新建文档
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 新建文件夹
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 重命名
+  - action: dtk_context_menu
+    selector:
+      name: 桌面
+      role: list item
+    items:
+    - 重命名
+  assert_steps:
+  - action: assert_not_exists
+    selector:
+      name: 快捷访问分组
+  - action: assert_element
+    selector:
+      name: 快捷访问
+  - action: assert_not_exists
+    selector:
+      name: 分区分组
+  - action: assert_not_exists
+    selector:
+      name: 网络分组
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 显示文件扩展名
+  - action: assert_element
+    selector:
+      name: 最近使用
+  - action: assert_element
+    selector:
+      name: 显示隐藏文件
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_not_exists
+    selector:
+      name: 操作文件的扩展名
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 开启普通删除提示
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 设置
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: test.tar.7z
+  - action: assert_element
+    selector:
+      name: test
+  - action: assert_element
+    selector:
+      name: test
+  - action: assert_element
+    selector:
+      name: test.jpg.png
+  - action: assert_not_exists
+    selector:
+      name: 后缀
+  - action: assert_window
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+teardown:
+- action: session_stop

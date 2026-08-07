@@ -1,0 +1,431 @@
+name: 主界面区域_文件操作_撤销(#126085)_suite
+app: dde-file-manager
+description: ''
+module: 主界面区域_文件操作_撤销(#126085)
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager
+  wait: 3.0
+suites:
+- id: suite__126085__1_s1
+  name: 主界面区域/文件操作/撤销(#126085)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 剪切
+  - action: element_action
+    selector:
+      name: 图片
+      role: list item
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+v
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 重命名
+  - action: element_action
+    selector:
+      name: 替换文本
+      role: list item
+    do: click
+  - action: keyboard_type
+    text: word
+  - action: element_action
+    selector:
+      name: 重命名
+      role: button
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: test.txt
+      role: list item
+    items:
+    - 剪切
+  - action: keyboard_hot_key
+    key: ctrl+v
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    x: 400
+    y: 300
+    items:
+    - 剪切
+  - action: keyboard_hot_key
+    key: ctrl+v
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: test.txt
+      role: list item
+    items:
+    - 剪切
+  - action: keyboard_hot_key
+    key: ctrl+v
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: test.txt
+      role: list item
+    items:
+    - 剪切
+  - action: keyboard_hot_key
+    key: ctrl+v
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+shift+/
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_type
+    text: test_input_123
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: dtk_context_menu
+    selector:
+      name: test.txt
+      role: list item
+    items:
+    - 还原
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_element
+    selector:
+      name: 重命名
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_element
+    selector:
+      name: 撤销操作Ctrl+Z
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+- id: suite__126085__2_s1
+  name: 主界面区域/文件操作/撤销(#126085)功能测试
+  description: ''
+  tags: []
+  steps:
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: delete
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_press
+    key: delete
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: keyboard_hot_key
+    key: ctrl+y
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: element_action
+    selector:
+      name: 确定
+      role: button
+    do: click
+  - action: keyboard_hot_key
+    key: ctrl+z
+  - action: element_action
+    selector:
+      name: 取消
+      role: button
+    do: click
+  - action: wait
+    wait: 1.0
+  - action: wait
+    wait: 1.0
+  assert_steps:
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_process_running
+  - action: assert_window
+  - action: assert_process_running
+teardown:
+- action: session_stop
