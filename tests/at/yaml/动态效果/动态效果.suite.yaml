@@ -9,16 +9,16 @@ module: 动态效果
 tags: []
 fast_fail: false
 env_check: []
-setup: []
+setup:
+- action: session_start
+  command: dde-file-manager --open-home
+  wait: 5.0
 suites:
 - id: case_dynamic_sidebar_view
   name: 侧边栏视图验证
   description: '验证侧边栏树视图(side_bar_view)存在'
   tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
+  steps: []
   assert_steps:
   - action: assert_element
     ref: side_bar_view
@@ -27,9 +27,6 @@ suites:
   description: '验证侧边栏"桌面"导航项存在并可点击'
   tags: []
   steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
   - action: element_action
     ref: 桌面
     do: click
@@ -42,9 +39,6 @@ suites:
   description: '验证侧边栏"快捷访问"导航项存在并可点击'
   tags: []
   steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
   - action: element_action
     ref: 快捷访问
     do: click

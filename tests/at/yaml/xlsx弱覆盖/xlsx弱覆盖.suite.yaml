@@ -1,0 +1,762 @@
+# SPDX-FileCopyrightText: 2026 UnionTech Software Technology Co., Ltd.
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+name: xlsx弱覆盖_suite
+app: dde-file-manager
+description: '从 V25 xlsx 筛选的弱覆盖 smoke 用例：只验证稳定入口动作和可访问元素存在'
+module: xlsx弱覆盖
+tags: [smoke, weak_coverage]
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager --open-home
+  wait: 5.0
+suites:
+- id: case_2022349
+  name: 最近使用-排序
+  description: '弱覆盖：进入最近使用并验证入口存在，不覆盖排序结果校验'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 最近使用
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 最近使用
+- id: case_2021321
+  name: 智能语义搜索-错误日期格式
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2021319
+  name: 智能语义搜索-本年精确日期
+  description: '弱覆盖：进入图片目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_2021317
+  name: 智能语义搜索-本年精确月份
+  description: '弱覆盖：进入图片目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_2021315
+  name: 智能语义搜索-精确年份
+  description: '弱覆盖：进入图片目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_2021313
+  name: 智能语义搜索-绝对日期
+  description: '弱覆盖：进入图片目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_2021301
+  name: 智能语义搜索-本月泛化词
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2021299
+  name: 智能语义搜索-本月
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2021297
+  name: 智能语义搜索-上周泛化词
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2021295
+  name: 智能语义搜索-上周
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2021293
+  name: 智能语义搜索-本周泛化词
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2021291
+  name: 智能语义搜索-本周
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2019753
+  name: 智能语义搜索-微信接收泛化词
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2019751
+  name: 智能语义搜索-微信接收
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2019737
+  name: 智能语义搜索-设计源文件后缀
+  description: '弱覆盖：进入桌面并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_2019223
+  name: 智能语义搜索-图片目录泛化词
+  description: '弱覆盖：进入图片目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_2019221
+  name: 智能语义搜索-图片目录
+  description: '弱覆盖：进入图片目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_2019217
+  name: 智能语义搜索-文档目录泛化词
+  description: '弱覆盖：进入图片目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_2019177
+  name: 智能语义搜索-文档目录
+  description: '弱覆盖：进入图片目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_2019153
+  name: 智能语义搜索-下载目录
+  description: '弱覆盖：进入桌面并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_2019141
+  name: 智能语义搜索-关键词加位置槽
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2018925
+  name: 智能语义搜索-动态精准大小泛化词
+  description: '弱覆盖：进入桌面并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_2018851
+  name: 智能语义搜索-动态精准大小大于500M
+  description: '弱覆盖：进入桌面并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_2018831
+  name: 智能语义搜索-关键词包含泛化词及文件后缀
+  description: '弱覆盖：进入桌面并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_2018829
+  name: 智能语义搜索-设计源文件泛化词
+  description: '弱覆盖：进入桌面并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_2018827
+  name: 智能语义搜索-设计源文件
+  description: '弱覆盖：进入桌面并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_2018813
+  name: 智能语义搜索-视频类型
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2018723
+  name: 智能语义搜索-完整精确日期
+  description: '弱覆盖：进入图片目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_2018721
+  name: 智能语义搜索-精确年月
+  description: '弱覆盖：进入图片目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_2018719
+  name: 智能语义搜索-精确月份
+  description: '弱覆盖：进入图片目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_2018713
+  name: 智能语义搜索-绝对月份
+  description: '弱覆盖：进入音乐目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 音乐
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 音乐
+- id: case_2018707
+  name: 智能语义搜索-槽位部分关键词
+  description: '弱覆盖：进入音乐目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 音乐
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 音乐
+- id: case_2018705
+  name: 智能语义搜索-上个月泛化词
+  description: '弱覆盖：进入音乐目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 音乐
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 音乐
+- id: case_2018703
+  name: 智能语义搜索-去年泛化词
+  description: '弱覆盖：进入下载目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 下载
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 下载
+- id: case_2018701
+  name: 智能语义搜索-去年
+  description: '弱覆盖：进入下载目录并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 下载
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 下载
+- id: case_2018699
+  name: 智能语义搜索-关键词有空格
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2018687
+  name: 智能语义搜索-高级筛选
+  description: '弱覆盖：进入桌面并验证入口存在，不覆盖搜索语义结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_2009163
+  name: 搜索专项优化-LVM 搜索
+  description: '弱覆盖：进入主目录并验证入口存在，不覆盖搜索结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 主目录
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 主目录
+- id: case_2002019
+  name: 图片文本内容搜索-OCR 多行文本
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖 OCR 搜索结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2002017
+  name: 图片文本内容搜索-摘要超出一行
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖 OCR 搜索结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2000559
+  name: 全局搜索-图片文本内容多关键词
+  description: '弱覆盖：进入桌面并验证入口存在，不覆盖搜索结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_2000451
+  name: 全局搜索-图片文本内容搜索结果操作
+  description: '弱覆盖：进入图片目录并验证入口存在，不覆盖搜索结果操作'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_2000449
+  name: 文管图片文本内容搜索结果操作
+  description: '弱覆盖：进入桌面并验证入口存在，不覆盖搜索结果操作'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_2000359
+  name: 全局搜索-图片文本内容预览搜索结果
+  description: '弱覆盖：进入图片目录并验证入口存在，不覆盖预览结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_2000319
+  name: 图片文本内容搜索-开启后搜索
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖 OCR 搜索结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_2000317
+  name: 图片文本内容搜索-功能默认关闭
+  description: '弱覆盖：进入图片目录并验证入口存在，不覆盖设置项状态'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_1998489
+  name: 搜索结果高亮显示关键词
+  description: '弱覆盖：进入文档目录并验证入口存在，不覆盖搜索高亮结果'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 文档
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 文档
+- id: case_1990355
+  name: 无法删除时彻底删除-空间足够删除文件
+  description: '弱覆盖：进入系统盘并验证入口存在，不执行删除操作'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 系统盘
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 系统盘
+- id: case_1990353
+  name: 无法删除时彻底删除-空间不足流程
+  description: '弱覆盖：进入桌面并验证入口存在，不执行删除操作'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_1990351
+  name: 无法删除时彻底删除-系统盘空间不足
+  description: '弱覆盖：进入回收站并验证入口存在，不执行删除操作'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 回收站
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 回收站
+- id: case_1990345
+  name: 无法删除时彻底删除-数据盘空间不足 shift delete
+  description: '弱覆盖：进入桌面并验证入口存在，不执行删除操作'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_1990341
+  name: 无法删除时彻底删除-删除大量小文件
+  description: '弱覆盖：进入图片目录并验证入口存在，不执行删除操作'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 图片
+- id: case_1990315
+  name: 桌面图标选中样式优化-兼容性测试
+  description: '弱覆盖：进入桌面并验证入口存在，不覆盖视觉样式'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_1977285
+  name: 主目录图标-右键操作-3
+  description: '弱覆盖：进入主目录并验证入口存在，不执行右键操作'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 主目录
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 主目录
+- id: case_1977283
+  name: 主目录图标-右键操作-2
+  description: '弱覆盖：进入主目录并验证入口存在，不执行右键操作'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 主目录
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 主目录
+- id: case_1976581
+  name: 右键菜单点击优化
+  description: '弱覆盖：进入桌面并验证入口存在，不执行右键菜单操作'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_1974339
+  name: 新标签默认目录设置后打开
+  description: '弱覆盖：进入计算机并验证入口存在，不覆盖设置菜单和标签页'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 计算机
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 计算机
+- id: case_1967945
+  name: 预览侧边栏-重命名文件后观察预览区
+  description: '弱覆盖：进入音乐目录并验证入口存在，不覆盖重命名和预览'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 音乐
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 音乐
+- id: case_1967759
+  name: 预览侧边栏-反复放大缩小右侧边栏
+  description: '弱覆盖：进入文档目录并验证入口存在，不覆盖预览侧边栏'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 文档
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 文档
+- id: case_1967757
+  name: 预览侧边栏-拖拽超出最大宽度
+  description: '弱覆盖：进入桌面并验证入口存在，不覆盖拖拽和预览侧边栏'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_1967755
+  name: 预览侧边栏-未开启显示预览
+  description: '弱覆盖：进入桌面并验证入口存在，不覆盖预览开关'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 桌面
+- id: case_1967753
+  name: 预览侧边栏-大图片预览
+  description: '弱覆盖：进入文档目录并验证入口存在，不覆盖图片预览'
+  tags: [weak_coverage]
+  steps:
+  - action: element_action
+    ref: 文档
+    do: click
+    wait: 0.3
+  assert_steps:
+  - action: assert_element
+    ref: 文档
+teardown:
+- action: session_stop
