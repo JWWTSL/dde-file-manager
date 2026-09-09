@@ -1,0 +1,15 @@
+elements:
+  SearchButton:
+    name: SearchButton
+    role: button
+  side_bar_view:
+    name: side_bar_view
+    role: tree
+  back_button:
+    name: back_button
+    role: button
+  桌面:
+    name: 桌面
+    role: table cell
+  文档:
+    name: 文档

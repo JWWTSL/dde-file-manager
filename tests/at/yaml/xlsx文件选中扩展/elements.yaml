@@ -1,0 +1,13 @@
+elements:
+  SearchButton:
+    name: SearchButton
+    role: button
+  side_bar_view:
+    name: side_bar_view
+    role: tree
+  back_button:
+    name: back_button
+    role: button
+  forword_button:
+    name: forword_button
+    role: button

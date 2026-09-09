@@ -1,0 +1,234 @@
+name: xlsx搜索导航扩展2_suite
+app: dde-file-manager
+description: 从 V25 xlsx 映射的搜索输入Enter和地址栏导航扩展用例
+module: xlsx搜索导航扩展2
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: dde-file-manager --open-home
+  wait: 5.0
+suites:
+- id: case_1805535
+  name: 【搜索】【支持筛选搜索】文管单击"搜索"按钮后，输入关键字进行搜索
+  description: |
+    xlsx 用例编号: 1805535
+    前置条件: 无
+    测试步骤:
+    1. 打开文管，顶部工具栏，单击"搜索"按钮
+    2. 搜索输入框键入关键字，然后按键Enter
+    预期结果:
+    1. 显示搜索输入框，输入框旁显示"筛选"按钮
+    2. 显示匹配的搜索结果
+  tags: []
+  vars:
+    xlsx_id: '1805535'
+    case_type: 功能测试
+  steps:
+  - action: element_action
+    ref: SearchButton
+    do: click
+    wait: 0.8
+  - action: keyboard_type
+    text: test
+    wait: 0.5
+  - action: keyboard_press
+    key: enter
+    wait: 2.0
+  assert_steps:
+  - action: assert_element
+    ref: SearchButton
+  - action: assert_element
+    ref: AdvancedButton
+- id: case_1805497
+  name: 【搜索】【支持筛选搜索】文管单击搜索按钮后，输入关键字进行搜索
+  description: |
+    xlsx 用例编号: 1805497
+    前置条件: 无
+    测试步骤:
+    1. 打开文管，顶部工具栏，单击"搜索"按钮
+    2. 搜索输入框键入关键字，然后按键Enter
+    预期结果:
+    1. 显示搜索输入框，输入框旁显示"筛选"按钮
+    2. 显示匹配的搜索结果
+  tags: []
+  vars:
+    xlsx_id: '1805497'
+    case_type: 功能测试
+  steps:
+  - action: element_action
+    ref: SearchButton
+    do: click
+    wait: 0.8
+  - action: keyboard_type
+    text: deepin
+    wait: 0.5
+  - action: keyboard_press
+    key: enter
+    wait: 2.0
+  assert_steps:
+  - action: assert_element
+    ref: SearchButton
+  - action: assert_element
+    ref: AdvancedButton
+- id: case_1805501
+  name: 【搜索】【支持筛选搜索】文管单击搜索按钮后，输入关键字和筛选过滤条件，进行搜索
+  description: |
+    xlsx 用例编号: 1805501
+    前置条件: 无
+    测试步骤:
+    1. 打开文管，顶部工具栏，单击"搜索"按钮
+    2. 单击"筛选"按钮，选择筛选过滤条件，然后搜索输入框键入关键字，然后按键Enter
+    预期结果:
+    1. 显示搜索输入框，输入框旁显示"筛选"按钮
+    2. 显示关键字和筛选都匹配的搜索结果
+  tags: []
+  vars:
+    xlsx_id: '1805501'
+    case_type: 功能测试
+  steps:
+  - action: element_action
+    ref: SearchButton
+    do: click
+    wait: 0.8
+  - action: element_action
+    ref: AdvancedButton
+    do: click
+    wait: 0.8
+  - action: keyboard_type
+    text: config
+    wait: 0.5
+  - action: keyboard_press
+    key: enter
+    wait: 2.0
+  assert_steps:
+  - action: assert_element
+    ref: AdvancedButton
+  - action: assert_element
+    ref: SearchButton
+- id: case_1816667
+  name: 地址栏-激活状态显示
+  description: |
+    xlsx 用例编号: 1816667
+    前置条件: 文件管理器已开启
+    测试步骤:
+    1. 点击地址栏输入框
+    2. 输入地址"/home"，单击输入框外任意位置
+    3. 输入地址"/home"，按enter键
+    预期结果:
+    1. 输入焦点出现在输入框
+    2. 输入框失去焦点，退出编辑状态，恢复默认状态
+    3. 跳转到/home目录
+  tags: []
+  vars:
+    xlsx_id: '1816667'
+    case_type: 功能测试
+  steps:
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /home
+    wait: 0.5
+  - action: keyboard_press
+    key: escape
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /home
+    wait: 0.5
+  - action: keyboard_press
+    key: enter
+    wait: 1.5
+  assert_steps:
+  - action: assert_element
+    ref: SearchButton
+  - action: assert_element
+    ref: side_bar_view
+- id: case_1805085
+  name: '[t]历史导航-面包屑切换浏览目录'
+  description: |
+    xlsx 用例编号: 1805085
+    前置条件: 无
+    测试步骤:
+    1. 打开文件管理器，进入任意目录
+    2. 点击面包屑上的任意目录
+    3. 再次进入其他目录
+    预期结果:
+    1. 面包屑展示始终从家目录开始，每进入一个目录就增加一个目录名字的面包屑
+    2. 直接切换到所点击的目录中
+    3. 面包屑更新为家目录到当前目录的路径
+  tags: []
+  vars:
+    xlsx_id: '1805085'
+    case_type: 功能测试
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 1.0
+  - action: element_action
+    ref: 文档
+    do: click
+    wait: 1.0
+  - action: element_action
+    ref: back_button
+    do: click
+    wait: 1.0
+  - action: element_action
+    ref: forword_button
+    do: click
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    ref: back_button
+  - action: assert_element
+    ref: side_bar_view
+- id: case_1805095
+  name: 文管历史导航，检查多层级目录路径_
+  description: |
+    xlsx 用例编号: 1805095
+    前置条件: 无
+    测试步骤:
+    1. 桌面新建多个层级的文件夹，双击桌面文件夹
+    2. 访问该文件夹内部的多个层级目录，检查顶部历史导航的路径是否正确
+    预期结果:
+    1. 打开文管窗口，路径定位到该文件夹
+    2. 正确显示多个层级的历史路径
+  tags: []
+  vars:
+    xlsx_id: '1805095'
+    case_type: 功能测试
+  steps:
+  - action: element_action
+    ref: 桌面
+    do: click
+    wait: 1.0
+  - action: element_action
+    ref: 图片
+    do: click
+    wait: 1.0
+  - action: element_action
+    ref: 下载
+    do: click
+    wait: 1.0
+  - action: element_action
+    ref: back_button
+    do: click
+    wait: 1.0
+  - action: element_action
+    ref: back_button
+    do: click
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    ref: back_button
+  - action: assert_element
+    ref: forword_button
+  - action: assert_element
+    ref: side_bar_view
+teardown:
+- action: session_stop
