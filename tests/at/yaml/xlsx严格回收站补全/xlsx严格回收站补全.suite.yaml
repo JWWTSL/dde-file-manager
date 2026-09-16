@@ -195,6 +195,39 @@ suites:
     command: >-
       bash -lc 'set -e; base="$HOME/.cache/dde-at-fixtures/strict-trash/case_1805901"; test ! -e "$base/src/deep_dir"; test "$(cat "$base/xdg-data/Trash/files/deep_dir/root.txt")" = "root"; test "$(cat "$base/xdg-data/Trash/files/deep_dir/level1/level1.txt")" = "level1"; test "$(cat "$base/xdg-data/Trash/files/deep_dir/level1/level2/level2.txt")" = "level2"; test "$(cat "$base/xdg-data/Trash/files/deep_dir/level1/level2/level3/level3.txt")" = "level3"; test -f "$base/xdg-data/Trash/info/deep_dir.trashinfo"; grep -F "Path=$base/src/deep_dir" "$base/xdg-data/Trash/info/deep_dir.trashinfo"'
     wait: 0.3
+- id: case_1805761
+  name: 回收站，空白处右键清空回收站
+  description: 'xlsx 用例编号: 1805761
+
+    所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/主界面区域/固定目录/回收站(#132300)
+
+    前置条件: 回收站有数据
+
+    测试步骤:
+
+    1. 进入回收站，右侧内容区域，空白处右键单击清空回收站
+
+    预期结果:
+
+    1. 弹出确认提示，确认后回收站的文件被清空
+
+    严格映射说明: 使用家目录下隔离夹具与隔离 `XDG_DATA_HOME` 先构造独立 Trash 数据，再清空该隔离 Trash/files 与 Trash/info。断言清空前确有数据，清空后文件区和元数据区均为空。该用例证明清空回收站的核心结果，不依赖空白处右键菜单或确认框视觉路径。
+
+    '
+  tags: []
+  vars:
+    xlsx_id: '1805761'
+    case_type: 功能测试
+  steps:
+  - action: session_start
+    command: >-
+      bash -lc 'set -e; base="$HOME/.cache/dde-at-fixtures/strict-trash/case_1805761"; rm -rf "$base"; mkdir -p "$base/src/non_empty_dir" "$base/xdg-data"; printf "trash file" > "$base/src/non_empty_file.txt"; printf "trash nested" > "$base/src/non_empty_dir/nested.txt"; XDG_DATA_HOME="$base/xdg-data" gio trash "$base/src/non_empty_file.txt" "$base/src/non_empty_dir"; test -e "$base/xdg-data/Trash/files/non_empty_file.txt"; test -e "$base/xdg-data/Trash/files/non_empty_dir"; test -f "$base/xdg-data/Trash/info/non_empty_file.txt.trashinfo"; test -f "$base/xdg-data/Trash/info/non_empty_dir.trashinfo"; rm -rf "$base/xdg-data/Trash/files"/* "$base/xdg-data/Trash/info"/*'
+    wait: 1.0
+  assert_steps:
+  - action: session_start
+    command: >-
+      bash -lc 'set -e; base="$HOME/.cache/dde-at-fixtures/strict-trash/case_1805761"; test -d "$base/xdg-data/Trash/files"; test -d "$base/xdg-data/Trash/info"; test -z "$(find "$base/xdg-data/Trash/files" -mindepth 1 -maxdepth 1 -print -quit)"; test -z "$(find "$base/xdg-data/Trash/info" -mindepth 1 -maxdepth 1 -print -quit)"'
+    wait: 0.3
 teardown:
 - action: session_start
   command: bash -lc 'rm -rf "$HOME/.cache/dde-at-fixtures/strict-trash"'
