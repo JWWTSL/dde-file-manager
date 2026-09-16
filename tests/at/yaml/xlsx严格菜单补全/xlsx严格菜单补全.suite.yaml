@@ -1,0 +1,83 @@
+name: xlsx严格菜单补全_suite
+app: dde-file-manager
+description: 从 V25 xlsx 顶部区域/菜单批次13中筛选的严格菜单用例，使用验证过的 DTK 主菜单导航并断言菜单操作后的具体对话框结果
+module: xlsx严格菜单补全
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: bash -lc 'pkill -9 -f "^/usr/libexec/dde-file-manager( |$)" 2>/dev/null || true; dde-file-manager --open-home >/tmp/dfm_at_strict_menu_batch13.log 2>&1 & sleep 3'
+  wait: 1.0
+suites:
+- id: case_1804847
+  name: 菜单-设置共享密码
+  description: 'xlsx 用例编号: 1804847
+
+    所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/顶部区域/菜单(#110807)
+
+    前置条件: 文件管理器已启动并处于主目录
+
+    测试步骤:
+
+    1. 打开文件管理器，点击窗口右上角的主菜单按钮，选择设置共享密码
+
+    2. 检查密码输入框显示
+
+    3. 检查密码输入框显示
+
+    4. 输入密码时，默认不可见，点击眼睛
+
+    5. 输入密码后，点击取消
+
+    6. 输入错误密码（空、超长），点击确定
+
+    7. 输入正确秘密，点击确定
+
+    8. 使用tab键，选择取消
+
+    9. 点击x
+
+    预期结果:
+
+    1. 弹出密码输入框
+
+    2. 提示:请输入共享密码，下面显示输入框 ；显示取消和确定按钮
+
+    3. 右侧显示为眼睛，默认显示暗文，不可见
+
+    4. 密码变为可见的
+
+    5. 密码设置不会保存
+
+    6. toolip提示密码错误
+
+    7. 密码设置成功
+
+    8. 密码设置取消
+
+    9. 密码设置窗口关闭
+
+    严格映射说明: 本用例只接受可由 AT-SPI 稳定证明的核心菜单结果：通过 DTK 主菜单选择“设置共享密码”后出现共享密码对话框，并显示业务提示、取消按钮和确定按钮。密码可见性、错误 tooltip、正确密码保存、Tab 焦点和右上角 X 分支需要额外 verified selectors/secret 状态，未在本严格用例中扩展。
+
+    '
+  tags: []
+  vars:
+    xlsx_id: '1804847'
+    case_type: 功能测试
+  steps:
+  - action: dtk_main_menu
+    ref: menu_set_shared_password
+    wait: 1.0
+  assert_steps:
+  - action: assert_element
+    ref: shared_password_message
+  - action: assert_element
+    ref: shared_password_cancel_button
+  - action: assert_element
+    ref: shared_password_confirm_button
+teardown:
+- action: session_start
+  command: bash -lc 'pkill -9 -f "^/usr/libexec/dde-file-manager( |$)" 2>/dev/null || true'
+  wait: 0.3
+- action: session_stop

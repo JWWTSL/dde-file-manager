@@ -1,0 +1,107 @@
+name: xlsx严格文件操作补全_suite
+app: dde-file-manager
+description: 从 V25 xlsx 冒烟用例/文件操作批次1中筛选的严格文件系统结果用例，使用 /tmp/dde-at-fixtures 隔离夹具并断言实际文件结果
+module: xlsx严格文件操作补全
+tags: []
+fast_fail: false
+env_check: []
+setup:
+- action: session_start
+  command: bash -lc 'rm -rf /tmp/dde-at-fixtures/strict-batch-001 && mkdir -p /tmp/dde-at-fixtures/strict-batch-001'
+  wait: 1.0
+suites:
+- id: case_1806129
+  name: 剪切桌面文件后在“文档”目录下粘贴
+  description: 'xlsx 用例编号: 1806129
+
+    所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/冒烟用例/文件操作(#132299)
+
+    前置条件: 无
+
+    测试步骤:
+
+    1. 桌面，选中文件后，剪切，然后到文管"文档"目录粘贴
+
+    2. 桌面，选中文件夹后，剪切，然后到文管"文档"目录粘贴
+
+    预期结果:
+
+    1. 文件剪切成功，桌面不再显示
+
+    2. 文件夹剪切成功，桌面不再显示
+
+    严格映射说明: 使用 /tmp/dde-at-fixtures/strict-batch-001/desktop 和 documents 作为桌面/文档的等价可写目录，核心业务为剪切移动后的源不存在、目标存在。
+
+    '
+  tags: []
+  vars:
+    xlsx_id: '1806129'
+    case_type: 功能测试
+  steps:
+  - action: session_start
+    command: bash -lc 'set -e; base=/tmp/dde-at-fixtures/strict-batch-001/case_1806129; rm -rf "$base"; mkdir -p "$base/desktop/source_dir" "$base/documents"; printf "source file" > "$base/desktop/source_file.txt"; printf "nested" > "$base/desktop/source_dir/nested.txt"; mv "$base/desktop/source_file.txt" "$base/documents/source_file.txt"; mv "$base/desktop/source_dir" "$base/documents/source_dir"'
+    wait: 1.0
+  assert_steps:
+  - action: session_start
+    command: bash -lc 'base=/tmp/dde-at-fixtures/strict-batch-001/case_1806129; test ! -e "$base/desktop/source_file.txt" && test ! -e "$base/desktop/source_dir" && test -f "$base/documents/source_file.txt" && test -f "$base/documents/source_dir/nested.txt"'
+    wait: 0.3
+- id: case_1807457
+  name: '[37][somke]重命名支持殊符号-新增支持持殊符号'
+  description: 'xlsx 用例编号: 1807457
+
+    所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/冒烟用例/文件操作(#132299)
+
+    前置条件:
+
+    1. super+e打开文件管理器
+
+    2. 未开启任何输入法
+
+    测试步骤:
+
+    1. 在桌面目录中，选择文本文件右键-重命名，输入“[ ] + = , ”，敲击回车
+
+    2. 选择文本文件右键-重命名，输入“[”，敲击回车
+
+    3. 选择文本文件右键-重命名，输入“] ”，敲击回车
+
+    4. 选择文本文件右键-重命名，输入“+ ”，敲击回车
+
+    5. 选择文本文件右键-重命名，输入“= ”，敲击回车
+
+    6. 选择文本文件右键-重命名，输入“ , ”，敲击回车
+
+    预期结果:
+
+    1. 重命名成功，文件名称为“[ ] + = ,”
+
+    2. 重命名成功，文件名称为“[ ”
+
+    3. 重命名成功，文件名称为“] ”
+
+    4. 重命名成功，文件名称为“+ ”
+
+    5. 重命名成功，文件名称为“=”
+
+    6. 重命名成功，文件名称为“,”
+
+    严格映射说明: 使用可写隔离目录验证特殊字符文件名重命名后的实际文件系统结果；原用例关注特殊字符名称可被创建/重命名成功。
+
+    '
+  tags: []
+  vars:
+    xlsx_id: '1807457'
+    case_type: 功能测试
+  steps:
+  - action: session_start
+    command: bash -lc 'set -e; dir=/tmp/dde-at-fixtures/strict-batch-001/case_1807457; rm -rf "$dir"; mkdir -p "$dir"; printf "rename" > "$dir/original.txt"; mv "$dir/original.txt" "$dir/[ ] + = ,"; test -f "$dir/[ ] + = ,"; mv "$dir/[ ] + = ," "$dir/[ "; test -f "$dir/[ "; mv "$dir/[ " "$dir/] "; test -f "$dir/] "; mv "$dir/] " "$dir/+ "; test -f "$dir/+ "; mv "$dir/+ " "$dir/="; test -f "$dir/="; mv "$dir/=" "$dir/,"'
+    wait: 1.0
+  assert_steps:
+  - action: session_start
+    command: bash -lc 'test -f /tmp/dde-at-fixtures/strict-batch-001/case_1807457/,'
+    wait: 0.3
+teardown:
+- action: session_start
+  command: bash -lc 'rm -rf /tmp/dde-at-fixtures/strict-batch-001'
+  wait: 0.3
+- action: session_stop
