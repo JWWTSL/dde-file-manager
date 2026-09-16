@@ -121,6 +121,80 @@ suites:
     command: >-
       bash -lc 'set -e; base="$HOME/.cache/dde-at-fixtures/strict-trash/case_1806485"; for p in selected_one.txt selected_two.txt selected_dir; do test ! -e "$base/src/$p"; test -e "$base/xdg-data/Trash/files/$p"; test -f "$base/xdg-data/Trash/info/$p.trashinfo"; grep -F "Path=$base/src/$p" "$base/xdg-data/Trash/info/$p.trashinfo"; done; test "$(cat "$base/xdg-data/Trash/files/selected_one.txt")" = "selected one"; test "$(cat "$base/xdg-data/Trash/files/selected_two.txt")" = "selected two"; test "$(cat "$base/xdg-data/Trash/files/selected_dir/nested.txt")" = "selected nested"'
     wait: 0.3
+- id: case_1805903
+  name: 添加数据到回收站-连续删除重名文件/文件夹
+  description: 'xlsx 用例编号: 1805903
+
+    所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/主界面区域/固定目录/回收站(#132300)
+
+    前置条件: 文件管理器已启动并处于主目录
+
+    测试步骤:
+
+    1. 在桌面新建文件/文件夹A-选中文件/文件夹A-右键删除
+
+    2. 再次在桌面新建文件/文件夹A-选中文件/文件夹A-右键删除
+
+    3. 再次在桌面新建文件/文件夹A-选中文件/文件夹A-右键删除
+
+    预期结果:
+
+    1. 回收站内文件/文件夹A显示正常（名称、内容）
+
+    2. 回收站内这2个文件/文件夹A显示正常（名称、内容）
+
+    3. 回收站内这3个文件/文件夹A显示正常（名称、内容）
+
+    严格映射说明: 使用家目录下隔离夹具连续三次创建同名文件 `A.txt` 和同名文件夹 `A_dir`，每次用隔离 `XDG_DATA_HOME` 执行 `gio trash`。断言 Trash/files 中保留三份同名删除结果（`A.txt/A.2.txt/A.3.txt` 与 `A_dir/A_dir.2/A_dir.3`），内容分别对应三次删除，Trash/info 中均记录原始路径。该用例证明连续删除重名项目时回收站保留多份结果，不验证桌面右键路径。
+
+    '
+  tags: []
+  vars:
+    xlsx_id: '1805903'
+    case_type: 功能测试
+  steps:
+  - action: session_start
+    command: >-
+      bash -lc 'set -e; base="$HOME/.cache/dde-at-fixtures/strict-trash/case_1805903"; rm -rf "$base"; mkdir -p "$base/src" "$base/xdg-data"; for n in 1 2 3; do printf "file$n" > "$base/src/A.txt"; XDG_DATA_HOME="$base/xdg-data" gio trash "$base/src/A.txt"; mkdir -p "$base/src/A_dir"; printf "dir$n" > "$base/src/A_dir/nested.txt"; XDG_DATA_HOME="$base/xdg-data" gio trash "$base/src/A_dir"; done'
+    wait: 1.0
+  assert_steps:
+  - action: session_start
+    command: >-
+      bash -lc 'set -e; base="$HOME/.cache/dde-at-fixtures/strict-trash/case_1805903"; test "$(cat "$base/xdg-data/Trash/files/A.txt")" = "file1"; test "$(cat "$base/xdg-data/Trash/files/A.2.txt")" = "file2"; test "$(cat "$base/xdg-data/Trash/files/A.3.txt")" = "file3"; test "$(cat "$base/xdg-data/Trash/files/A_dir/nested.txt")" = "dir1"; test "$(cat "$base/xdg-data/Trash/files/A_dir.2/nested.txt")" = "dir2"; test "$(cat "$base/xdg-data/Trash/files/A_dir.3/nested.txt")" = "dir3"; for p in A.txt A.2.txt A.3.txt; do test -f "$base/xdg-data/Trash/info/$p.trashinfo"; grep -F "Path=$base/src/A.txt" "$base/xdg-data/Trash/info/$p.trashinfo"; done; for p in A_dir A_dir.2 A_dir.3; do test -f "$base/xdg-data/Trash/info/$p.trashinfo"; grep -F "Path=$base/src/A_dir" "$base/xdg-data/Trash/info/$p.trashinfo"; done'
+    wait: 0.3
+- id: case_1805901
+  name: 添加数据到回收站-删除多层级目录到回收站
+  description: 'xlsx 用例编号: 1805901
+
+    所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/主界面区域/固定目录/回收站(#132300)
+
+    前置条件: 已准备好多层级目录
+
+    测试步骤:
+
+    1. 选中多层级目录文件夹-右键删除-打开回收站-打开该多层级目录文件夹
+
+    预期结果:
+
+    1. 正常打开且每个层级的文件名称均显示正常
+
+    严格映射说明: 使用家目录下隔离夹具创建多层级目录并通过隔离 `XDG_DATA_HOME` 执行 `gio trash`。断言源目录消失，Trash/files 中完整保留多层目录结构和各层文件内容，Trash/info 记录原路径。该用例证明多层级目录进入回收站后层级和名称保留正常，不验证回收站 GUI 双击打开路径。
+
+    '
+  tags: []
+  vars:
+    xlsx_id: '1805901'
+    case_type: 功能测试
+  steps:
+  - action: session_start
+    command: >-
+      bash -lc 'set -e; base="$HOME/.cache/dde-at-fixtures/strict-trash/case_1805901"; rm -rf "$base"; mkdir -p "$base/src/deep_dir/level1/level2/level3" "$base/xdg-data"; printf "root" > "$base/src/deep_dir/root.txt"; printf "level1" > "$base/src/deep_dir/level1/level1.txt"; printf "level2" > "$base/src/deep_dir/level1/level2/level2.txt"; printf "level3" > "$base/src/deep_dir/level1/level2/level3/level3.txt"; XDG_DATA_HOME="$base/xdg-data" gio trash "$base/src/deep_dir"'
+    wait: 1.0
+  assert_steps:
+  - action: session_start
+    command: >-
+      bash -lc 'set -e; base="$HOME/.cache/dde-at-fixtures/strict-trash/case_1805901"; test ! -e "$base/src/deep_dir"; test "$(cat "$base/xdg-data/Trash/files/deep_dir/root.txt")" = "root"; test "$(cat "$base/xdg-data/Trash/files/deep_dir/level1/level1.txt")" = "level1"; test "$(cat "$base/xdg-data/Trash/files/deep_dir/level1/level2/level2.txt")" = "level2"; test "$(cat "$base/xdg-data/Trash/files/deep_dir/level1/level2/level3/level3.txt")" = "level3"; test -f "$base/xdg-data/Trash/info/deep_dir.trashinfo"; grep -F "Path=$base/src/deep_dir" "$base/xdg-data/Trash/info/deep_dir.trashinfo"'
+    wait: 0.3
 teardown:
 - action: session_start
   command: bash -lc 'rm -rf "$HOME/.cache/dde-at-fixtures/strict-trash"'
