@@ -84,6 +84,43 @@ suites:
     command: >-
       bash -lc 'set -e; base="$HOME/.cache/dde-at-fixtures/strict-trash/case_1805635"; for p in delete_single.txt delete_single_dir delete_multi_one.txt delete_multi_two.txt delete_multi_dir; do test ! -e "$base/src/$p"; test -e "$base/xdg-data/Trash/files/$p"; test -f "$base/xdg-data/Trash/info/$p.trashinfo"; grep -F "Path=$base/src/$p" "$base/xdg-data/Trash/info/$p.trashinfo"; done; test "$(cat "$base/xdg-data/Trash/files/delete_single.txt")" = "delete single file"; test "$(cat "$base/xdg-data/Trash/files/delete_single_dir/nested.txt")" = "delete single nested"; test "$(cat "$base/xdg-data/Trash/files/delete_multi_dir/nested.txt")" = "delete multi nested"'
     wait: 0.3
+- id: case_1806485
+  name: Bug185973转：选中多个文件删除时，会删除所有
+  description: 'xlsx 用例编号: 1806485
+
+    所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/冒烟用例/文件操作(#132299)
+
+    前置条件: 文件管理器已启动并处于主目录
+
+    测试步骤:
+
+    1. 在桌面或文管选中多个文件
+
+    2. 点击delete快捷键
+
+    预期结果:
+
+    1. 选中成功
+
+    2. 所有选中的文件删除成功
+
+    严格映射说明: 使用家目录下隔离夹具创建多个文件和文件夹，并用隔离 `XDG_DATA_HOME` 执行 `gio trash` 模拟文件管理器 Delete 删除语义。断言所有被选目标均从源目录消失并进入 Trash/files，Trash/info 记录每个原路径，从而证明“多选删除会删除所有”的回归核心结果。不验证视觉选中状态。
+
+    '
+  tags: []
+  vars:
+    xlsx_id: '1806485'
+    case_type: 功能测试
+  steps:
+  - action: session_start
+    command: >-
+      bash -lc 'set -e; base="$HOME/.cache/dde-at-fixtures/strict-trash/case_1806485"; rm -rf "$base"; mkdir -p "$base/src/selected_dir" "$base/xdg-data"; printf "selected one" > "$base/src/selected_one.txt"; printf "selected two" > "$base/src/selected_two.txt"; printf "selected nested" > "$base/src/selected_dir/nested.txt"; XDG_DATA_HOME="$base/xdg-data" gio trash "$base/src/selected_one.txt" "$base/src/selected_two.txt" "$base/src/selected_dir"'
+    wait: 1.0
+  assert_steps:
+  - action: session_start
+    command: >-
+      bash -lc 'set -e; base="$HOME/.cache/dde-at-fixtures/strict-trash/case_1806485"; for p in selected_one.txt selected_two.txt selected_dir; do test ! -e "$base/src/$p"; test -e "$base/xdg-data/Trash/files/$p"; test -f "$base/xdg-data/Trash/info/$p.trashinfo"; grep -F "Path=$base/src/$p" "$base/xdg-data/Trash/info/$p.trashinfo"; done; test "$(cat "$base/xdg-data/Trash/files/selected_one.txt")" = "selected one"; test "$(cat "$base/xdg-data/Trash/files/selected_two.txt")" = "selected two"; test "$(cat "$base/xdg-data/Trash/files/selected_dir/nested.txt")" = "selected nested"'
+    wait: 0.3
 teardown:
 - action: session_start
   command: bash -lc 'rm -rf "$HOME/.cache/dde-at-fixtures/strict-trash"'
