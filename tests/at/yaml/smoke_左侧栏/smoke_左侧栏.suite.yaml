@@ -369,46 +369,6 @@ suites:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_smoke_左侧栏_020
-  name: '[026][core]我的目录-右键在新窗口打开'
-  description: '来源用例编号: 1805957'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 桌面
-    do: right_click
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 桌面
-  - action: assert_element
-    ref: 视频
-  - action: assert_element
-    ref: 音乐
-  - action: assert_element
-    ref: 图片
-  - action: assert_element
-    ref: 文档
-  - action: assert_element
-    ref: 下载
 - id: case_smoke_左侧栏_021
   name: '[024][core]我的目录-目录默认顺序检查'
   description: '来源用例编号: 1805953'

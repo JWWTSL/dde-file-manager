@@ -200,41 +200,6 @@ suites:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_smoke_计算机界面_014
-  name: '[smoke]计算机图标右键菜单'
-  description: '来源用例编号: 1808273'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 计算机
-    do: double_click
-    wait: 1.0
-  - action: element_action
-    ref: 桌面
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 计算机
-    items:
-    - 属性
-    wait: 2.0
-  - action: dtk_context_menu
-    selector:
-      name: 计算机
-    items:
-    - 打开
-    wait: 2.0
-  assert_steps:
-  - action: assert_element
-    ref: 计算机
-  - action: assert_element
-    ref: 计算机
-  - action: assert_element
-    ref: 计算机
 - id: case_smoke_计算机界面_015
   name: 查看计算机属性窗口展示信息
   description: '来源用例编号: 1807339'

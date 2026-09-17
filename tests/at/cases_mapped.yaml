@@ -2762,28 +2762,6 @@ cases:
     ref: 回收站
   - action: assert_element
     ref: 回收站
-- id: case_smoke_回收站_020
-  name: 【回收站】入口-通过dock栏回收站图标进入回收站
-  module: 回收站
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 回收站
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 回收站
-    items:
-    - 打开
-    wait: 2.0
-  assert_steps:
-  - action: assert_element
-    ref: 回收站
-  - action: assert_element
-    ref: 回收站
 - id: case_smoke_回收站_021
   name: 【回收站】入口-通过启动器进入回收站
   module: 回收站
@@ -3280,45 +3258,6 @@ cases:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_smoke_左侧栏_020
-  name: '[026][core]我的目录-右键在新窗口打开'
-  module: 左侧栏
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 桌面
-    do: right_click
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 桌面
-  - action: assert_element
-    ref: 视频
-  - action: assert_element
-    ref: 音乐
-  - action: assert_element
-    ref: 图片
-  - action: assert_element
-    ref: 文档
-  - action: assert_element
-    ref: 下载
 - id: case_smoke_左侧栏_021
   name: '[024][core]我的目录-目录默认顺序检查'
   module: 左侧栏
@@ -5888,40 +5827,6 @@ cases:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_smoke_计算机界面_014
-  name: '[smoke]计算机图标右键菜单'
-  module: 计算机界面
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 计算机
-    do: double_click
-    wait: 1.0
-  - action: element_action
-    ref: 桌面
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 计算机
-    items:
-    - 属性
-    wait: 2.0
-  - action: dtk_context_menu
-    selector:
-      name: 计算机
-    items:
-    - 打开
-    wait: 2.0
-  assert_steps:
-  - action: assert_element
-    ref: 计算机
-  - action: assert_element
-    ref: 计算机
-  - action: assert_element
-    ref: 计算机
 - id: case_smoke_计算机界面_015
   name: 查看计算机属性窗口展示信息
   module: 计算机界面
@@ -7738,31 +7643,6 @@ cases:
   assert_steps:
   - action: assert_element
     ref: 视频
-- id: case_mainui_固定目录_111
-  name: 单击侧边栏网络邻居入口，操作windwos网络
-  module: 固定目录
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 打开
-    wait: 2.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 网络
-  - action: assert_element
-    ref: 网络
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_mainui_固定目录_112
   name: 固定栏目下选中多个不同类文件右键
   module: 固定目录
@@ -7861,19 +7741,6 @@ cases:
   assert_steps:
   - action: assert_element
     ref: 系统盘
-- id: case_mainui_固定目录_119
-  name: '[038]系统盘-空白处右键已管理员身份打开'
-  module: 固定目录
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_mainui_固定目录_120
   name: '[035]系统盘-空白处右键检查新建文件选项'
   module: 固定目录

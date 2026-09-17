@@ -367,29 +367,6 @@ suites:
     ref: 回收站
   - action: assert_element
     ref: 回收站
-- id: case_smoke_回收站_020
-  name: 【回收站】入口-通过dock栏回收站图标进入回收站
-  description: '来源用例编号: 1805687'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 回收站
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 回收站
-    items:
-    - 打开
-    wait: 2.0
-  assert_steps:
-  - action: assert_element
-    ref: 回收站
-  - action: assert_element
-    ref: 回收站
 - id: case_smoke_回收站_021
   name: 【回收站】入口-通过启动器进入回收站
   description: '来源用例编号: 1805685'

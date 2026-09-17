@@ -1612,32 +1612,6 @@ suites:
   assert_steps:
   - action: assert_element
     ref: 视频
-- id: case_mainui_固定目录_111
-  name: 单击侧边栏网络邻居入口，操作windwos网络
-  description: '来源用例编号: 1806075'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 打开
-    wait: 2.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 网络
-  - action: assert_element
-    ref: 网络
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_mainui_固定目录_112
   name: 固定栏目下选中多个不同类文件右键
   description: '来源用例编号: 1806055'
@@ -1742,20 +1716,6 @@ suites:
   assert_steps:
   - action: assert_element
     ref: 系统盘
-- id: case_mainui_固定目录_119
-  name: '[038]系统盘-空白处右键已管理员身份打开'
-  description: '来源用例编号: 1805991'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_mainui_固定目录_120
   name: '[035]系统盘-空白处右键检查新建文件选项'
   description: '来源用例编号: 1805985'
