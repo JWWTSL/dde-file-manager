@@ -27,6 +27,25 @@
 > `0` even when a case fails, so failures were first mis-recorded as PASS. Results
 > must be parsed from the `Specs: N passed, M failed` log line.
 
+### Multica verification (batched)
+
+To avoid Multica run timeouts, the 612 verified cases were split into four
+self-contained test branches (each holds only its subset, no legacy cases):
+
+| Branch | Cases |
+|---|---:|
+| `agent/at/pr4493-757-1` | 134 |
+| `agent/at/pr4493-757-2` | 147 |
+| `agent/at/pr4493-757-3` | 147 |
+| `agent/at/pr4493-757-4` | 184 |
+| **Union** | **612** |
+
+- Union of the four branches = 612 unique cases; all are present on `master`.
+- Result: all four branches pass on Multica.
+- One selector fix was needed: `case_desktop_桌面_139` asserted
+  `桌面[@role='table cell']` but the live element's role differs, so it was
+  relaxed to name-only (`$//桌面/`) on both the branch and `master`.
+
 ### Coverage (automatable baseline 569)
 
 - Covered (automatable): 502 / 569 = 88.22%
