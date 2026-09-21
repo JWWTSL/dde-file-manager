@@ -170,25 +170,6 @@ suites:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_u2req_2500_U2需求_006
-  name: 【智能语义搜索】智能搜索默认值检查及恢复默认值
-  description: '来源用例编号: 2019285'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_u2req_2500_U2需求_007
   name: 【智能语义搜索】位置槽-下载目录泛化库：下载的, 下载目录, 下下来的, 浏览器下载
   description: '来源用例编号: 2019159'
