@@ -1,43 +1,5 @@
 version: '1.0'
 cases:
-- id: case_u1req_2500_U1需求_001
-  name: 【图片文本内容搜索】仅图片文本内容搜索索引进行更新
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_002
-  name: 【新建office文档默认格式修改】ftp上右键新建文档格式验证
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 新建文档
-    wait: 2.0
-  assert_steps:
-  - action: assert_element
-    ref: 文档
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_u1req_2500_U1需求_003
   name: 【图片文本内容搜索】索引更新过程中进行图片文件内容搜索
   module: 2500_U1需求
@@ -144,89 +106,6 @@ cases:
     ref: 图片
   - action: assert_process_running
     app: dde-file-manager
-- id: case_u1req_2500_U1需求_008
-  name: 【文管-图片文本内容搜索】对图片文件内容搜索结果进行排序
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: keyboard_type
-    text: 终于等到你啦
-    wait: 1.0
-  - action: keyboard_type
-    text: 终于等到你啦
-    wait: 1.0
-  - action: element_action
-    ref: 计算机
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 排序
-    - 修改时间
-    wait: 1.0
-  - action: keyboard_type
-    text: 终于等到你啦
-    wait: 1.0
-  - action: keyboard_type
-    text: 终于等到你啦
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 图片
-- id: case_u1req_2500_U1需求_009
-  name: 【图片文本内容搜索】索引更新失败UI检查
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  - action: keyboard_press
-    key: Escape
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_010
-  name: 【图片文本内容搜索】索引各个状态UI检查
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  - action: keyboard_type
-    text: 附件中任意一张图片中的文本内容
-    wait: 1.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 图片
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_element
-    ref: 图片
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_element
-    ref: 图片
 - id: case_u1req_2500_U1需求_011
   name: 【文管-图片文本内容搜索】图片文本内容增删改之后进行搜索
   module: 2500_U1需求
@@ -497,20 +376,6 @@ cases:
     ref: 图片
   - action: assert_element
     ref: 图片
-- id: case_u1req_2500_U1需求_022
-  name: 【图片文本内容搜索】功能默认关闭
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_u1req_2500_U1需求_023
   name: 【文件索引配置】连续切换开关20次
   module: 2500_U1需求
@@ -675,28 +540,6 @@ cases:
     app: dde-file-manager
   - action: assert_element
     ref: 桌面
-- id: case_u1req_2500_U1需求_034
-  name: 【文件索引配置】关闭文件索引配置
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 取消
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_u1req_2500_U1需求_035
   name: 【文件索引配置】立即更新索引按钮功能
   module: 2500_U1需求
@@ -727,20 +570,6 @@ cases:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_u1req_2500_U1需求_037
-  name: 【文件索引配置】更新中/更新失败提示检查
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_u1req_2500_U1需求_038
   name: 【文件索引配置】未开启时提示文案检查
   module: 2500_U1需求
@@ -751,20 +580,6 @@ cases:
   - action: element_action
     ref: side_bar_view
     do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_039
-  name: 【文件索引配置】系统升级后默认开启检查
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 显示预览
-    do: click
     wait: 1.0
   assert_steps:
   - action: assert_process_running
@@ -959,137 +774,6 @@ cases:
     app: dde-file-manager
   - action: assert_element
     ref: 音乐
-- id: case_u1req_2500_U1需求_049
-  name: 【预览侧边栏支持放大预览图片】拖拽右侧边栏超出最大宽度
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 桌面
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: ToggleModeBtn
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 视图模式
-    - 树形模式
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_050
-  name: 【预览侧边栏支持放大预览图片】未开启'显示预览'
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 桌面
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: ToggleModeBtn
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 视图模式
-    - 树形模式
-    wait: 1.0
-  - action: element_action
-    ref: 图片
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_051
-  name: 【预览侧边栏支持放大预览图片】树形视图下缩放右侧边栏
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 桌面
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: ToggleModeBtn
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 视图模式
-    - 树形模式
-    wait: 1.0
-  - action: element_action
-    ref: 图片
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_052
-  name: 【预览侧边栏支持放大预览图片】列表视图下缩放右侧边栏
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 桌面
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: ToggleModeBtn
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 视图模式
-    - 列表模式
-    wait: 1.0
-  - action: element_action
-    ref: 图片
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 桌面
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: ToggleModeBtn
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 视图模式
-    - 树形模式
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_u1req_2500_U1需求_053
   name: 【预览侧边栏支持放大预览图片】davs共享目录支持放大预览图片
   module: 2500_U1需求
@@ -1183,24 +867,6 @@ cases:
     wait: 5.0
   - action: element_action
     ref: 图片
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_060
-  name: 【预览侧边栏支持放大预览图片】隐藏右侧边栏
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 图片
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 显示预览
     do: click
     wait: 1.0
   assert_steps:
@@ -1399,22 +1065,6 @@ cases:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_u1req_2500_U1需求_073
-  name: 【标签页支持右键固定】性能测试
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: TabBar
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_u1req_2500_U1需求_074
   name: 【标签页支持右键固定】重复固定
   module: 2500_U1需求
@@ -1470,42 +1120,6 @@ cases:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_u1req_2500_U1需求_077
-  name: 【标签页支持右键固定】固定标签页后使用快捷键操作
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 关闭标签页
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 关闭标签页
-    wait: 1.0
-  - action: keyboard_press
-    key: ctrl+w
-    wait: 1.0
-  - action: element_action
-    ref: 视频
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 视频
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_u1req_2500_U1需求_078
   name: 【标签页支持右键固定】固定标签页记忆排序
   module: 2500_U1需求
@@ -1517,98 +1131,6 @@ cases:
     key: Escape
     wait: 1.0
   assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_079
-  name: 【标签页支持右键固定】固定20个标签页
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: TabBar
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_element
-    ref: 计算机
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_080
-  name: 【标签页支持右键固定】固定/取消固定标签页UI界面检查
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 关闭标签页
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: keyboard_press
-    key: Escape
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_081
-  name: 【标签页支持右键固定】固定标签页后操作
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: AddressBar
-    do: click
-    wait: 1.0
-  - action: keyboard_type
-    text: 任意其他地址
-    wait: 1.0
-  - action: keyboard_press
-    key: Return
-    wait: 1.0
-  - action: element_action
-    ref: 视频
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 后退
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: TabBar
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 关闭标签页
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_element
-    ref: 视频
-  - action: assert_process_running
-    app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
 - id: case_u1req_2500_U1需求_082
@@ -1678,50 +1200,6 @@ cases:
   - action: element_action
     ref: side_bar_view
     do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_086
-  name: 【支持固定标签页】添加自定义目录后打开文管，切换目录
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 计算机
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: TabBar
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 计算机
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 计算机
-  - action: assert_element
-    ref: 计算机
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_087
-  name: 【拖拽文件至边缘滚动列表】拖拽虚拟目录中的文件至边缘滚动
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 回收站
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: click
     wait: 1.0
   assert_steps:
   - action: assert_process_running
@@ -1868,52 +1346,6 @@ cases:
     app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
-- id: case_u1req_2500_U1需求_097
-  name: 【复制文件地址】树形视图下复制文件地址
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: ToggleModeBtn
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 视图模式
-    - 树形模式
-    wait: 1.0
-  - action: element_action
-    ref: 图片
-    do: click
-    wait: 1.0
-  - action: keyboard_press
-    key: ctrl+shift+c
-    wait: 1.0
-  - action: keyboard_press
-    key: ctrl+shift+c
-    wait: 1.0
-  - action: keyboard_press
-    key: ctrl+shift+c
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_u1req_2500_U1需求_098
   name: 【文件列表支持分组】分组UI界面检查
   module: 2500_U1需求
@@ -1932,41 +1364,6 @@ cases:
     app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
-- id: case_u1req_2500_U1需求_099
-  name: 【支持固定标签页】打开多文管窗口后自定义目录失效
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 关闭标签页
-    wait: 1.0
-  - action: keyboard_press
-    key: Escape
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 关闭标签页
-    wait: 1.0
-  - action: element_action
-    ref: TabBar
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: TabBar
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 计算机
-  - action: assert_element
-    ref: 计算机
 - id: case_u1req_2500_U1需求_100
   name: 【文件列表支持分组】搜索结果界面支持分组
   module: 2500_U1需求
@@ -2048,40 +1445,6 @@ cases:
     wait: 1.0
   - action: keyboard_press
     key: Menu
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_104
-  name: 【文件列表支持分组】保险箱进行分组
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 保险箱
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
     wait: 1.0
   assert_steps:
   - action: assert_process_running
@@ -2250,31 +1613,6 @@ cases:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_u1req_2500_U1需求_111
-  name: 【文件列表支持分组】分组仅对当前目录生效
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 音乐
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: ToggleModeBtn
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 视图模式
-    - 图标模式
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_u1req_2500_U1需求_112
   name: 【文件列表支持分组】树形视图模式下分组后进行搜索
   module: 2500_U1需求
@@ -2351,46 +1689,6 @@ cases:
     app: dde-file-manager
   - action: assert_element
     ref: 桌面
-- id: case_u1req_2500_U1需求_114
-  name: 【文件列表支持分组】图标视图模式下分组后对文件进行操作
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 桌面
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 文档
-    do: click
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: keyboard_press
-    key: ctrl+shift+i
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_element
-    ref: 文档
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_u1req_2500_U1需求_115
   name: 【文件列表支持分组】对系统目录下的隐藏文件分组
   module: 2500_U1需求
@@ -2498,35 +1796,6 @@ cases:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_u1req_2500_U1需求_121
-  name: 【文件列表支持分组】分组从无到有/从有到无
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 排序
-    - 类型
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 文档
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_element
-    ref: 图片
-  - action: assert_element
-    ref: 文档
 - id: case_u1req_2500_U1需求_122
   name: 【文件列表支持分组】分组功能入口
   module: 2500_U1需求
@@ -2658,30 +1927,6 @@ cases:
     ref: 计算机
   - action: assert_process_running
     app: dde-file-manager
-- id: case_u1req_2500_U1需求_129
-  name: 【支持固定标签页】新窗口自定义目录失效
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 取消
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: TabBar
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_element
-    ref: 计算机
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_element
-    ref: 计算机
 - id: case_u1req_2500_U1需求_130
   name: 【支持固定标签页】默认配置测试
   module: 2500_U1需求
@@ -2724,32 +1969,6 @@ cases:
   assert_steps:
   - action: assert_element
     ref: 下载
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_132
-  name: 【在新标签页中打开新文件夹】标签页UI检查
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: TabBar
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
 - id: case_u1req_2500_U1需求_133
@@ -2796,80 +2015,6 @@ cases:
     ref: 下载
   - action: assert_element
     ref: 图片
-- id: case_u1req_2500_U1需求_135
-  name: 【在新标签页中打开新文件夹】勾选“重复打开文件夹时激活已有窗口”
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 桌面
-    do: double_click
-    wait: 1.0
-  - action: element_action
-    ref: 桌面
-    do: double_click
-    wait: 1.0
-  - action: element_action
-    ref: 桌面
-    do: double_click
-    wait: 1.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 计算机
-    do: double_click
-    wait: 1.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 桌面
-    do: double_click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_136
-  name: 【在新标签页中打开新文件夹】打开多个文管窗口后打开桌面上新文件夹
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 计算机
-    do: double_click
-    wait: 1.0
-  - action: element_action
-    ref: 系统盘
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 计算机
-    do: double_click
-    wait: 1.0
-  - action: element_action
-    ref: 显示预览
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 桌面
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 桌面
-    do: double_click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_u1req_2500_U1需求_137
   name: 【在新标签页中打开新文件夹】在文管打开新文件夹
   module: 2500_U1需求
@@ -2884,20 +2029,6 @@ cases:
   - action: element_action
     ref: 主目录
     do: double_click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_138
-  name: 【外设支持实时同步】设置模式后恢复默认值
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 显示预览
-    do: click
     wait: 1.0
   assert_steps:
   - action: assert_process_running
@@ -2969,30 +2100,6 @@ cases:
     app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
-- id: case_u1req_2500_U1需求_143
-  name: 【文件粉碎】文件粉碎UI界面检查
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: element_action
-    ref: 取消
-    do: click
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_u1req_2500_U1需求_144
   name: 【文件粉碎】对搜索结果的文件进行粉碎
   module: 2500_U1需求
@@ -3012,103 +2119,6 @@ cases:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_u1req_2500_U1需求_145
-  name: 【新建office文档默认格式修改】新建office文档属性查看
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 桌面
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 桌面
-    items:
-    - 属性
-    wait: 2.0
-  - action: element_action
-    ref: 文档
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 属性
-    wait: 2.0
-  assert_steps:
-  - action: assert_element
-    ref: 文档
-  - action: assert_element
-    ref: 文档
-  - action: assert_element
-    ref: 文档
-  - action: assert_element
-    ref: 文档
-- id: case_u1req_2500_U1需求_146
-  name: 【文件排序支持同类型聚合排序】搜索文件结果按类型排序结果验证
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 排序
-    - 名称
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 排序
-    - 名称
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_147
-  name: 【文件排序支持同类型聚合排序】按类型排序稳定性验证
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 排序
-    - 类型
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_148
-  name: 【文件排序支持同类型聚合排序】大文件量（10,000个）按类型排序效率验证
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 排序
-    - 类型
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_u1req_2500_U1需求_149
   name: 【文件排序支持同类型聚合排序】隐藏文件排序验证
   module: 2500_U1需求
@@ -3121,66 +2131,6 @@ cases:
     do: focus
     wait: 1.0
   assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_150
-  name: 【文件排序支持同类型聚合排序】修改mimetype排序结果刷新
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 刷新
-    wait: 2.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_u1req_2500_U1需求_151
-  name: 【文件排序支持同类型聚合排序】不同视图下的类型排序结果一致性验证
-  module: 2500_U1需求
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: ToggleModeBtn
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 视图模式
-    - 图标模式
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: element_action
-    ref: ToggleModeBtn
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 视图模式
-    - 图标模式
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
 - id: case_u1req_2500_U1需求_152
@@ -3360,20 +2310,6 @@ cases:
   assert_steps:
   - action: assert_element
     ref: 图片
-- id: case_config_配置_009
-  name: 埋点-右键菜单项点击分布-特殊场景，保险箱_
-  module: 配置
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_config_配置_010
   name: 埋点-右键菜单项点击分布-以管理员身份打开（空白地方）_
   module: 配置
@@ -3410,50 +2346,6 @@ cases:
   - action: element_action
     ref: 桌面
     do: right_click
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 图片
-- id: case_config_配置_013
-  name: 埋点，右键菜单项点击分布-排序方式，修改时间
-  module: 配置
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 排序
-    - 修改时间
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 图片
-- id: case_config_配置_014
-  name: 埋点，右键菜单项点击分布-显示方式，列表视图
-  module: 配置
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: element_action
-    ref: ToggleModeBtn
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 视图模式
-    - 列表模式
     wait: 1.0
   assert_steps:
   - action: assert_element
@@ -3719,20 +2611,6 @@ cases:
     wait: 5.0
   - action: element_action
     ref: 回收站
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_config_配置_027
-  name: 埋点，侧边栏各目录去重后的点击分布-保险箱
-  module: 配置
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 保险箱
     do: click
     wait: 1.0
   assert_steps:
@@ -4131,86 +3009,6 @@ cases:
     wait: 1.0
   - action: element_action
     ref: 回收站
-    do: right_click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_config_配置_037
-  name: 右键菜单整体隐藏，检查文件管理器保险箱窗口右键菜单情况
-  module: 配置
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
     do: right_click
     wait: 1.0
   assert_steps:

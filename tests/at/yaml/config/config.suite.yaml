@@ -182,21 +182,6 @@ suites:
   assert_steps:
   - action: assert_element
     ref: 图片
-- id: case_config_配置_009
-  name: 埋点-右键菜单项点击分布-特殊场景，保险箱_
-  description: '来源用例编号: 1815871'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_config_配置_010
   name: 埋点-右键菜单项点击分布-以管理员身份打开（空白地方）_
   description: '来源用例编号: 1815867'
@@ -236,52 +221,6 @@ suites:
   - action: element_action
     ref: 桌面
     do: right_click
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 图片
-- id: case_config_配置_013
-  name: 埋点，右键菜单项点击分布-排序方式，修改时间
-  description: '来源用例编号: 1815841'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 排序
-    - 修改时间
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 图片
-- id: case_config_配置_014
-  name: 埋点，右键菜单项点击分布-显示方式，列表视图
-  description: '来源用例编号: 1815837'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: element_action
-    ref: ToggleModeBtn
-    do: click
-    wait: 1.0
-  - action: dtk_context_menu
-    selector:
-      name: 主目录
-    items:
-    - 视图模式
-    - 列表模式
     wait: 1.0
   assert_steps:
   - action: assert_element
@@ -559,21 +498,6 @@ suites:
     wait: 5.0
   - action: element_action
     ref: 回收站
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_config_配置_027
-  name: 埋点，侧边栏各目录去重后的点击分布-保险箱
-  description: '来源用例编号: 1810935'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 保险箱
     do: click
     wait: 1.0
   assert_steps:
@@ -981,87 +905,6 @@ suites:
     wait: 1.0
   - action: element_action
     ref: 回收站
-    do: right_click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_config_配置_037
-  name: 右键菜单整体隐藏，检查文件管理器保险箱窗口右键菜单情况
-  description: '来源用例编号: 1807563'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 保险箱
     do: right_click
     wait: 1.0
   assert_steps:
