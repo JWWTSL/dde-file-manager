@@ -9,23 +9,45 @@
 
 ## Current Result
 
-- Runnable suite files: 6
-- Runnable cases: 100
-- Skipped cases: 0
-- Last full run command:
-  `youqu at run --testdir tests/at/yaml --skip-env-check`
-- Last full run result: `100 passed, 0 failed, 0 skipped`
+- Suite files: 55
+- Suite cases: 1473
+- `cases_mapped.yaml` mappings: 1203
 - Structure validation:
   `youqu at validate --gate 4 --generate-output tests/at/yaml` passed.
+  `youqu at validate --gate 5 --cases-mapped tests/at/cases_mapped.yaml --generate-output tests/at/yaml` passed.
+
+### PR #4493 batch (757 generated cases)
+
+- Generated: 757 cases across 11 suites
+- Verified passing (isolated per-case run): 612
+- Removed: 145 (wrong AT-SPI element mappings, e.g. `显示预览`, `ToggleModeBtn`,
+  `取消`, `保险箱`, unreachable menu items)
+
+> Note: the original isolation runner trusted `youqu at run`'s exit code, which is
+> `0` even when a case fails, so failures were first mis-recorded as PASS. Results
+> must be parsed from the `Specs: N passed, M failed` log line.
+
+### Coverage (automatable baseline 569)
+
+- Covered (automatable): 502 / 569 = 88.22%
+- Full raw coverage: 52.42%
+- Backlog (unfiltered & uncovered): 67
 
 ## Current Suite Layout
 
-- `bug转用例场景/bug转用例场景.suite.yaml`: 7 cases
-- `动态效果/动态效果.suite.yaml`: 3 cases
-- `管理员/管理员.suite.yaml`: 5 cases
-- `xlsx候选/xlsx候选.suite.yaml`: 19 cases
-- `xlsx弱覆盖/xlsx弱覆盖.suite.yaml`: 62 cases
-- `命令方式/命令方式.suite.yaml`: 4 cases
+PR #4493 batch suites (subset kept, see branch `agent/at/pr4493-757-*`):
+
+- `topui/topui.suite.yaml`
+- `u1req/u1req.suite.yaml`
+- `desktop/desktop.suite.yaml`
+- `desktop_水印/desktop_水印.suite.yaml`
+- `clouddisk/clouddisk.suite.yaml`
+- `config/config.suite.yaml`
+- `teamstd/teamstd.suite.yaml`
+- `u2req/u2req.suite.yaml`
+- `interact/interact.suite.yaml`
+- `cmdmode/cmdmode.suite.yaml`
+- `fourprop/fourprop.suite.yaml`
 
 ## Screening Rules
 
