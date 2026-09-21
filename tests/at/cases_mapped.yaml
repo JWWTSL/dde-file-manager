@@ -2313,7 +2313,8 @@ cases:
     wait: 2.0
   assert_steps:
   - action: assert_element
-    ref: 桌面
+    selector:
+      name: 桌面
 - id: case_u2req_2500_U2需求_001
   name: 【智能语义搜索】时间槽-精确时间-错误的日期格式
   module: 2500_U2需求
