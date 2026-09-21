@@ -2456,6 +2456,7 @@ suites:
     wait: 2.0
   assert_steps:
   - action: assert_element
-    ref: 桌面
+    selector:
+      name: 桌面
 teardown:
 - action: session_stop

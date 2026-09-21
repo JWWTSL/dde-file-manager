@@ -19698,7 +19698,8 @@ cases:
     wait: 2.0
   assert_steps:
   - action: assert_element
-    ref: 桌面
+    selector:
+      name: 桌面
 - id: case_desktop_水印_001
   name: 水印支持配置-自定义水印支持格式和大小检查
   module: 水印
