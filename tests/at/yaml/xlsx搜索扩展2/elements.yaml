@@ -1,7 +1,0 @@
-elements:
-  SearchButton:
-    name: SearchButton
-  SearchLineEdit:
-    name: DLineEditChildLineEdit
-  side_bar_view:
-    name: side_bar_view
