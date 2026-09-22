@@ -10,7 +10,7 @@
 ## Current Result
 
 - Suite files: 55
-- Suite cases: 1473
+- Suite cases: 1479
 - `cases_mapped.yaml` mappings: 1203
 - Structure validation:
   `youqu at validate --gate 4 --generate-output tests/at/yaml` passed.
@@ -21,12 +21,12 @@
 | Field | Meaning | Current value |
 |---|---|---:|
 | 测试用例基线 | 测试用例表的总数 | 2400 |
-| 转换用例对标测试基线数据 | 可自动化用例成果跑出来的原始用例数 | 502 |
-| AT用例数 | 实际产生的 suite 用例数 | 1473 |
+| 转换用例对标测试基线数据 | 可自动化用例成果跑出来的原始用例数 | 508 |
+| AT用例数 | 实际产生的 suite 用例数 | 1479 |
 | 可自动化数（测试基线） | 测试用例基线中按 AT 口径可自动化的数目 | 569 |
-| 可自动化覆盖率 | 转换用例对标测试基线数据 / 可自动化数 | 88.22% |
+| 可自动化覆盖率 | 转换用例对标测试基线数据 / 可自动化数 | 89.28% |
 
-Current formula: `502 / 569 = 88.22%`.
+Current formula: `508 / 569 = 89.28%`.
 
 ### PR #4493 batch (757 generated cases)
 
@@ -60,9 +60,15 @@ self-contained test branches (each holds only its subset, no legacy cases):
 
 ### Coverage (automatable baseline 569)
 
-- Covered (automatable): 502 / 569 = 88.22%
-- Full raw coverage: 52.42%
-- Backlog (unfiltered & uncovered): 67
+- Covered (automatable): 508 / 569 = 89.28%
+- Full raw coverage: 52.67%
+- Backlog (unfiltered & uncovered): 61
+
+### Supplemental strict filesystem batch
+
+- Added 6 validated suite cases in `xlsx严格文件操作补全.suite.yaml`.
+- Covered xlsx IDs: 1940143, 1806633, 1806637, 1807459, 1807365, 1809285.
+- Local run result: `Specs: 6 passed, 0 failed, 0 skipped`.
 
 ## Current Suite Layout
 
