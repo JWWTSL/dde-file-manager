@@ -16,6 +16,18 @@
   `youqu at validate --gate 4 --generate-output tests/at/yaml` passed.
   `youqu at validate --gate 5 --cases-mapped tests/at/cases_mapped.yaml --generate-output tests/at/yaml` passed.
 
+### Reporting fields
+
+| Field | Meaning | Current value |
+|---|---|---:|
+| 测试用例基线 | 测试用例表的总数 | 2400 |
+| 转换用例对标测试基线数据 | 可自动化用例成果跑出来的原始用例数 | 502 |
+| AT用例数 | 实际产生的 suite 用例数 | 1473 |
+| 可自动化数（测试基线） | 测试用例基线中按 AT 口径可自动化的数目 | 569 |
+| 可自动化覆盖率 | 转换用例对标测试基线数据 / 可自动化数 | 88.22% |
+
+Current formula: `502 / 569 = 88.22%`.
+
 ### PR #4493 batch (757 generated cases)
 
 - Generated: 757 cases across 11 suites
