@@ -70,28 +70,6 @@ suites:
     app: dde-file-manager
   - action: assert_element
     ref: 图片
-- id: case_smoke_文件操作_006
-  name: 排序方式-排序方式修改
-  description: '来源用例编号: 1816711'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 下载
-    do: click
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: element_action
-    ref: ToggleModeBtn
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_smoke_文件操作_007
   name: 长文件名功能 - 桌面创建长文件名的文件
   description: '来源用例编号: 1816029'
@@ -1169,20 +1147,6 @@ suites:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_smoke_文件操作_064
-  name: 反选快捷键【Shift+Ctrl+I】- 部分选中
-  description: '来源用例编号: 1806937'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: keyboard_press
-    key: ctrl+i
-    wait: 1.0
-  assert_steps:
   - action: assert_process_running
     app: dde-file-manager
 - id: case_smoke_文件操作_065

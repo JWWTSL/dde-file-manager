@@ -8,9 +8,7 @@ fast_fail: false
 env_check: []
 setup:
 - action: session_start
-  command: bash -lc 'pkill -9 -f "^/usr/libexec/dde-file-manager( |$)" 2>/dev/null || true; dde-file-manager --open-home >/tmp/dfm_at_youqu_increment.log
-    2>&1 & sleep 4; xdotool search --class dde-file-manager windowactivate %@ windowsize %@ 1200 700 >/tmp/dfm_at_youqu_increment_resize.log
-    2>&1 || true'
+  command: bash -lc 'pkill -9 -f "^/usr/libexec/dde-file-manager( |$)" 2>/dev/null || true; dde-file-manager --open-home >/tmp/dfm_at_youqu_increment.log 2>&1 & sleep 4; xdotool search --class dde-file-manager windowactivate %@ windowsize %@ 1200 700 >/tmp/dfm_at_youqu_increment_resize.log 2>&1 || true'
   wait: 1.0
 - action: assert_process_running
   app: dde-file-manager
@@ -274,7 +272,7 @@ suites:
     ref: listView_button
 - id: case_1806145
   name: 侧边栏目-查看主目录
-  description: 'xlsx 用例编号: 1873487
+  description: 'xlsx 用例编号: 1806145
 
     所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/冒烟用例/左侧栏/地址栏/导航栏(#132297)
 
@@ -316,7 +314,7 @@ suites:
     ref: 文档
 - id: case_1806067
   name: '[052]固定目录顶部排序'
-  description: 'xlsx 用例编号: 1873487
+  description: 'xlsx 用例编号: 1806067
 
     所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/冒烟用例/左侧栏/地址栏/导航栏(#132297)
 
@@ -393,7 +391,7 @@ suites:
     ref: listView_button
 - id: case_1808751
   name: 树状结构-开启树状结构
-  description: 'xlsx 用例编号: 1873487
+  description: 'xlsx 用例编号: 1808751
 
     所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/顶部区域/视图(#110809)
 
@@ -432,7 +430,7 @@ suites:
     ref: treeView_button
 - id: case_1816683
   name: 搜索框-搜索结果列表切换显示视图
-  description: 'xlsx 用例编号: 1873487
+  description: 'xlsx 用例编号: 1816683
 
     所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/顶部区域/V25设计改版(#123271)
 
@@ -500,7 +498,7 @@ suites:
     ref: iconView_button
 - id: case_1808251
   name: 桌面刷新优化-快捷键-桌面空白处点击右键【刷新】按钮刷新桌面
-  description: 'xlsx 用例编号: 1873487
+  description: 'xlsx 用例编号: 1808251
 
     所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/冒烟用例/桌面整理(#132301)
 
@@ -542,7 +540,7 @@ suites:
   - *id002
 - id: case_1808273
   name: '[smoke]计算机图标右键菜单'
-  description: 'xlsx 用例编号: 1873487
+  description: 'xlsx 用例编号: 1808273
 
     所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/冒烟用例/计算机界面/文管设置(#132333)
 
@@ -581,7 +579,7 @@ suites:
     ref: 计算机
 - id: case_1805689
   name: 【回收站】入口-通过桌面回收站图标进入回收站
-  description: 'xlsx 用例编号: 1873487
+  description: 'xlsx 用例编号: 1805689
 
     所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/冒烟用例/回收站(#132281)
 
@@ -616,7 +614,7 @@ suites:
     ref: 回收站
 - id: case_1806251
   name: 【最近使用】最近使用侧边栏右键-清除最近访问
-  description: 'xlsx 用例编号: 1873487
+  description: 'xlsx 用例编号: 1806251
 
     所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/冒烟用例/左侧栏/地址栏/导航栏(#132297)
 
@@ -651,7 +649,7 @@ suites:
     ref: 最近使用
 - id: case_1806277
   name: '[t]最近使用目录右键-空白页右键_'
-  description: 'xlsx 用例编号: 1873487
+  description: 'xlsx 用例编号: 1806277
 
     所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/主界面区域/固定目录/最近使用(#110827)
 
@@ -696,7 +694,7 @@ suites:
     ref: listView_button
 - id: case_1807685
   name: 检查文管-列表模式-留白处右键菜单
-  description: 'xlsx 用例编号: 1873487
+  description: 'xlsx 用例编号: 1807685
 
     所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/冒烟用例/视图/标签页(#132319)
 

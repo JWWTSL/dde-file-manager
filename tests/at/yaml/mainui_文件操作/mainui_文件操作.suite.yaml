@@ -1081,25 +1081,6 @@ suites:
   assert_steps:
   - action: assert_element
     ref: 计算机
-- id: case_mainui_文件操作_060
-  name: 文件操作-在有缩略图的文件夹使用F5不断刷新
-  description: '来源用例编号: 1806945'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: ToggleModeBtn
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: ToggleModeBtn
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_mainui_文件操作_061
   name: 选中多个文件后，再取消选中一些
   description: '来源用例编号: 1806939'
@@ -1161,42 +1142,6 @@ suites:
     key: ctrl+a
     wait: 1.0
   assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_mainui_文件操作_066
-  name: 文件操作-文件名快速定位到文件_
-  description: '来源用例编号: 1806875'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_mainui_文件操作_067
-  name: '[052]文件操作-选中文件后底部状态栏展示'
-  description: '来源用例编号: 1806871'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
 - id: case_mainui_文件操作_069

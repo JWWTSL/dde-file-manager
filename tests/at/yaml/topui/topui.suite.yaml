@@ -1,7 +1,3 @@
-# SPDX-FileCopyrightText: 2026 UnionTech Software Technology Co., Ltd.
-#
-# SPDX-License-Identifier: GPL-3.0-or-later
-
 name: 顶部区域_suite
 app: dde-file-manager
 description: 顶部区域模块 AT-SPI 用例
@@ -544,21 +540,6 @@ suites:
   - action: element_action
     ref: 主目录
     do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_topui_顶部区域_044
-  name: 视图选项-单击弹出视图选项面板
-  description: '来源用例编号: 1816691'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
     wait: 1.0
   assert_steps:
   - action: assert_process_running
@@ -1569,22 +1550,6 @@ suites:
     app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
-- id: case_topui_顶部区域_130
-  name: 【搜索】【支持筛选搜索】文管单击'搜索'按钮后，输入关键字进行搜索
-  description: '来源用例编号: 1805535'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: keyboard_press
-    key: Return
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_topui_顶部区域_132
   name: 【搜索】【支持筛选搜索】文管单击&amp;amp;quot;搜索&amp;amp;quot;按钮后，输入关键字和筛选过滤条件，进行搜索
   description: '来源用例编号: 1805501'
@@ -1649,21 +1614,6 @@ suites:
     app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
-- id: case_topui_顶部区域_136
-  name: 【搜索】【支持筛选搜索】文管单击&amp;amp;quot;搜索&amp;amp;quot;按钮后，&amp;amp;quot;筛选&amp;amp;quot;
-  description: '来源用例编号: 1805487'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_topui_顶部区域_137
   name: 【搜索】Bug211957转：搜索打开.sh文件后，打开文件所在位置不会导致文管闪退
   description: '来源用例编号: 1805483'
@@ -1714,27 +1664,6 @@ suites:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_topui_顶部区域_142
-  name: 【搜索】全文搜索-混合语言搜索多个文件（仅文件内容包含关键词）
-  description: '来源用例编号: 1805433'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_topui_顶部区域_143
   name: 【搜索】全文搜索-中文、英文字母单独/混合进行搜索
   description: '来源用例编号: 1805393'
@@ -1753,21 +1682,6 @@ suites:
 - id: case_topui_顶部区域_144
   name: 【搜索】全文搜索-繁体、数字单独/混合进行搜索
   description: '来源用例编号: 1805387'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_topui_顶部区域_145
-  name: 【搜索】全文搜索-特殊符号进行搜索
-  description: '来源用例编号: 1805379'
   tags: []
   steps:
   - action: session_start

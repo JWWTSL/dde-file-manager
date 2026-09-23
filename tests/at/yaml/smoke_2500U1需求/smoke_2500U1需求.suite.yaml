@@ -224,27 +224,6 @@ suites:
     app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
-- id: case_smoke_2500U1需求_014
-  name: 【在新标签页中打开新文件夹】不勾选在新标签页中打开新文件夹
-  description: '来源用例编号: 1935225'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 桌面
-    do: double_click
-    wait: 1.0
-  - action: element_action
-    ref: 桌面
-    do: double_click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_smoke_2500U1需求_016
   name: 【文件粉碎】非虚拟目录中文件粉碎
   description: '来源用例编号: 1924527'

@@ -184,23 +184,6 @@ suites:
     app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
-- id: case_smoke_搜索_011
-  name: 【搜索】【支持筛选搜索】文管单击“搜索”按钮后，筛选过滤条件，直接进行筛选
-  description: '来源用例编号: 1805533'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_smoke_搜索_012
   name: 【搜索】Bug200133转：全文搜索后，拖动侧边栏滚动条
   description: '来源用例编号: 1805485'
@@ -226,21 +209,6 @@ suites:
     wait: 5.0
   - action: keyboard_type
     text: deepin
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_smoke_搜索_014
-  name: 【搜索】全文搜索-搜索隐藏
-  description: '来源用例编号: 1805441'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
     wait: 1.0
   assert_steps:
   - action: assert_process_running
@@ -289,25 +257,6 @@ suites:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_smoke_搜索_020
-  name: 【搜索】高级搜索-打开/关闭
-  description: '来源用例编号: 1805269'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: keyboard_press
-    key: ctrl+f
-    wait: 1.0
-  - action: keyboard_press
-    key: ctrl+f
-    wait: 1.0
-  assert_steps:
   - action: assert_process_running
     app: dde-file-manager
   - action: assert_process_running

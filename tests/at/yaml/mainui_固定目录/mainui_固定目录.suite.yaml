@@ -1364,22 +1364,6 @@ suites:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_mainui_固定目录_099
-  name: '[t]最近使用目录右键-空白页右键_'
-  description: '来源用例编号: 1806277'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_mainui_固定目录_100
   name: 最近使用数据同步-多窗口记录同步
   description: '来源用例编号: 1806271'

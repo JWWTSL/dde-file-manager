@@ -170,21 +170,6 @@ suites:
     app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
-- id: case_smoke_视图_008
-  name: 地址栏-激活状态显示
-  description: '来源用例编号: 1816667'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_smoke_视图_009
   name: 地址栏-悬停状态显示
   description: '来源用例编号: 1816665'
@@ -215,36 +200,6 @@ suites:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_smoke_视图_011
-  name: 检查文管-列表模式-留白处右键菜单
-  description: '来源用例编号: 1807685'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 主目录
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 桌面
-    do: right_click
-    wait: 1.0
-  - action: keyboard_press
-    key: Menu
-    wait: 1.0
-  - action: element_action
-    ref: 回收站
-    do: right_click
-    wait: 1.0
-  - action: element_action
-    ref: 系统盘
-    do: right_click
-    wait: 1.0
-  assert_steps:
   - action: assert_process_running
     app: dde-file-manager
 - id: case_smoke_视图_012

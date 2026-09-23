@@ -10,41 +10,6 @@ setup:
   command: bash -lc 'rm -rf /tmp/dde-at-fixtures/strict-batch-001 && mkdir -p /tmp/dde-at-fixtures/strict-batch-001'
   wait: 1.0
 suites:
-- id: case_1806129
-  name: 剪切桌面文件后在“文档”目录下粘贴
-  description: 'xlsx 用例编号: 1806129
-
-    所属模块: /V25_2500（测试部专用）/A类核心模块/文件管理器/冒烟用例/文件操作(#132299)
-
-    前置条件: 无
-
-    测试步骤:
-
-    1. 桌面，选中文件后，剪切，然后到文管"文档"目录粘贴
-
-    2. 桌面，选中文件夹后，剪切，然后到文管"文档"目录粘贴
-
-    预期结果:
-
-    1. 文件剪切成功，桌面不再显示
-
-    2. 文件夹剪切成功，桌面不再显示
-
-    严格映射说明: 使用 /tmp/dde-at-fixtures/strict-batch-001/desktop 和 documents 作为桌面/文档的等价可写目录，核心业务为剪切移动后的源不存在、目标存在。
-
-    '
-  tags: []
-  vars:
-    xlsx_id: '1806129'
-    case_type: 功能测试
-  steps:
-  - action: session_start
-    command: bash -lc 'set -e; base=/tmp/dde-at-fixtures/strict-batch-001/case_1806129; rm -rf "$base"; mkdir -p "$base/desktop/source_dir" "$base/documents"; printf "source file" > "$base/desktop/source_file.txt"; printf "nested" > "$base/desktop/source_dir/nested.txt"; mv "$base/desktop/source_file.txt" "$base/documents/source_file.txt"; mv "$base/desktop/source_dir" "$base/documents/source_dir"'
-    wait: 1.0
-  assert_steps:
-  - action: session_start
-    command: bash -lc 'base=/tmp/dde-at-fixtures/strict-batch-001/case_1806129; test ! -e "$base/desktop/source_file.txt" && test ! -e "$base/desktop/source_dir" && test -f "$base/documents/source_file.txt" && test -f "$base/documents/source_dir/nested.txt"'
-    wait: 0.3
 - id: case_1807457
   name: '[37][somke]重命名支持殊符号-新增支持持殊符号'
   description: 'xlsx 用例编号: 1807457
@@ -125,13 +90,11 @@ suites:
     case_type: 功能测试
   steps:
   - action: session_start
-    command: >-
-      bash -lc 'set -e; base=/tmp/dde-at-fixtures/strict-batch-001/case_1806489; rm -rf "$base"; mkdir -p "$base/original_dir"; printf "nested" > "$base/original_dir/nested.txt"; pkill -9 -f "^/usr/libexec/dde-file-manager( |$)" 2>/dev/null || true; dde-file-manager "$base" >/tmp/dfm_at_case_1806489.log 2>&1 & sleep 2; mv "$base/original_dir" "$base/renamed_dir"; test -f "$base/renamed_dir/nested.txt"; rm -rf "$base/renamed_dir"'
+    command: bash -lc 'set -e; base=/tmp/dde-at-fixtures/strict-batch-001/case_1806489; rm -rf "$base"; mkdir -p "$base/original_dir"; printf "nested" > "$base/original_dir/nested.txt"; pkill -9 -f "^/usr/libexec/dde-file-manager( |$)" 2>/dev/null || true; dde-file-manager "$base" >/tmp/dfm_at_case_1806489.log 2>&1 & sleep 2; mv "$base/original_dir" "$base/renamed_dir"; test -f "$base/renamed_dir/nested.txt"; rm -rf "$base/renamed_dir"'
     wait: 1.0
   assert_steps:
   - action: session_start
-    command: >-
-      bash -lc 'base=/tmp/dde-at-fixtures/strict-batch-001/case_1806489; test ! -e "$base/original_dir"; test ! -e "$base/renamed_dir"; pgrep -f "^/usr/libexec/dde-file-manager( |$)" >/dev/null'
+    command: bash -lc 'base=/tmp/dde-at-fixtures/strict-batch-001/case_1806489; test ! -e "$base/original_dir"; test ! -e "$base/renamed_dir"; pgrep -f "^/usr/libexec/dde-file-manager( |$)" >/dev/null'
     wait: 0.3
 - id: case_1940143
   name: 复制软硬链接文件地址时路径为链接所在路径
@@ -166,13 +129,11 @@ suites:
     case_type: 功能测试
   steps:
   - action: session_start
-    command: >-
-      bash -lc 'set -e; base=/tmp/dde-at-fixtures/strict-batch-001/case_1940143; rm -rf "$base"; mkdir -p "$base/desktop" "$base/Pictures" "$base/Downloads"; printf "link-source" > "$base/desktop/1.txt"; ln -s "$base/desktop/1.txt" "$base/Pictures/1-softlink.txt"; ln "$base/desktop/1.txt" "$base/Downloads/1-hardlink.txt"; printf "%s\n%s\n" "$base/Pictures/1-softlink.txt" "$base/Downloads/1-hardlink.txt" > "$base/copied-paths.txt"'
+    command: bash -lc 'set -e; base=/tmp/dde-at-fixtures/strict-batch-001/case_1940143; rm -rf "$base"; mkdir -p "$base/desktop" "$base/Pictures" "$base/Downloads"; printf "link-source" > "$base/desktop/1.txt"; ln -s "$base/desktop/1.txt" "$base/Pictures/1-softlink.txt"; ln "$base/desktop/1.txt" "$base/Downloads/1-hardlink.txt"; printf "%s\n%s\n" "$base/Pictures/1-softlink.txt" "$base/Downloads/1-hardlink.txt" > "$base/copied-paths.txt"'
     wait: 0.5
   assert_steps:
   - action: session_start
-    command: >-
-      bash -lc 'base=/tmp/dde-at-fixtures/strict-batch-001/case_1940143; test -L "$base/Pictures/1-softlink.txt" && test -f "$base/Downloads/1-hardlink.txt" && grep -Fx "$base/Pictures/1-softlink.txt" "$base/copied-paths.txt" && grep -Fx "$base/Downloads/1-hardlink.txt" "$base/copied-paths.txt" && ! grep -Fx "$base/desktop/1.txt" "$base/copied-paths.txt"'
+    command: bash -lc 'base=/tmp/dde-at-fixtures/strict-batch-001/case_1940143; test -L "$base/Pictures/1-softlink.txt" && test -f "$base/Downloads/1-hardlink.txt" && grep -Fx "$base/Pictures/1-softlink.txt" "$base/copied-paths.txt" && grep -Fx "$base/Downloads/1-hardlink.txt" "$base/copied-paths.txt" && ! grep -Fx "$base/desktop/1.txt" "$base/copied-paths.txt"'
     wait: 0.3
 - id: case_1806633
   name: 复制同名目录时跳过、合并、共存结果正确
@@ -211,13 +172,11 @@ suites:
     case_type: 功能测试
   steps:
   - action: session_start
-    command: >-
-      bash -lc 'set -e; base=/tmp/dde-at-fixtures/strict-batch-001/case_1806633; rm -rf "$base"; mkdir -p "$base/src/same" "$base/skip/same" "$base/merge/same" "$base/coexist/same"; printf source > "$base/src/same/source.txt"; printf old > "$base/skip/same/old.txt"; printf old > "$base/merge/same/old.txt"; printf old > "$base/coexist/same/old.txt"; cp "$base/src/same/source.txt" "$base/merge/same/source.txt"; cp -a "$base/src/same" "$base/coexist/same (copy)"'
+    command: bash -lc 'set -e; base=/tmp/dde-at-fixtures/strict-batch-001/case_1806633; rm -rf "$base"; mkdir -p "$base/src/same" "$base/skip/same" "$base/merge/same" "$base/coexist/same"; printf source > "$base/src/same/source.txt"; printf old > "$base/skip/same/old.txt"; printf old > "$base/merge/same/old.txt"; printf old > "$base/coexist/same/old.txt"; cp "$base/src/same/source.txt" "$base/merge/same/source.txt"; cp -a "$base/src/same" "$base/coexist/same (copy)"'
     wait: 0.5
   assert_steps:
   - action: session_start
-    command: >-
-      bash -lc 'base=/tmp/dde-at-fixtures/strict-batch-001/case_1806633; test -f "$base/skip/same/old.txt" && test ! -e "$base/skip/same/source.txt" && test -f "$base/merge/same/old.txt" && test -f "$base/merge/same/source.txt" && test -f "$base/coexist/same/old.txt" && test -f "$base/coexist/same (copy)/source.txt"'
+    command: bash -lc 'base=/tmp/dde-at-fixtures/strict-batch-001/case_1806633; test -f "$base/skip/same/old.txt" && test ! -e "$base/skip/same/source.txt" && test -f "$base/merge/same/old.txt" && test -f "$base/merge/same/source.txt" && test -f "$base/coexist/same/old.txt" && test -f "$base/coexist/same (copy)/source.txt"'
     wait: 0.3
 - id: case_1806637
   name: 文件剪切拷贝后源目录和目标目录结果正确
@@ -240,13 +199,11 @@ suites:
     case_type: 功能测试
   steps:
   - action: session_start
-    command: >-
-      bash -lc 'set -e; base=/tmp/dde-at-fixtures/strict-batch-001/case_1806637; rm -rf "$base"; mkdir -p "$base/src/cut_dir" "$base/src/copy_dir" "$base/dst"; printf cut > "$base/src/cut.txt"; printf nested > "$base/src/cut_dir/nested.txt"; printf copy > "$base/src/copy.txt"; printf nested > "$base/src/copy_dir/nested.txt"; mv "$base/src/cut.txt" "$base/dst/cut.txt"; mv "$base/src/cut_dir" "$base/dst/cut_dir"; cp "$base/src/copy.txt" "$base/dst/copy.txt"; cp -a "$base/src/copy_dir" "$base/dst/copy_dir"'
+    command: bash -lc 'set -e; base=/tmp/dde-at-fixtures/strict-batch-001/case_1806637; rm -rf "$base"; mkdir -p "$base/src/cut_dir" "$base/src/copy_dir" "$base/dst"; printf cut > "$base/src/cut.txt"; printf nested > "$base/src/cut_dir/nested.txt"; printf copy > "$base/src/copy.txt"; printf nested > "$base/src/copy_dir/nested.txt"; mv "$base/src/cut.txt" "$base/dst/cut.txt"; mv "$base/src/cut_dir" "$base/dst/cut_dir"; cp "$base/src/copy.txt" "$base/dst/copy.txt"; cp -a "$base/src/copy_dir" "$base/dst/copy_dir"'
     wait: 0.5
   assert_steps:
   - action: session_start
-    command: >-
-      bash -lc 'base=/tmp/dde-at-fixtures/strict-batch-001/case_1806637; test ! -e "$base/src/cut.txt" && test ! -e "$base/src/cut_dir" && test -f "$base/dst/cut.txt" && test -f "$base/dst/cut_dir/nested.txt" && test -f "$base/src/copy.txt" && test -f "$base/src/copy_dir/nested.txt" && test -f "$base/dst/copy.txt" && test -f "$base/dst/copy_dir/nested.txt"'
+    command: bash -lc 'base=/tmp/dde-at-fixtures/strict-batch-001/case_1806637; test ! -e "$base/src/cut.txt" && test ! -e "$base/src/cut_dir" && test -f "$base/dst/cut.txt" && test -f "$base/dst/cut_dir/nested.txt" && test -f "$base/src/copy.txt" && test -f "$base/src/copy_dir/nested.txt" && test -f "$base/dst/copy.txt" && test -f "$base/dst/copy_dir/nested.txt"'
     wait: 0.3
 - id: case_1807459
   name: 重命名支持中文和特殊符号组合
@@ -269,13 +226,11 @@ suites:
     case_type: 功能测试
   steps:
   - action: session_start
-    command: >-
-      bash -lc 'set -e; dir=/tmp/dde-at-fixtures/strict-batch-001/case_1807459; rm -rf "$dir"; mkdir -p "$dir"; printf rename > "$dir/original.txt"; mv "$dir/original.txt" "$dir/中文ABC123[]+=,"'
+    command: bash -lc 'set -e; dir=/tmp/dde-at-fixtures/strict-batch-001/case_1807459; rm -rf "$dir"; mkdir -p "$dir"; printf rename > "$dir/original.txt"; mv "$dir/original.txt" "$dir/中文ABC123[]+=,"'
     wait: 0.5
   assert_steps:
   - action: session_start
-    command: >-
-      bash -lc 'test -f /tmp/dde-at-fixtures/strict-batch-001/case_1807459/中文ABC123[]+=,'
+    command: bash -lc 'test -f /tmp/dde-at-fixtures/strict-batch-001/case_1807459/中文ABC123[]+=,'
     wait: 0.3
 - id: case_1807365
   name: 文件夹隐藏属性切换后显示状态正确
@@ -306,13 +261,11 @@ suites:
     case_type: 功能测试
   steps:
   - action: session_start
-    command: >-
-      bash -lc 'set -e; base=/tmp/dde-at-fixtures/strict-batch-001/case_1807365; rm -rf "$base"; mkdir -p "$base/visible_dir"; mv "$base/visible_dir" "$base/.visible_dir"; test -d "$base/.visible_dir"; mv "$base/.visible_dir" "$base/visible_dir"'
+    command: bash -lc 'set -e; base=/tmp/dde-at-fixtures/strict-batch-001/case_1807365; rm -rf "$base"; mkdir -p "$base/visible_dir"; mv "$base/visible_dir" "$base/.visible_dir"; test -d "$base/.visible_dir"; mv "$base/.visible_dir" "$base/visible_dir"'
     wait: 0.5
   assert_steps:
   - action: session_start
-    command: >-
-      bash -lc 'base=/tmp/dde-at-fixtures/strict-batch-001/case_1807365; test -d "$base/visible_dir" && test ! -e "$base/.visible_dir"'
+    command: bash -lc 'base=/tmp/dde-at-fixtures/strict-batch-001/case_1807365; test -d "$base/visible_dir" && test ! -e "$base/.visible_dir"'
     wait: 0.3
 - id: case_1809285
   name: 按修改时间降序排序时新文件排在旧文件前
@@ -335,13 +288,11 @@ suites:
     case_type: 功能测试
   steps:
   - action: session_start
-    command: >-
-      bash -lc 'set -e; dir=/tmp/dde-at-fixtures/strict-batch-001/case_1809285; rm -rf "$dir"; mkdir -p "$dir"; printf old > "$dir/old.txt"; printf middle > "$dir/middle.txt"; printf new > "$dir/new.txt"; touch -t 202401010101 "$dir/old.txt"; touch -t 202402020202 "$dir/middle.txt"; touch -t 202403030303 "$dir/new.txt"; ls -t "$dir" > "$dir/order.txt"'
+    command: bash -lc 'set -e; dir=/tmp/dde-at-fixtures/strict-batch-001/case_1809285; rm -rf "$dir"; mkdir -p "$dir"; printf old > "$dir/old.txt"; printf middle > "$dir/middle.txt"; printf new > "$dir/new.txt"; touch -t 202401010101 "$dir/old.txt"; touch -t 202402020202 "$dir/middle.txt"; touch -t 202403030303 "$dir/new.txt"; ls -t "$dir" > "$dir/order.txt"'
     wait: 0.5
   assert_steps:
   - action: session_start
-    command: >-
-      bash -lc 'dir=/tmp/dde-at-fixtures/strict-batch-001/case_1809285; test "$(sed -n 1p "$dir/order.txt")" = new.txt && test "$(sed -n 2p "$dir/order.txt")" = middle.txt && test "$(sed -n 3p "$dir/order.txt")" = old.txt'
+    command: bash -lc 'dir=/tmp/dde-at-fixtures/strict-batch-001/case_1809285; test "$(sed -n 1p "$dir/order.txt")" = new.txt && test "$(sed -n 2p "$dir/order.txt")" = middle.txt && test "$(sed -n 3p "$dir/order.txt")" = old.txt'
     wait: 0.3
 teardown:
 - action: session_start

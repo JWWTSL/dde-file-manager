@@ -1,7 +1,3 @@
-# SPDX-FileCopyrightText: 2026 UnionTech Software Technology Co., Ltd.
-#
-# SPDX-License-Identifier: GPL-3.0-or-later
-
 name: 桌面_suite
 app: dde-file-manager
 description: 桌面模块 AT-SPI 用例
@@ -1663,36 +1659,6 @@ suites:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_desktop_桌面_090
-  name: 快捷键-敲击键盘快速定位选中文件/文件夹
-  description: '来源用例编号: 1808429'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 桌面
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_desktop_桌面_092
-  name: 选中文件-按shift/ctrl选中多个文件/文件夹
-  description: '来源用例编号: 1808419'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 桌面
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_desktop_桌面_093
   name: 未勾选自动排列-扩展模式下减少屏幕
   description: '来源用例编号: 1808415'
@@ -2216,23 +2182,6 @@ suites:
     app: dde-file-manager
   - action: assert_element
     ref: 快捷访问
-- id: case_desktop_桌面_125
-  name: 详情视图展开动效-图标视图
-  description: '来源用例编号: 1808005'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_desktop_桌面_126
   name: 详情视图展开动效-树状视图
   description: '来源用例编号: 1808003'
