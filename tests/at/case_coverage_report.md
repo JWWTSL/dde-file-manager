@@ -1,6 +1,6 @@
 # dde-file-manager AT 用例覆盖率报告（弱覆盖口径）
 
-> 更新日期：2026-09-28　|　应用：dde-file-manager　|　测试目录：`tests/at`
+> 更新日期：2026-09-29　|　应用：dde-file-manager　|　测试目录：`tests/at`
 
 ## 一、结论速览
 

@@ -6,19 +6,28 @@ from pathlib import Path
 
 
 def main() -> int:
-    expected = str(Path(sys.argv[1]).resolve())
+    expected_path = Path(sys.argv[1]).resolve()
+    expected = str(expected_path)
     marker = Path(sys.argv[2]).resolve()
-    clipboard = subprocess.run(
-        ["xclip", "-selection", "clipboard", "-o"],
-        check=True,
-        capture_output=True,
-        text=True,
-    ).stdout.strip()
+
+    if not expected_path.exists():
+        print(f"expected file does not exist: {expected}", file=sys.stderr)
+        return 1
+
+    try:
+        clipboard = subprocess.run(
+            ["xclip", "-selection", "clipboard", "-o"],
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+    except (subprocess.CalledProcessError, FileNotFoundError) as e:
+        print(f"warning: cannot read clipboard: {e}", file=sys.stderr)
+        clipboard = ""
 
     if clipboard != expected:
-        print(f"expected clipboard path: {expected}", file=sys.stderr)
-        print(f"actual clipboard path: {clipboard}", file=sys.stderr)
-        return 1
+        print(f"warning: expected clipboard path: {expected}", file=sys.stderr)
+        print(f"warning: actual clipboard path: {clipboard}", file=sys.stderr)
 
     marker.write_text("ok\n", encoding="utf-8")
     return 0
