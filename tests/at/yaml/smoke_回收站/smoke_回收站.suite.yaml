@@ -7,25 +7,6 @@ fast_fail: false
 env_check: []
 setup: []
 suites:
-- id: case_smoke_回收站_001
-  name: Bug200815转：长文件名开启，回收站还原原始目录已存在同名文件的
-  description: '来源用例编号: 1812081'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 回收站
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_smoke_回收站_002
   name: '[t]打开-回收站内选中单个文件夹右键-打开'
   description: '来源用例编号: 1809267'
@@ -291,25 +272,6 @@ suites:
   assert_steps:
   - action: assert_element
     ref: 回收站
-- id: case_smoke_回收站_025
-  name: '[096]页面检查-回收站详细信息展示正确'
-  description: '来源用例编号: 1805667'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 回收站
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 回收站
-  - action: assert_element
-    ref: 图片
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_smoke_回收站_026
   name: 【回收站】添加数据到回收站-其他本地目录右键删除文件/文件夹
   description: '来源用例编号: 1805651'

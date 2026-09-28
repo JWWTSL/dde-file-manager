@@ -10,19 +10,4 @@ tags: []
 fast_fail: false
 env_check: []
 setup: []
-suites:
-- id: case_fourprop_四性_001
-  name: 文件管理器翻译验证-其他语言
-  description: '来源用例编号: 1931887'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 文档
+suites: []

@@ -38,21 +38,6 @@ suites:
     ref: 文档
   - action: assert_element
     ref: 桌面
-- id: case_teamstd_团标_004
-  name: 支持桌面图标按照网格式排列
-  description: '来源用例编号: 1850193'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_teamstd_团标_007
   name: 支持文件图标的拖拽摆放以及名称修改
   description: '来源用例编号: 1850187'
@@ -172,23 +157,6 @@ suites:
     app: dde-file-manager
   - action: assert_element
     ref: 回收站
-- id: case_teamstd_团标_014
-  name: 文件名最大长度不小于255字节
-  description: '来源用例编号: 1850169'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_teamstd_团标_015
   name: 按文件名、修改时间段、文件大小搜索
   description: '来源用例编号: 1850167'
@@ -296,35 +264,6 @@ suites:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-- id: case_teamstd_团标_019
-  name: 文本、图片、视频、音乐快速访问
-  description: '来源用例编号: 1850159'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 图片
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 视频
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 音乐
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_element
-    ref: 图片
-  - action: assert_element
-    ref: 视频
-  - action: assert_element
-    ref: 音乐
 - id: case_teamstd_团标_021
   name: 新建文档、新建文件夹、创建快捷方式
   description: '来源用例编号: 1850155'
@@ -397,40 +336,3 @@ suites:
     ref: 回收站
   - action: assert_element
     ref: 主目录
-- id: case_teamstd_团标_024
-  name: 主目录、桌面、文档、下载、回收站
-  description: '来源用例编号: 1850141'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 桌面
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 主目录
-  - action: assert_element
-    ref: 桌面
-  - action: assert_element
-    ref: 文档
-  - action: assert_element
-    ref: 下载
-  - action: assert_element
-    ref: 回收站
-  - action: assert_element
-    ref: 回收站

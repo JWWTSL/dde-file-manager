@@ -129,40 +129,6 @@ suites:
     app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
-- id: case_smoke_搜索_010
-  name: 【搜索】文件重命名、新建后，进行搜索
-  description: '来源用例编号: 1805537'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_smoke_搜索_011
-  name: 【搜索】【支持筛选搜索】文管单击“搜索”按钮后，筛选过滤条件，直接进行筛选
-  description: '来源用例编号: 1805533'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_smoke_搜索_013
   name: 【搜索】搜索-单个词搜索
   description: '来源用例编号: 1805469'
@@ -173,51 +139,6 @@ suites:
     wait: 5.0
   - action: keyboard_type
     text: deepin
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_smoke_搜索_014
-  name: 【搜索】全文搜索-搜索隐藏
-  description: '来源用例编号: 1805441'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_smoke_搜索_015
-  name: 【搜索】搜索-关键词搜索（文件名和内容均包含关键词）
-  description: '来源用例编号: 1805419'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_smoke_搜索_018
-  name: 【搜索】全文搜索-中文、繁体、英文、数字单独/混合进行搜索
-  description: '来源用例编号: 1805381'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
     wait: 1.0
   assert_steps:
   - action: assert_process_running

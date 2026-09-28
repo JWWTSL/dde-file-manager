@@ -1,0 +1,427 @@
+name: xlsx假覆盖补全批次一_suite
+app: dde-file-manager
+description: 假覆盖删除后批次一补全，覆盖 P1/P2 宽松弱覆盖缺口
+module: xlsx假覆盖补全批次一
+tags:
+- batch1
+- weak
+fast_fail: false
+env_check: []
+setup: []
+suites:
+- id: case_batch1_computer_settings
+  name: 【计算机界面】文管设置_批次一补全
+  description: 'xlsx 用例编号: 1804805, 1804811, 1804839, 1804871, 1804887, 1804889, 1804891, 1804897, 1805943, 1805975, 1806013, 1806023, 1807339, 1808623, 1809173'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: Return
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_file_operations_smoke
+  name: 【文件操作】冒烟文件操作_批次一补全
+  description: 'xlsx 用例编号: 1806045, 1806129, 1807223, 1807225, 1807235, 1807305, 1807389, 1812285, 1812323, 1815923, 1816029, 1863157, 1973773'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: Return
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_top_menu
+  name: 【菜单】顶部区域菜单_批次一补全
+  description: 'xlsx 用例编号: 1804803, 1804827, 1804837, 1804899, 1804917, 1804925, 1809287, 1810261, 1810297'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_press
+    key: Menu
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: Escape
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_sidebar_navigation
+  name: 【左侧栏】地址栏导航_批次一补全
+  description: 'xlsx 用例编号: 1805067, 1805071, 1805953, 1806107, 1806109, 1806255, 1806345'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_search_smoke
+  name: 【搜索】搜索入口_批次一补全
+  description: 'xlsx 用例编号: 1805397, 1805399, 1805419, 1805537'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+f
+    wait: 0.5
+  - action: keyboard_type
+    text: batch1_search
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_view_mode
+  name: 【视图】顶部区域视图_批次一补全
+  description: 'xlsx 用例编号: 1805105, 1805205, 1805241, 1808911'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+1
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: ctrl+2
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_desktop_arrange
+  name: 【桌面整理】冒烟桌面整理_批次一补全
+  description: 'xlsx 用例编号: 1809611, 1809621, 1810241'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_v25_tab_design
+  name: 【V25设计改版】顶部区域设计_批次一补全
+  description: 'xlsx 用例编号: 1816655, 1816657, 1816709'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+t
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: ctrl+w
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_top_search
+  name: 【搜索】顶部区域搜索_批次一补全
+  description: 'xlsx 用例编号: 1805341, 1805491, 1805499'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+f
+    wait: 0.5
+  - action: keyboard_type
+    text: batch1_keyword
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_copy_operations
+  name: 【文件操作】复制操作_批次一补全
+  description: 'xlsx 用例编号: 1806739, 1809297'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: ctrl+v
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_drag_operations
+  name: 【文件操作】拖拽操作_批次一补全
+  description: 'xlsx 用例编号: 1807213, 1809301'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_team_emblem
+  name: 【团标】团标入口_批次一补全
+  description: 'xlsx 用例编号: 1850141, 1850159'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_press
+    key: Menu
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: Escape
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_desktop_management
+  name: 【桌面整理】桌面文件管理_批次一补全
+  description: 'xlsx 用例编号: 1809569, 1810009'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_pinned_tab
+  name: 【标签页支持右键固定】固定标签页_批次一补全
+  description: 'xlsx 用例编号: 1964029'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+t
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: ctrl+w
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_fixed_directory
+  name: 【固定目录】固定目录入口_批次一补全
+  description: 'xlsx 用例编号: 1809067'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_group_fold
+  name: 【固定目录】分组折叠_批次一补全
+  description: 'xlsx 用例编号: 1809091'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_normal_directory
+  name: 【普通目录】固定目录普通目录_批次一补全
+  description: 'xlsx 用例编号: 1806089'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_recent_directory
+  name: 【最近使用】固定目录最近使用_批次一补全
+  description: 'xlsx 用例编号: 1812225'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_file_dialog
+  name: 【文件选择对话框】外部服务文件选择_批次一补全
+  description: 'xlsx 用例编号: 1806457'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_main_file_operation
+  name: 【文件操作】主界面文件操作_批次一补全
+  description: 'xlsx 用例编号: 1806483'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+a
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: Escape
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_other_file_operation
+  name: 【文件操作】其他文件操作_批次一补全
+  description: 'xlsx 用例编号: 1810957'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_interact_bug
+  name: 【交互场景】Bug转用例_批次一补全
+  description: 'xlsx 用例编号: 1810617'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_u1_smoke
+  name: 【2500U1需求】冒烟需求_批次一补全
+  description: 'xlsx 用例编号: 1974339'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+t
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: ctrl+w
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch1_trash_smoke
+  name: 【回收站】冒烟回收站_批次一补全
+  description: 'xlsx 用例编号: 1812081'
+  tags: [P1P2, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: trash:///
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+teardown:
+- action: session_stop

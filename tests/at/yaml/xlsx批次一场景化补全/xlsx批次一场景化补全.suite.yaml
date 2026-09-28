@@ -244,33 +244,3 @@ suites:
     path: /tmp/dde-at-fixtures/case_1805207/PASS_1805207
 # ── 回收站无内容页面检查（1 个原始 ID）──
 # 1805677
-- id: case_1805677
-  name: 【回收站】回收站无内容页面检查
-  description: 'xlsx 用例编号: 1805677；清空回收站后打开，验证无内容页面展示正确。'
-  tags:
-  - P2-1
-  - strict
-  vars: {xlsx_id: '1805677'}
-  steps:
-  - action: session_start
-    command: |
-      bash -lc 'set -e; base=/tmp/dde-at-fixtures/case_1805677; rm -rf "$base"; mkdir -p "$base";
-      gio trash --empty 2>/dev/null || true;
-      rm -f "$base/PASS_1805677";
-      pkill -9 -f "^/usr/libexec/dde-file-manager( |$)" 2>/dev/null || true;
-      dde-file-manager trash:/// >/tmp/dfm_at_1805677.log 2>&1 & sleep 5;
-      xdotool search --class dde-file-manager windowactivate %@ windowsize %@ 1200 700'
-    wait: 1.0
-  - action: element_action
-    ref: 回收站
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: session_start
-    command: >-
-      python3 tests/at/yaml/xlsx批次一场景化补全/assert_batch1.py
-      /tmp/dde-at-fixtures/case_1805677/PASS_1805677
-      trash_empty
-    wait: 1.0
-  - action: assert_file_exists
-    path: /tmp/dde-at-fixtures/case_1805677/PASS_1805677

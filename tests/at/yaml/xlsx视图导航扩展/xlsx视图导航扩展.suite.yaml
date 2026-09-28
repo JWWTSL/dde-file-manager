@@ -67,19 +67,5 @@ suites:
   assert_steps:
   - action: assert_element
     ref: AddBtn
-- id: case_1812225
-  name: 长文件名功能-最近使用
-  description: 按 xlsx 固定目录场景进入最近使用并验证入口存在
-  tags: []
-  steps:
-  - action: element_action
-    ref: 最近使用
-    do: click
-    wait: 1.0
-  assert_steps:
-  - action: assert_element
-    ref: 最近使用
-  - action: assert_element
-    ref: side_bar_view
 teardown:
 - action: session_stop

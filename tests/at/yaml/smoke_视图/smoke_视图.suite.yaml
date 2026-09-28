@@ -64,23 +64,6 @@ suites:
     app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
-- id: case_smoke_视图_002
-  name: 标签页-调整标签页顺序
-  description: '来源用例编号: 1816723'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_smoke_视图_004
   name: 标签页-新建标签页
   description: '来源用例编号: 1816717'
@@ -97,21 +80,6 @@ suites:
     app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_smoke_视图_005
-  name: 视图选项-在设置中拖动图标大小，滑动正常
-  description: '来源用例编号: 1816697'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
   - action: assert_process_running
     app: dde-file-manager
 - id: case_smoke_视图_006
@@ -151,21 +119,6 @@ suites:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_smoke_视图_008
-  name: 地址栏-激活状态显示
-  description: '来源用例编号: 1816667'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
   - action: assert_process_running
     app: dde-file-manager
 - id: case_smoke_视图_011

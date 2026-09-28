@@ -7,21 +7,6 @@ fast_fail: false
 env_check: []
 setup: []
 suites:
-- id: case_mainui_文件属性_001
-  name: 属性复制-属性字段最长支持4行，超出从中间隐藏字符
-  description: '来源用例编号: 1807433'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_mainui_文件属性_002
   name: 属性复制-快捷键全选
   description: '来源用例编号: 1807431'

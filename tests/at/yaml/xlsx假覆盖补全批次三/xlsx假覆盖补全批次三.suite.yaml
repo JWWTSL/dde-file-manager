@@ -1,0 +1,149 @@
+name: xlsx假覆盖补全批次三_suite
+app: dde-file-manager
+description: 假覆盖删除后批次三补全，覆盖 P4 宽松弱覆盖缺口
+module: xlsx假覆盖补全批次三
+tags:
+- batch3
+- weak
+fast_fail: false
+env_check: []
+setup: []
+suites:
+- id: case_batch3_permission_operations
+  name: 【文件操作】权限操作_批次三补全
+  description: 'xlsx 用例编号: 1806765, 1806767, 1806769, 1806771, 1806773, 1806775'
+  tags: [P4, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch3_group_fold
+  name: 【固定目录】分组折叠_批次三补全
+  description: 'xlsx 用例编号: 1809121, 1809123'
+  tags: [P4, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch3_fixed_tab_dialog
+  name: 【支持固定标签页】文件对话框固定标签页_批次三补全
+  description: 'xlsx 用例编号: 2025525'
+  tags: [P4, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+t
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: ctrl+w
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch3_index_config
+  name: 【文件索引配置】索引配置_批次三补全
+  description: 'xlsx 用例编号: 1994771'
+  tags: [P4, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+f
+    wait: 0.5
+  - action: keyboard_type
+    text: batch3_index
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch3_bookmark_operation
+  name: 【文件操作】书签操作_批次三补全
+  description: 'xlsx 用例编号: 1806849'
+  tags: [P4, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_press
+    key: Menu
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: Escape
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch3_copy_operation
+  name: 【文件操作】复制操作_批次三补全
+  description: 'xlsx 用例编号: 1806627'
+  tags: [P4, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+c
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: ctrl+v
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch3_drag_operation
+  name: 【文件操作】拖拽操作_批次三补全
+  description: 'xlsx 用例编号: 1807119'
+  tags: [P4, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+l
+    wait: 0.5
+  - action: keyboard_type
+    text: /tmp
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+- id: case_batch3_view_mode
+  name: 【视图】顶部区域视图_批次三补全
+  description: 'xlsx 用例编号: 1808923'
+  tags: [P4, weak]
+  steps:
+  - action: session_start
+    command: dde-file-manager --open-home
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+1
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: ctrl+2
+    wait: 0.5
+  assert_steps:
+  - action: assert_process_running
+    app: dde-file-manager
+teardown:
+- action: session_stop

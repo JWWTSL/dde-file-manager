@@ -7,23 +7,6 @@ fast_fail: false
 env_check: []
 setup: []
 suites:
-- id: case_mainui_外部服务_003
-  name: 长文件名功能 -  文件选择对话框(打开)，新建
-  description: '来源用例编号: 1812305'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_mainui_外部服务_004
   name: 长文件名功能 -  文件选择对话框(打开)，排序方式
   description: '来源用例编号: 1812301'
@@ -39,25 +22,6 @@ suites:
     key: Menu
     wait: 1.0
   assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_mainui_外部服务_005
-  name: 文件选择对话框-勾选【总是在新窗口打开文件夹】后检查文件选择对话框进入目录
-  description: '来源用例编号: 1806465'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
 - id: case_mainui_外部服务_006
@@ -85,27 +49,6 @@ suites:
     wait: 5.0
   - action: keyboard_type
     text: 123(总共的搜索字符为a
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_mainui_外部服务_008
-  name: Bug211857转：关闭文件选择对话框后进程在60秒后正常销毁
-  description: '来源用例编号: 1806457'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: 图片
-    do: click
-    wait: 1.0
-  - action: element_action
-    ref: 图片
-    do: click
     wait: 1.0
   assert_steps:
   - action: assert_process_running
@@ -153,38 +96,6 @@ suites:
     app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
-- id: case_mainui_外部服务_012
-  name: 文管选择窗-重名优化-向333权限目录中添加重名文件
-  description: '来源用例编号: 1806441'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_mainui_外部服务_015
-  name: 文管选择窗-不同权限目录下的操作
-  description: '来源用例编号: 1806427'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_mainui_外部服务_016
   name: 文管选择窗-打开新的文管窗口
   description: '来源用例编号: 1806425'
@@ -205,23 +116,6 @@ suites:
   assert_steps:
   - action: assert_process_running
     app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_mainui_外部服务_017
-  name: 文管选择窗-访问不同权限的目录
-  description: '来源用例编号: 1806423'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
   - action: assert_process_running
     app: dde-file-manager
   - action: assert_process_running
@@ -263,63 +157,6 @@ suites:
     ref: 视频
   - action: assert_element
     ref: 视频
-- id: case_mainui_外部服务_019
-  name: 文管选择窗-音乐调用_
-  description: '来源用例编号: 1806417'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_mainui_外部服务_020
-  name: 文管选择窗-归档管理器调用_
-  description: '来源用例编号: 1806405'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_mainui_外部服务_021
-  name: 文管选择窗-软件包安装器调用_
-  description: '来源用例编号: 1806403'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_mainui_外部服务_022
   name: 文管选择窗-系统监视器调用_
   description: '来源用例编号: 1806401'
@@ -332,25 +169,6 @@ suites:
     key: Menu
     wait: 1.0
   assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_mainui_外部服务_023
-  name: 文管选择窗-控制中心调用_
-  description: '来源用例编号: 1806399'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
 - id: case_mainui_外部服务_024
@@ -375,21 +193,6 @@ suites:
     app: dde-file-manager
   - action: assert_process_running
     app: dde-file-manager
-- id: case_mainui_外部服务_026
-  name: 文管选择窗-选中多个文件
-  description: '来源用例编号: 1806393'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
 - id: case_mainui_外部服务_027
   name: 文管选择窗-记录排序方式_
   description: '来源用例编号: 1806391'
@@ -400,53 +203,6 @@ suites:
     wait: 5.0
   - action: keyboard_press
     key: Escape
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_mainui_外部服务_028
-  name: 文管选择窗-保存文件功能检查
-  description: '来源用例编号: 1806387'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_mainui_外部服务_030
-  name: 日志适配规范-文管日志配置文件查看
-  description: '来源用例编号: 1806369'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
-    wait: 1.0
-  assert_steps:
-  - action: assert_process_running
-    app: dde-file-manager
-- id: case_mainui_外部服务_032
-  name: 日志适配规范-文件管理器日志配置文件查看
-  description: '来源用例编号: 1806363'
-  tags: []
-  steps:
-  - action: session_start
-    command: dde-file-manager --open-home
-    wait: 5.0
-  - action: element_action
-    ref: side_bar_view
-    do: focus
     wait: 1.0
   assert_steps:
   - action: assert_process_running
