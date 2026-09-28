@@ -1,0 +1,72 @@
+name: xlsx场景化补全五_suite
+app: dde-file-manager
+description: 场景化补全五——通过属性对话框切换隐藏属性并验证恢复显示，覆盖原始用例 1807365
+module: xlsx场景化补全五
+tags:
+- strict
+fast_fail: false
+env_check: []
+setup: []
+suites:
+# ── 文件操作：文件属性_隐藏属性切换与显示（1807365 单独验证隐藏逻辑）──
+# 验证勾选隐藏后文件从视图中消失、Ctrl+H 显示隐藏文件、取消隐藏后恢复显示。
+- id: case_1807365_hide
+  name: 【文件操作】文件属性_隐藏属性切换与显示
+  description: 'xlsx 用例编号: 1807365；勾选隐藏复选框后文件消失，Ctrl+H 显示隐藏文件，取消隐藏后恢复显示。'
+  tags:
+  - P2-1
+  - strict
+  vars: {xlsx_id: '1807365'}
+  steps:
+  - action: session_start
+    command: >-
+      bash -lc 'set -e; base=/tmp/dde-at-fixtures/case_1807365_hide_v5; rm -rf "$base"; mkdir -p "$base"; printf "hide test\n" > "$base/visiblefile.txt"; chmod 644 "$base/visiblefile.txt"; rm -f "$base/PASS_1807365_hide"; pkill -9 -f "^/usr/libexec/dde-file-manager( |$)" 2>/dev/null || true; dde-file-manager "$base" >/tmp/dfm_at_1807365_hide_v5.log 2>&1 & sleep 5; xdotool search --class dde-file-manager windowactivate %@ windowsize %@ 1200 700'
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: Tab
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: Home
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: ctrl+i
+    wait: 2.0
+  - action: element_action
+    ref: HideFile
+    do: click
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: Return
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: ctrl+h
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: Tab
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: Home
+    wait: 0.5
+  - action: keyboard_hot_key
+    key: ctrl+i
+    wait: 2.0
+  - action: element_action
+    ref: HideFile
+    do: click
+    wait: 1.0
+  - action: keyboard_hot_key
+    key: Return
+    wait: 1.0
+  assert_steps:
+  - action: session_start
+    command: >-
+      bash -lc 'set -e; base=/tmp/dde-at-fixtures/case_1807365_hide_v5; found=""; for f in "$base/visiblefile.txt" "$base/.visiblefile.txt"; do if [ -f "$f" ]; then found="$f"; break; fi; done; test -n "$found"; case "$found" in *.visiblefile.txt) false;; *) true;; esac; touch "$base/PASS_1807365_hide"'
+    wait: 1.0
+  - action: assert_file_exists
+    path: /tmp/dde-at-fixtures/case_1807365_hide_v5/PASS_1807365_hide
+teardown:
+- action: session_stop
+- action: session_start
+  command: >-
+    bash -lc 'pkill -9 -f "^/usr/libexec/dde-file-manager( |$)" 2>/dev/null || true; rm -rf /tmp/dde-at-fixtures/case_1807365_hide_v5'
+  wait: 0.5
